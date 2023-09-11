@@ -9,6 +9,14 @@
       {
         "name": "PBIDesktopVersion",
         "value": "2.120.963.0 (23.08)"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"avansData Contoso_Calendar\",\"avansData Contoso_Channel\",\"avansData Contoso_Product\",\"avansData Contoso_Geography\",\"avansData Contoso_Product_Category\",\"avansData Contoso_ProductSubcategory\",\"avansData Contoso_Promotion\",\"avansData Contoso_Sales\",\"avansData Contoso_Stores\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
       }
     ],
     "culture": "en-US",
@@ -23,6 +31,1306 @@
           },
           "contentType": "json"
         }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "relationships": [
+      {
+        "name": "75b19fd8-61dd-4f46-8bff-124d7a83a21b",
+        "fromColumn": "ProductKey",
+        "fromTable": "avansData Contoso_Sales",
+        "toColumn": "ProductKey",
+        "toTable": "avansData Contoso_Product"
+      },
+      {
+        "name": "f0360018-7fa4-44c0-b529-a4a325eb1c98",
+        "fromColumn": "ProductSubcategoryKey",
+        "fromTable": "avansData Contoso_Product",
+        "toColumn": "ProductSubcategoryKey",
+        "toTable": "avansData Contoso_ProductSubcategory"
+      },
+      {
+        "name": "f1c59ee2-55ea-4b78-9172-81d9282daf45",
+        "fromColumn": "GeographyKey",
+        "fromTable": "avansData Contoso_Stores",
+        "toColumn": "GeographyKey",
+        "toTable": "avansData Contoso_Geography"
+      },
+      {
+        "name": "4792e2de-5aac-40fe-895c-a375f0eb4015",
+        "fromColumn": "ProductCategoryKey",
+        "fromTable": "avansData Contoso_ProductSubcategory",
+        "toColumn": "ProductCategoryKey",
+        "toTable": "avansData Contoso_Product_Category"
+      },
+      {
+        "name": "2ace458b-691a-4574-92a1-ca73930e8d4e",
+        "fromColumn": "PromotionKey",
+        "fromTable": "avansData Contoso_Sales",
+        "toColumn": "PromotionKey",
+        "toTable": "avansData Contoso_Promotion"
+      },
+      {
+        "name": "dd165123-3f2c-4485-b006-d5970532281b",
+        "fromColumn": "StoreKey",
+        "fromTable": "avansData Contoso_Sales",
+        "toColumn": "StoreKey",
+        "toTable": "avansData Contoso_Stores"
+      },
+      {
+        "name": "18147a73-d010-4de1-a2b9-8dd1d475fe28",
+        "fromColumn": "channelKey",
+        "fromTable": "avansData Contoso_Sales",
+        "toColumn": "Channel",
+        "toTable": "avansData Contoso_Channel"
+      }
+    ],
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "avansData Contoso_Calendar",
+        "columns": [
+          {
+            "name": "DateInt",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "2733187c-01c4-43d0-9876-acf588640dad",
+            "sourceColumn": "DateInt",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "eb41068a-13b0-481a-8176-8e385778e4ad",
+            "sourceColumn": "Year",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "58d61698-e8fa-414a-af26-053260243298",
+            "sourceColumn": "Quarter",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ed7412f8-9640-4c10-8ff0-6cb9a53ea003",
+            "sourceColumn": "Month",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "ee03876a-ea5d-4d00-9861-dfe916248440",
+            "sourceColumn": "Day",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "DayOfMonth",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "274387ee-9dc0-4d71-b36e-0ee69550ef37",
+            "sourceColumn": "DayOfMonth",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "DayOfWeekName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f86b495f-820d-4673-ad0f-8eb1077e5040",
+            "sourceColumn": "DayOfWeekName",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "MonthName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "5913f8e4-f676-44cd-8fe4-0dbec04e5129",
+            "sourceColumn": "MonthName",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "MonthOfYear",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "7e4e44ce-ff74-4761-acf0-7ae6c2f1cdc2",
+            "sourceColumn": "MonthOfYear",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "QuarterOfYear",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "4f23d15e-db58-4f5d-a630-ebb943662d56",
+            "sourceColumn": "QuarterOfYear",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "8ec8d295-d688-4dbf-92ce-fa0c17aa047c",
+        "partitions": [
+          {
+            "name": "avansData Contoso_Calendar",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = PostgreSQL.Database(\"161.97.97.200\", \"avansData\"),",
+                "    avansData_Contoso_Calendar = Source{[Schema=\"avansData\",Item=\"Contoso_Calendar\"]}[Data]",
+                "in",
+                "    avansData_Contoso_Calendar"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DateTableTemplate_eebeb993-38de-470f-af85-56049ddadf93",
+        "annotations": [
+          {
+            "name": "__PBI_TemplateDateTable",
+            "value": "true"
+          },
+          {
+            "name": "DefaultItem",
+            "value": "DateHierarchy"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "cfc8b188-bf56-49e8-bb46-9f7a21540b51",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "143d5a63-5dc1-4627-b3b5-1d0f3056cd48",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "6755b786-1298-4c55-967a-94efb3a19eff",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "ac01a1fd-1dcf-4e83-9cb7-5a1e6d047ffd",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "14572c7d-b38f-4149-b1e1-029738ec0eed",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "ada6a6c4-9a73-480f-9545-300d1bd1259b",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "251c3541-c863-48de-9659-c53b8a4f5208",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "b28fe2b1-84a6-474c-bacc-27d0d3c28b5e",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "d39287ac-4b10-43d1-a7ea-e39ca8dc3210",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "53247128-5508-4f53-8266-2e59bef3e4ac",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "338caecd-2afb-417d-a143-22380060a87d",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "4119e28c-6833-40fa-97a1-9a031316aafa"
+          }
+        ],
+        "isHidden": true,
+        "isPrivate": true,
+        "lineageTag": "9d7a2ad7-d80c-439c-87a7-1e3b3f64cbb5",
+        "partitions": [
+          {
+            "name": "DateTableTemplate_eebeb993-38de-470f-af85-56049ddadf93",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))",
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "avansData Contoso_Channel",
+        "columns": [
+          {
+            "name": "Channel",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "b83f43d4-1624-4a1e-b495-d147d88835bb",
+            "sourceColumn": "Channel",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ChannelName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ba45d744-4d25-4fa0-ad85-ce692be7ea63",
+            "sourceColumn": "ChannelName",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "9e338bab-71b5-4b85-89d0-4c89dddba61c",
+        "partitions": [
+          {
+            "name": "avansData Contoso_Channel",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = PostgreSQL.Database(\"161.97.97.200\", \"avansData\"),",
+                "    avansData_Contoso_Channel = Source{[Schema=\"avansData\",Item=\"Contoso_Channel\"]}[Data]",
+                "in",
+                "    avansData_Contoso_Channel"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "avansData Contoso_Product",
+        "columns": [
+          {
+            "name": "BrandName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "097839f6-f386-41a9-82d6-3b8927df64fa",
+            "sourceColumn": "BrandName",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ClassName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "bf8752aa-2b08-4092-8866-f8ee4249d9a2",
+            "sourceColumn": "ClassName",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Manufacturer",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "dd7300a8-b333-4307-93b2-d2ff963654d3",
+            "sourceColumn": "Manufacturer",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ProductDescription",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "96aee8c7-20d8-40c1-b4cd-0297a9899707",
+            "sourceColumn": "ProductDescription",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ProductKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d07992c4-478c-4b05-875e-ba95f41de7c9",
+            "sourceColumn": "ProductKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ProductName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "5f33072c-03ff-4eb0-887b-4f1e6aeae8ca",
+            "sourceColumn": "ProductName",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ProductSubcategoryKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "3b4be8fe-999a-4716-b41a-34f11c4018ea",
+            "sourceColumn": "ProductSubcategoryKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "UnitCost",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "fd49e247-0c97-4164-9704-9d27c1733cce",
+            "sourceColumn": "UnitCost",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "UnitPrice",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ad425b2c-71b9-4989-b191-8bf05f8eb04a",
+            "sourceColumn": "UnitPrice",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "e7299768-0dca-4937-82ab-d504d639a78d",
+        "partitions": [
+          {
+            "name": "avansData Contoso_Product",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = PostgreSQL.Database(\"161.97.97.200\", \"avansData\"),",
+                "    avansData_Contoso_Product = Source{[Schema=\"avansData\",Item=\"Contoso_Product\"]}[Data]",
+                "in",
+                "    avansData_Contoso_Product"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "avansData Contoso_Geography",
+        "columns": [
+          {
+            "name": "ContinentName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "41102b79-7a88-432e-acf8-73af8ff5cd03",
+            "sourceColumn": "ContinentName",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "GeographyKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "9e16f637-d5b4-45b5-be51-47266d3ba1ad",
+            "sourceColumn": "GeographyKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "GeographyType",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "fb6a00f3-3706-4e22-9d0b-382bd32174b8",
+            "sourceColumn": "GeographyType",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "RegionCountryName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4ca72f42-48ad-4f99-a0e4-6dc29abd98e9",
+            "sourceColumn": "RegionCountryName",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "8730a8b8-7129-45ef-9e9d-1b29205341f8",
+        "partitions": [
+          {
+            "name": "avansData Contoso_Geography",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = PostgreSQL.Database(\"161.97.97.200\", \"avansData\"),",
+                "    avansData_Contoso_Geography = Source{[Schema=\"avansData\",Item=\"Contoso_Geography\"]}[Data]",
+                "in",
+                "    avansData_Contoso_Geography"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "avansData Contoso_Product_Category",
+        "columns": [
+          {
+            "name": "ProductCategory",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8fb3e746-3326-40c9-b6f5-527b30520d74",
+            "sourceColumn": "ProductCategory",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ProductCategoryKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "efab53d8-127f-4b67-b93a-4a04c6af063b",
+            "sourceColumn": "ProductCategoryKey",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "efb5edc5-b4c1-4546-88e2-3ed3b508c562",
+        "partitions": [
+          {
+            "name": "avansData Contoso_Product_Category",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = PostgreSQL.Database(\"161.97.97.200\", \"avansData\"),",
+                "    avansData_Contoso_Product_Category = Source{[Schema=\"avansData\",Item=\"Contoso_Product_Category\"]}[Data]",
+                "in",
+                "    avansData_Contoso_Product_Category"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "avansData Contoso_ProductSubcategory",
+        "columns": [
+          {
+            "name": "ProductCategoryKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "e3fff286-5454-470b-86a2-43a8e594d247",
+            "sourceColumn": "ProductCategoryKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ProductSubcategory",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f20e3da2-94ab-4677-83c7-2d2bff657960",
+            "sourceColumn": "ProductSubcategory",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ProductSubcategoryKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "aac744c5-8567-4a86-958a-aa260191fe71",
+            "sourceColumn": "ProductSubcategoryKey",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "fdda2a07-9e83-4de4-947f-eac4fb00c0a2",
+        "partitions": [
+          {
+            "name": "avansData Contoso_ProductSubcategory",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = PostgreSQL.Database(\"161.97.97.200\", \"avansData\"),",
+                "    avansData_Contoso_ProductSubcategory = Source{[Schema=\"avansData\",Item=\"Contoso_ProductSubcategory\"]}[Data]",
+                "in",
+                "    avansData_Contoso_ProductSubcategory"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "avansData Contoso_Promotion",
+        "columns": [
+          {
+            "name": "DiscountPercent",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "19bab095-20bd-4a3f-80ae-a7ca76607715",
+            "sourceColumn": "DiscountPercent",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "973e8578-87e6-4e0c-aa0f-04156ca8c204",
+            "sourceColumn": "Year",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "794dd1f6-cf1f-404d-ade4-88c9f871d109",
+            "sourceColumn": "Quarter",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "789f9cd8-7ac6-420e-8d80-c6233b608b1b",
+            "sourceColumn": "Month",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "3b5c1886-b4f3-42cb-a7ac-f0f3f8698703",
+            "sourceColumn": "Day",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "PromotionKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "123613c9-e820-4e68-93cc-342a3d17f782",
+            "sourceColumn": "PromotionKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "PromotionLabel",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "53908866-c770-4611-b135-f7d5b17d6e7b",
+            "sourceColumn": "PromotionLabel",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "PromotionName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "edcf4e6a-1028-4486-b3e9-dc325cf315e2",
+            "sourceColumn": "PromotionName",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "b9d3af76-b21c-4586-ac42-ad3dc66c7438",
+        "partitions": [
+          {
+            "name": "avansData Contoso_Promotion",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = PostgreSQL.Database(\"161.97.97.200\", \"avansData\"),",
+                "    avansData_Contoso_Promotion = Source{[Schema=\"avansData\",Item=\"Contoso_Promotion\"]}[Data]",
+                "in",
+                "    avansData_Contoso_Promotion"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "avansData Contoso_Sales",
+        "columns": [
+          {
+            "name": "SalesKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "4e1e4deb-c932-4b3e-a029-52ce0ddf9817",
+            "sourceColumn": "SalesKey",
+            "summarizeBy": "count"
+          },
+          {
+            "name": "DateKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "473b0f03-1449-4ec4-bb76-b080386b4cf6",
+            "sourceColumn": "DateKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "channelKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "a1abb2a2-81bd-494d-9e8c-8774e0dda733",
+            "sourceColumn": "channelKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "StoreKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "5f0f4359-97ce-4cc6-987e-53ba28d4b163",
+            "sourceColumn": "StoreKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ProductKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "456a6378-f289-4ef9-a2e2-f8e73c1fd119",
+            "sourceColumn": "ProductKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "PromotionKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "5c83afdf-04e2-4e7e-8f66-427759c8b5b8",
+            "sourceColumn": "PromotionKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "UnitCost",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2fee091a-e8a1-4cf2-876a-ac1be8bbb083",
+            "sourceColumn": "UnitCost",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "UnitPrice",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e4c0c193-22c7-494b-aa70-e0871313dfa0",
+            "sourceColumn": "UnitPrice",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "SalesQuantity",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "86f4999f-81f6-4fdc-aaff-0c5678b3ba2a",
+            "sourceColumn": "SalesQuantity",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ReturnQuantity",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "1f7b5fc1-30b9-4e83-9804-6a95ddf26f12",
+            "sourceColumn": "ReturnQuantity",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ReturnAmount",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "1212ef0b-acfd-4b91-99b7-26feee203e19",
+            "sourceColumn": "ReturnAmount",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "DiscountQuantity",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "223e35d3-fc62-4ed9-ba12-159a5458fe41",
+            "sourceColumn": "DiscountQuantity",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "DiscountAmount",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f512891c-a8e6-4562-9602-7a6e3fb6243a",
+            "sourceColumn": "DiscountAmount",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "TotalCost",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "0af10866-7144-4905-8221-868c49d5c4e7",
+            "sourceColumn": "TotalCost",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "SalesAmount",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8d7c1935-b3a0-492a-8dcd-5b8280269655",
+            "sourceColumn": "SalesAmount",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "f4edda52-2231-49b6-89ea-05c53422b0e9",
+        "partitions": [
+          {
+            "name": "avansData Contoso_Sales",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = PostgreSQL.Database(\"161.97.97.200\", \"avansData\"),",
+                "    avansData_Contoso_Sales = Source{[Schema=\"avansData\",Item=\"Contoso_Sales\"]}[Data]",
+                "in",
+                "    avansData_Contoso_Sales"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "avansData Contoso_Stores",
+        "columns": [
+          {
+            "name": "CloseReason",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "a26d0e11-f78e-4fe3-836f-34e238884602",
+            "sourceColumn": "CloseReason",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "EmployeeCount",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "4ccb6d67-c63a-43f5-8a15-386867d1bb83",
+            "sourceColumn": "EmployeeCount",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "GeographyKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "e412cbb1-276c-4003-a05b-9049753fba5f",
+            "sourceColumn": "GeographyKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "SellingAreaSize",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "65ecd2f6-f34f-409e-92fa-13cb810a5932",
+            "sourceColumn": "SellingAreaSize",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Status",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "30f080aa-2c50-474c-9db4-11d29702de41",
+            "sourceColumn": "Status",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "StoreKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "58e7d972-6119-4df6-aa8a-52d6b1905abf",
+            "sourceColumn": "StoreKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "StoreName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "51b449f5-7c2b-482c-b350-7b221354bc4a",
+            "sourceColumn": "StoreName",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "StoreType",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b0c459be-50f5-4bf6-a326-77718297ef6b",
+            "sourceColumn": "StoreType",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "3b33fa4b-4f8e-4fe8-b42d-d44a1891b348",
+        "partitions": [
+          {
+            "name": "avansData Contoso_Stores",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = PostgreSQL.Database(\"161.97.97.200\", \"avansData\"),",
+                "    avansData_Contoso_Stores = Source{[Schema=\"avansData\",Item=\"Contoso_Stores\"]}[Data]",
+                "in",
+                "    avansData_Contoso_Stores"
+              ],
+              "type": "m"
+            }
+          }
+        ]
       }
     ]
   }
