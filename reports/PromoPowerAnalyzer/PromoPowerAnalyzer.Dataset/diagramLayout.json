@@ -7,7 +7,125 @@
         "x": 0,
         "y": 0
       },
-      "nodes": [],
+      "nodes": [
+        {
+          "location": {
+            "x": 1150.5773428365651,
+            "y": 528.665319729263
+          },
+          "nodeIndex": "avansData Contoso_Calendar",
+          "nodeLineageTag": "b8bd4c21-bbaf-4731-9368-adac01f694d2",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 876.57734283656509,
+            "y": 300.31018391302041
+          },
+          "nodeIndex": "avansData Contoso_Channel",
+          "nodeLineageTag": "6754c924-a07d-4b91-a76e-0b8facd192e7",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 546.2625570691996,
+            "y": 1171.3306394585261
+          },
+          "nodeIndex": "avansData Contoso_Geography",
+          "nodeLineageTag": "4c8417e1-5382-4e10-ae7e-f4f1b550154a",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 10,
+            "y": 138.09341959025755
+          },
+          "nodeIndex": "avansData Contoso_Product",
+          "nodeLineageTag": "3169f31e-2a1b-4a29-bbc4-c0cff3ba6218",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 301.87064571236169,
+            "y": 314.46808125935843
+          },
+          "nodeIndex": "avansData Contoso_Product_Category",
+          "nodeLineageTag": "28bdd819-46b2-4bc7-a7b3-ab15f8aac8ce",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 588.94468817303152,
+            "y": 319.73457975561428
+          },
+          "nodeIndex": "avansData Contoso_ProductSubcategory",
+          "nodeLineageTag": "c8f52e18-76da-49f3-878b-0d168fdb03ee",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 300.86143007910778,
+            "y": -10
+          },
+          "nodeIndex": "avansData Contoso_Promotion",
+          "nodeLineageTag": "c59e3260-6973-4686-b821-503cead83dc1",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 13.368696800887847,
+            "y": 486.66612661396539
+          },
+          "nodeIndex": "avansData Contoso_Sales",
+          "nodeLineageTag": "889d102d-5974-426d-b767-6e31e7c618e4",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 271.29172980372391,
+            "y": 843.649234720869
+          },
+          "nodeIndex": "avansData Contoso_Stores",
+          "nodeLineageTag": "e5612c81-6498-4a5c-8a4b-812e87077b14",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
       "name": "All tables",
       "zoomValue": 100,
       "pinKeyFieldsToTop": false,
