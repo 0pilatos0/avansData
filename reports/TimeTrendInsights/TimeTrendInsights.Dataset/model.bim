@@ -12,7 +12,7 @@
       },
       {
         "name": "PBI_QueryOrder",
-        "value": "[\"avansData Contoso_Calendar\",\"avansData Contoso_Channel\",\"avansData Contoso_Product\",\"avansData Contoso_Geography\",\"avansData Contoso_Product_Category\",\"avansData Contoso_ProductSubcategory\",\"avansData Contoso_Promotion\",\"avansData Contoso_Sales\",\"avansData Contoso_Stores\"]"
+        "value": "[\"avansData Contoso_Calendar\",\"avansData Contoso_Channel\",\"avansData Contoso_Product\",\"avansData Contoso_Geography\",\"avansData Contoso_Product_Category\",\"avansData Contoso_ProductSubcategory\",\"avansData Contoso_Promotion\",\"avansData Contoso_Sales\",\"avansData Contoso_Stores\",\"avansData Gross National Income Per Capita\"]"
       },
       {
         "name": "__PBI_TimeIntelligenceEnabled",
@@ -1326,6 +1326,674 @@
                 "    avansData_Contoso_Stores = Source{[Schema=\"avansData\",Item=\"Contoso_Stores\"]}[Data]",
                 "in",
                 "    avansData_Contoso_Stores"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "avansData Gross National Income Per Capita",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "iso3",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "597a15bc-9636-4429-b79a-a18bdd80d8b4",
+            "sourceColumn": "iso3",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Country",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3a0bebcb-957d-40d2-8f53-5d131c1e08a2",
+            "sourceColumn": "Country",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Continent",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "77f56ba6-203d-4a74-9043-86781b2ccaad",
+            "sourceColumn": "Continent",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Hemisphere",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e1a84b31-a906-48b4-8793-ac91c20f9bb9",
+            "sourceColumn": "Hemisphere",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Human Development Groups",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4dc44ff9-dc20-4dd7-8c0b-9f8445c8b040",
+            "sourceColumn": "Human Development Groups",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "UNDP Developing Regions",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "369008d0-d02b-4372-a45e-0769a5497901",
+            "sourceColumn": "UNDP Developing Regions",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "HDI Rank (2021)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "00a5d1ba-5cfb-4eb3-a9f9-1304425319d6",
+            "sourceColumn": "HDI Rank (2021)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (1990)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "1825d12f-cdc2-41f6-b5f5-155691b51889",
+            "sourceColumn": "Gross National Income Per Capita (1990)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (1991)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "ed357d13-2e35-47cf-a9a4-d434d9abf243",
+            "sourceColumn": "Gross National Income Per Capita (1991)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (1992)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "1856f365-7b84-4ee8-aaca-666a33f2abb4",
+            "sourceColumn": "Gross National Income Per Capita (1992)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (1993)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "68ac023f-77ae-49f6-af09-b86f4110596e",
+            "sourceColumn": "Gross National Income Per Capita (1993)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (1994)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "0fd985d7-b56d-4a3c-8bdb-cd5525df6aab",
+            "sourceColumn": "Gross National Income Per Capita (1994)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (1995)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "bd044651-49eb-4bb3-917c-195caad61b78",
+            "sourceColumn": "Gross National Income Per Capita (1995)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (1996)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "f15d436f-8d7a-4022-a968-9f73912da6f8",
+            "sourceColumn": "Gross National Income Per Capita (1996)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (1997)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "571024aa-3bf9-46e3-a2bb-5263991833df",
+            "sourceColumn": "Gross National Income Per Capita (1997)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (1998)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "01f2b5b3-bbd0-488c-a6fd-2c548821f16b",
+            "sourceColumn": "Gross National Income Per Capita (1998)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (1999)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "300ef0dc-3413-4514-8f9a-6df04de8c7b8",
+            "sourceColumn": "Gross National Income Per Capita (1999)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (2000)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "4b6d4668-015e-4609-8bb6-1f0e8e404a7c",
+            "sourceColumn": "Gross National Income Per Capita (2000)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (2001)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "f6f2245d-b904-4980-a42a-31dd5ca3f44a",
+            "sourceColumn": "Gross National Income Per Capita (2001)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (2002)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "dd259338-1020-4e01-8b63-fe2b315c16c4",
+            "sourceColumn": "Gross National Income Per Capita (2002)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (2003)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "a50015d2-96c2-407b-9176-5706c351d5c8",
+            "sourceColumn": "Gross National Income Per Capita (2003)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (2004)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "df3d74d0-5d38-40ec-96c3-de7dd416cf92",
+            "sourceColumn": "Gross National Income Per Capita (2004)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (2005)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "77287802-c929-43e8-af0a-b8f8eaf4ae6c",
+            "sourceColumn": "Gross National Income Per Capita (2005)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (2006)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "bf0e444a-45da-4c47-a721-0f8388da4e64",
+            "sourceColumn": "Gross National Income Per Capita (2006)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (2007)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "174130e1-47b0-4d6e-815d-318debf8a22c",
+            "sourceColumn": "Gross National Income Per Capita (2007)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (2008)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "79ee8a00-07a8-41d6-9759-54f6f0d5c423",
+            "sourceColumn": "Gross National Income Per Capita (2008)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (2009)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "c16b3c37-bbe7-4d68-909d-22f88d58304f",
+            "sourceColumn": "Gross National Income Per Capita (2009)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (2010)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "97358b11-7759-4b47-8550-a677ef3a613c",
+            "sourceColumn": "Gross National Income Per Capita (2010)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (2011)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "b320b140-f3e5-4e50-b8b3-4e81750f406c",
+            "sourceColumn": "Gross National Income Per Capita (2011)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (2012)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "4fdeb54c-119c-40e6-9b34-7b4c65bfb4ce",
+            "sourceColumn": "Gross National Income Per Capita (2012)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (2013)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "b316ba27-3b95-4ffd-a077-ca7873d777ef",
+            "sourceColumn": "Gross National Income Per Capita (2013)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (2014)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "882ffafe-eeef-428a-870c-66fcf0bc186a",
+            "sourceColumn": "Gross National Income Per Capita (2014)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (2015)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "44193a73-8a53-4e2a-a8e2-ebc9ce4c41d6",
+            "sourceColumn": "Gross National Income Per Capita (2015)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (2016)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "d9593baa-e9d1-4242-a932-1257d1ad8bcc",
+            "sourceColumn": "Gross National Income Per Capita (2016)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (2017)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "7a42fab9-c3ff-45fc-b535-52160a089c51",
+            "sourceColumn": "Gross National Income Per Capita (2017)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (2018)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "7a30a536-71ec-4c28-b2be-b4ba8c837f36",
+            "sourceColumn": "Gross National Income Per Capita (2018)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (2019)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "c87744e7-f570-49f5-befa-66a748fc4d99",
+            "sourceColumn": "Gross National Income Per Capita (2019)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (2020)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "66773680-028b-4d9f-9ce1-695b8890d6f8",
+            "sourceColumn": "Gross National Income Per Capita (2020)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (2021)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "783fed26-dd4c-4608-b6a5-089b6d144c05",
+            "sourceColumn": "Gross National Income Per Capita (2021)",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "154565fd-332c-4ab6-b17f-f14f535fb9c4",
+        "partitions": [
+          {
+            "name": "avansData Gross National Income Per Capita",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = PostgreSQL.Database(\"161.97.97.200\", \"avansData\"),",
+                "    #\"avansData_Gross National Income Per Capita\" = Source{[Schema=\"avansData\",Item=\"Gross National Income Per Capita\"]}[Data]",
+                "in",
+                "    #\"avansData_Gross National Income Per Capita\""
               ],
               "type": "m"
             }

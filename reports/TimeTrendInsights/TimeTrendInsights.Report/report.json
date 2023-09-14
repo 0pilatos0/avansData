@@ -27,11 +27,11 @@
       "name": "ReportSection",
       "visualContainers": [
         {
-          "config": "{\"name\":\"a9af3b0f72e9b95da673\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.850746268656716,\"y\":0,\"z\":0,\"width\":1269.8507462686566,\"height\":720,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"avansData Contoso_Sales.StoreKey\"},{\"queryRef\":\"avansData Contoso_Sales.TotalCost\"},{\"queryRef\":\"avansData Contoso_Sales.SalesAmount\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"avansData Contoso_Sales\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"StoreKey\"},\"Name\":\"avansData Contoso_Sales.StoreKey\",\"NativeReferenceName\":\"StoreKey\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"TotalCost\"},\"Name\":\"avansData Contoso_Sales.TotalCost\",\"NativeReferenceName\":\"TotalCost\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"SalesAmount\"},\"Name\":\"avansData Contoso_Sales.SalesAmount\",\"NativeReferenceName\":\"SalesAmount\"}]},\"drillFilterOtherVisuals\":true}}",
+          "config": "{\"name\":\"a9af3b0f72e9b95da673\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.377289377289378,\"y\":0,\"z\":0,\"width\":1270.6227106227107,\"height\":719.7069597069597,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"avansData Contoso_Sales.StoreKey\"},{\"queryRef\":\"avansData Contoso_Sales.TotalCost\"},{\"queryRef\":\"avansData Contoso_Sales.SalesAmount\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"avansData Contoso_Sales\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"StoreKey\"},\"Name\":\"avansData Contoso_Sales.StoreKey\",\"NativeReferenceName\":\"StoreKey\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"TotalCost\"},\"Name\":\"avansData Contoso_Sales.TotalCost\",\"NativeReferenceName\":\"TotalCost\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"SalesAmount\"},\"Name\":\"avansData Contoso_Sales.SalesAmount\",\"NativeReferenceName\":\"SalesAmount\"}]},\"drillFilterOtherVisuals\":true}}",
           "filters": "[]",
-          "height": 720.00,
-          "width": 1269.85,
-          "x": 9.85,
+          "height": 719.71,
+          "width": 1270.62,
+          "x": 9.38,
           "y": 0.00,
           "z": 0.00
         }

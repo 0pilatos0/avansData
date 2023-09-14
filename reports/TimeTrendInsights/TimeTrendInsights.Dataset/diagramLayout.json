@@ -11,7 +11,7 @@
         {
           "location": {
             "x": 1451.2929542237434,
-            "y": 330.72575968451429
+            "y": 330.72575968451428
           },
           "nodeIndex": "avansData Contoso_Calendar",
           "nodeLineageTag": "8ec8d295-d688-4dbf-92ce-fa0c17aa047c",
@@ -24,7 +24,7 @@
         {
           "location": {
             "x": 472.3631774816472,
-            "y": 823.45151936902857
+            "y": 823.45151936902864
           },
           "nodeIndex": "avansData Contoso_Channel",
           "nodeLineageTag": "9e338bab-71b5-4b85-89d0-4c89dddba61c",
@@ -36,8 +36,8 @@
         },
         {
           "location": {
-            "x": 888.04259998012367,
-            "y": 367.79124417122375
+            "x": 888.04259998012368,
+            "y": 367.79124417122376
           },
           "nodeIndex": "avansData Contoso_Geography",
           "nodeLineageTag": "8730a8b8-7129-45ef-9e9d-1b29205341f8",
@@ -49,7 +49,7 @@
         },
         {
           "location": {
-            "x": 319.83191646256614,
+            "x": 319.83191646256616,
             "y": 0
           },
           "nodeIndex": "avansData Contoso_Product",
@@ -75,7 +75,7 @@
         },
         {
           "location": {
-            "x": 313.3741522985141,
+            "x": 313.37415229851412,
             "y": 395.06915501966336
           },
           "nodeIndex": "avansData Contoso_ProductSubcategory",
@@ -89,7 +89,7 @@
         {
           "location": {
             "x": 1131.4071270047875,
-            "y": 660.7070560799541
+            "y": 660.70705607995408
           },
           "nodeIndex": "avansData Contoso_Promotion",
           "nodeLineageTag": "b9d3af76-b21c-4586-ac42-ad3dc66c7438",
@@ -101,8 +101,8 @@
         },
         {
           "location": {
-            "x": 600.74216794428571,
-            "y": 467.92241633820964
+            "x": 600.74216794428568,
+            "y": 467.9224163382096
           },
           "nodeIndex": "avansData Contoso_Sales",
           "nodeLineageTag": "f4edda52-2231-49b6-89ea-05c53422b0e9",
@@ -115,12 +115,25 @@
         {
           "location": {
             "x": 1177.2929542237434,
-            "y": 135.41150644915433
+            "y": 135.41150644915434
           },
           "nodeIndex": "avansData Contoso_Stores",
           "nodeLineageTag": "3b33fa4b-4f8e-4fe8-b42d-d44a1891b348",
           "size": {
             "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1725.2929542237434,
+            "y": 330.72575968451428
+          },
+          "nodeIndex": "avansData Gross National Income Per Capita",
+          "nodeLineageTag": "154565fd-332c-4ab6-b17f-f14f535fb9c4",
+          "size": {
+            "height": 300,
             "width": 234
           },
           "zIndex": 0
