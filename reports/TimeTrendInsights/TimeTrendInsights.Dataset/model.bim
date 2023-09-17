@@ -12,11 +12,11 @@
       },
       {
         "name": "PBI_QueryOrder",
-        "value": "[\"avansData Contoso_Calendar\",\"avansData Contoso_Channel\",\"avansData Contoso_Product\",\"avansData Contoso_Geography\",\"avansData Contoso_Product_Category\",\"avansData Contoso_ProductSubcategory\",\"avansData Contoso_Promotion\",\"avansData Contoso_Sales\",\"avansData Contoso_Stores\",\"avansData Gross National Income Per Capita\"]"
+        "value": "[\"avansData Contoso_Calendar\",\"avansData Contoso_Channel\",\"avansData Contoso_Product\",\"avansData Contoso_Geography\",\"avansData Contoso_Product_Category\",\"avansData Contoso_ProductSubcategory\",\"avansData Contoso_Promotion\",\"avansData Contoso_Sales\",\"avansData Contoso_Stores\",\"avansData Gross National Income Per Capita\",\"Measures (2)\"]"
       },
       {
         "name": "__PBI_TimeIntelligenceEnabled",
-        "value": "1"
+        "value": "0"
       }
     ],
     "culture": "en-US",
@@ -100,6 +100,16 @@
     "tables": [
       {
         "name": "avansData Contoso_Calendar",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
         "columns": [
           {
             "name": "DateInt",
@@ -127,7 +137,7 @@
             "formatString": "0",
             "lineageTag": "eb41068a-13b0-481a-8176-8e385778e4ad",
             "sourceColumn": "Year",
-            "summarizeBy": "none"
+            "summarizeBy": "sum"
           },
           {
             "name": "Quarter",
@@ -167,7 +177,7 @@
             "formatString": "0",
             "lineageTag": "ee03876a-ea5d-4d00-9861-dfe916248440",
             "sourceColumn": "Day",
-            "summarizeBy": "none"
+            "summarizeBy": "sum"
           },
           {
             "name": "DayOfMonth",
@@ -181,7 +191,7 @@
             "formatString": "0",
             "lineageTag": "274387ee-9dc0-4d71-b36e-0ee69550ef37",
             "sourceColumn": "DayOfMonth",
-            "summarizeBy": "none"
+            "summarizeBy": "sum"
           },
           {
             "name": "DayOfWeekName",
@@ -221,7 +231,7 @@
             "formatString": "0",
             "lineageTag": "7e4e44ce-ff74-4761-acf0-7ae6c2f1cdc2",
             "sourceColumn": "MonthOfYear",
-            "summarizeBy": "none"
+            "summarizeBy": "sum"
           },
           {
             "name": "QuarterOfYear",
@@ -235,9 +245,29 @@
             "formatString": "0",
             "lineageTag": "4f23d15e-db58-4f5d-a630-ebb943662d56",
             "sourceColumn": "QuarterOfYear",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "isKey": true,
+            "lineageTag": "795c78a6-54a2-4ecc-bcf8-ec8bbddd62b8",
+            "sourceColumn": "Date",
             "summarizeBy": "none"
           }
         ],
+        "dataCategory": "Time",
         "lineageTag": "8ec8d295-d688-4dbf-92ce-fa0c17aa047c",
         "partitions": [
           {
@@ -247,228 +277,13 @@
               "expression": [
                 "let",
                 "    Source = PostgreSQL.Database(\"161.97.97.200\", \"avansData\"),",
-                "    avansData_Contoso_Calendar = Source{[Schema=\"avansData\",Item=\"Contoso_Calendar\"]}[Data]",
+                "    avansData_Contoso_Calendar = Source{[Schema=\"avansData\",Item=\"Contoso_Calendar\"]}[Data],",
+                "    #\"Inserted Date\" = Table.AddColumn(avansData_Contoso_Calendar, \"Date\", each Date.From(Text.From([DateInt], \"en-US\")), type date),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Inserted Date\",{{\"Date\", type date}})",
                 "in",
-                "    avansData_Contoso_Calendar"
+                "    #\"Changed Type\""
               ],
               "type": "m"
-            }
-          }
-        ]
-      },
-      {
-        "name": "DateTableTemplate_eebeb993-38de-470f-af85-56049ddadf93",
-        "annotations": [
-          {
-            "name": "__PBI_TemplateDateTable",
-            "value": "true"
-          },
-          {
-            "name": "DefaultItem",
-            "value": "DateHierarchy"
-          }
-        ],
-        "columns": [
-          {
-            "name": "Date",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              }
-            ],
-            "dataCategory": "PaddedDateTableDates",
-            "dataType": "dateTime",
-            "formatString": "General Date",
-            "isDataTypeInferred": true,
-            "isHidden": true,
-            "isNameInferred": true,
-            "lineageTag": "cfc8b188-bf56-49e8-bb46-9f7a21540b51",
-            "sourceColumn": "[Date]",
-            "summarizeBy": "none",
-            "type": "calculatedTableColumn"
-          },
-          {
-            "name": "Year",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Year"
-              }
-            ],
-            "dataCategory": "Years",
-            "dataType": "int64",
-            "expression": "YEAR([Date])",
-            "formatString": "0",
-            "isDataTypeInferred": true,
-            "isHidden": true,
-            "lineageTag": "143d5a63-5dc1-4627-b3b5-1d0f3056cd48",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "MonthNo",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "MonthNumber"
-              }
-            ],
-            "dataCategory": "MonthOfYear",
-            "dataType": "int64",
-            "expression": "MONTH([Date])",
-            "formatString": "0",
-            "isDataTypeInferred": true,
-            "isHidden": true,
-            "lineageTag": "6755b786-1298-4c55-967a-94efb3a19eff",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "Month",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Month"
-              }
-            ],
-            "dataCategory": "Months",
-            "dataType": "string",
-            "expression": "FORMAT([Date], \"MMMM\")",
-            "isDataTypeInferred": true,
-            "isHidden": true,
-            "lineageTag": "ac01a1fd-1dcf-4e83-9cb7-5a1e6d047ffd",
-            "sortByColumn": "MonthNo",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "QuarterNo",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "QuarterNumber"
-              }
-            ],
-            "dataCategory": "QuarterOfYear",
-            "dataType": "int64",
-            "expression": "INT(([MonthNo] + 2) / 3)",
-            "formatString": "0",
-            "isDataTypeInferred": true,
-            "isHidden": true,
-            "lineageTag": "14572c7d-b38f-4149-b1e1-029738ec0eed",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "Quarter",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Quarter"
-              }
-            ],
-            "dataCategory": "Quarters",
-            "dataType": "string",
-            "expression": "\"Qtr \" & [QuarterNo]",
-            "isDataTypeInferred": true,
-            "isHidden": true,
-            "lineageTag": "ada6a6c4-9a73-480f-9545-300d1bd1259b",
-            "sortByColumn": "QuarterNo",
-            "summarizeBy": "none",
-            "type": "calculated"
-          },
-          {
-            "name": "Day",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "User"
-              },
-              {
-                "name": "TemplateId",
-                "value": "Day"
-              }
-            ],
-            "dataCategory": "DayOfMonth",
-            "dataType": "int64",
-            "expression": "DAY([Date])",
-            "formatString": "0",
-            "isDataTypeInferred": true,
-            "isHidden": true,
-            "lineageTag": "251c3541-c863-48de-9659-c53b8a4f5208",
-            "summarizeBy": "none",
-            "type": "calculated"
-          }
-        ],
-        "hierarchies": [
-          {
-            "name": "Date Hierarchy",
-            "annotations": [
-              {
-                "name": "TemplateId",
-                "value": "DateHierarchy"
-              }
-            ],
-            "levels": [
-              {
-                "name": "Year",
-                "column": "Year",
-                "lineageTag": "b28fe2b1-84a6-474c-bacc-27d0d3c28b5e",
-                "ordinal": 0
-              },
-              {
-                "name": "Quarter",
-                "column": "Quarter",
-                "lineageTag": "d39287ac-4b10-43d1-a7ea-e39ca8dc3210",
-                "ordinal": 1
-              },
-              {
-                "name": "Month",
-                "column": "Month",
-                "lineageTag": "53247128-5508-4f53-8266-2e59bef3e4ac",
-                "ordinal": 2
-              },
-              {
-                "name": "Day",
-                "column": "Day",
-                "lineageTag": "338caecd-2afb-417d-a143-22380060a87d",
-                "ordinal": 3
-              }
-            ],
-            "lineageTag": "4119e28c-6833-40fa-97a1-9a031316aafa"
-          }
-        ],
-        "isHidden": true,
-        "isPrivate": true,
-        "lineageTag": "9d7a2ad7-d80c-439c-87a7-1e3b3f64cbb5",
-        "partitions": [
-          {
-            "name": "DateTableTemplate_eebeb993-38de-470f-af85-56049ddadf93",
-            "mode": "import",
-            "source": {
-              "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))",
-              "type": "calculated"
             }
           }
         ]
@@ -2011,6 +1826,67 @@
                 "    #\"avansData_Gross National Income Per Capita\" = Source{[Schema=\"avansData\",Item=\"Gross National Income Per Capita\"]}[Data]",
                 "in",
                 "    #\"avansData_Gross National Income Per Capita\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Measures (2)",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Column1",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "0152e871-f2f8-4d57-b92a-7a342e099c1b",
+            "sourceColumn": "Column1",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "b5dac59c-99eb-45df-875f-69d46cec1701",
+        "measures": [
+          {
+            "name": "SumOfSalesQuantity",
+            "expression": "SUM('avansData Contoso_Sales'[SalesQuantity])",
+            "formatString": "#,0",
+            "lineageTag": "9a5e0d98-e43d-46f9-ba63-5adc07a3973a"
+          },
+          {
+            "name": "SalesQuantityPreviousMonth",
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    [SumOfSalesQuantity],",
+              "    DATEADD('avansData Contoso_Calendar'[Date], -1, MONTH)",
+              ")"
+            ],
+            "formatString": "#,0",
+            "lineageTag": "9a1de3e0-4f13-4e0b-9eb4-844ecbdcf98b"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Measures (2)",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"i44FAA==\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(Source,{{\"Column1\", type text}})",
+                "in",
+                "    #\"Changed Type\""
               ],
               "type": "m"
             }
