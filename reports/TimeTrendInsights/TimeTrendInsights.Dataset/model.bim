@@ -87,6 +87,13 @@
         "fromTable": "avansData Contoso_Sales",
         "toColumn": "Channel",
         "toTable": "avansData Contoso_Channel"
+      },
+      {
+        "name": "1820e296-6044-4459-bd0e-20ed138d3459",
+        "fromColumn": "DateKey",
+        "fromTable": "avansData Contoso_Sales",
+        "toColumn": "DateInt",
+        "toTable": "avansData Contoso_Calendar"
       }
     ],
     "sourceQueryCulture": "en-US",
@@ -106,7 +113,7 @@
             "formatString": "0",
             "lineageTag": "2733187c-01c4-43d0-9876-acf588640dad",
             "sourceColumn": "DateInt",
-            "summarizeBy": "sum"
+            "summarizeBy": "none"
           },
           {
             "name": "Year",
@@ -120,7 +127,7 @@
             "formatString": "0",
             "lineageTag": "eb41068a-13b0-481a-8176-8e385778e4ad",
             "sourceColumn": "Year",
-            "summarizeBy": "sum"
+            "summarizeBy": "none"
           },
           {
             "name": "Quarter",
@@ -160,7 +167,7 @@
             "formatString": "0",
             "lineageTag": "ee03876a-ea5d-4d00-9861-dfe916248440",
             "sourceColumn": "Day",
-            "summarizeBy": "sum"
+            "summarizeBy": "none"
           },
           {
             "name": "DayOfMonth",
@@ -174,7 +181,7 @@
             "formatString": "0",
             "lineageTag": "274387ee-9dc0-4d71-b36e-0ee69550ef37",
             "sourceColumn": "DayOfMonth",
-            "summarizeBy": "sum"
+            "summarizeBy": "none"
           },
           {
             "name": "DayOfWeekName",
@@ -214,7 +221,7 @@
             "formatString": "0",
             "lineageTag": "7e4e44ce-ff74-4761-acf0-7ae6c2f1cdc2",
             "sourceColumn": "MonthOfYear",
-            "summarizeBy": "sum"
+            "summarizeBy": "none"
           },
           {
             "name": "QuarterOfYear",
@@ -228,7 +235,7 @@
             "formatString": "0",
             "lineageTag": "4f23d15e-db58-4f5d-a630-ebb943662d56",
             "sourceColumn": "QuarterOfYear",
-            "summarizeBy": "sum"
+            "summarizeBy": "none"
           }
         ],
         "lineageTag": "8ec8d295-d688-4dbf-92ce-fa0c17aa047c",
@@ -979,6 +986,16 @@
       },
       {
         "name": "avansData Contoso_Sales",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
         "columns": [
           {
             "name": "SalesKey",
@@ -1002,7 +1019,8 @@
                 "value": "Automatic"
               }
             ],
-            "dataType": "string",
+            "dataType": "int64",
+            "formatString": "0",
             "lineageTag": "473b0f03-1449-4ec4-bb76-b080386b4cf6",
             "sourceColumn": "DateKey",
             "summarizeBy": "none"
@@ -1193,9 +1211,12 @@
               "expression": [
                 "let",
                 "    Source = PostgreSQL.Database(\"161.97.97.200\", \"avansData\"),",
-                "    avansData_Contoso_Sales = Source{[Schema=\"avansData\",Item=\"Contoso_Sales\"]}[Data]",
+                "    avansData_Contoso_Sales = Source{[Schema=\"avansData\",Item=\"Contoso_Sales\"]}[Data],",
+                "    #\"Replaced Value\" = Table.ReplaceValue(avansData_Contoso_Sales,\" 00:00:00,000\",\"\",Replacer.ReplaceText,{\"DateKey\"}),",
+                "    #\"Replaced Value1\" = Table.ReplaceValue(#\"Replaced Value\",\"-\",\"\",Replacer.ReplaceText,{\"DateKey\"}),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Replaced Value1\",{{\"DateKey\", Int64.Type}})",
                 "in",
-                "    avansData_Contoso_Sales"
+                "    #\"Changed Type\""
               ],
               "type": "m"
             }
@@ -1335,10 +1356,6 @@
       {
         "name": "avansData Gross National Income Per Capita",
         "annotations": [
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
-          },
           {
             "name": "PBI_ResultType",
             "value": "Table"

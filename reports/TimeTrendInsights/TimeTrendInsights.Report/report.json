@@ -1,5 +1,5 @@
 {
-  "config": "{\"version\":\"5.47\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU08\",\"version\":\"5.47\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "config": "{\"version\":\"5.47\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU08\",\"version\":\"5.47\",\"type\":2}},\"activeSectionIndex\":1,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
   "layoutOptimization": 0,
   "resourcePackages": [
     {
@@ -20,20 +20,233 @@
   "sections": [
     {
       "config": "{}",
-      "displayName": "Page 1",
+      "displayName": "Dashboard",
       "displayOption": 1,
       "filters": "[]",
       "height": 720.00,
       "name": "ReportSection",
+      "ordinal": 1,
       "visualContainers": [
         {
-          "config": "{\"name\":\"a9af3b0f72e9b95da673\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.377289377289378,\"y\":0,\"z\":0,\"width\":1270.6227106227107,\"height\":719.7069597069597,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"avansData Contoso_Sales.StoreKey\"},{\"queryRef\":\"avansData Contoso_Sales.TotalCost\"},{\"queryRef\":\"avansData Contoso_Sales.SalesAmount\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"avansData Contoso_Sales\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"StoreKey\"},\"Name\":\"avansData Contoso_Sales.StoreKey\",\"NativeReferenceName\":\"StoreKey\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"TotalCost\"},\"Name\":\"avansData Contoso_Sales.TotalCost\",\"NativeReferenceName\":\"TotalCost\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"SalesAmount\"},\"Name\":\"avansData Contoso_Sales.SalesAmount\",\"NativeReferenceName\":\"SalesAmount\"}]},\"drillFilterOtherVisuals\":true}}",
+          "config": "{\"name\":\"78e629dfadd0a081e40a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":54.53634085213032,\"y\":121.9047619047619,\"z\":3,\"width\":257.7109440267335,\"height\":135.8061821219716,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"card\",\"drillFilterOtherVisuals\":true}}",
           "filters": "[]",
-          "height": 719.71,
-          "width": 1270.62,
-          "x": 9.38,
+          "height": 135.81,
+          "width": 257.71,
+          "x": 54.54,
+          "y": 121.90,
+          "z": 3.00
+        },
+        {
+          "config": "{\"name\":\"794aabb160de1138c237\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":1280,\"height\":99.4486215538847,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Dashboard\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"36pt\"}}]},{\"textRuns\":[{\"value\":\"This page provides an overview of key metrics and allows users to navigate to specific sections.\",\"textStyle\":{\"fontSize\":\"13.3333px\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0.4}}}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 99.45,
+          "width": 1280.00,
+          "x": 0.00,
           "y": 0.00,
           "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"a31fb7264137b03602c9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":93.03258145363408,\"z\":1,\"width\":1280,\"height\":12.832080200501252,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":-0.5}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":-0.5}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 12.83,
+          "width": 1280.00,
+          "x": 0.00,
+          "y": 93.03,
+          "z": 1.00
+        },
+        {
+          "config": "{\"name\":\"dc4cb030ca202456119d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1170.9273182957393,\"y\":105.86466165413533,\"z\":2,\"width\":93.03258145363408,\"height\":604.1771094402674}}],\"singleVisual\":{\"visualType\":\"pageNavigator\",\"drillFilterOtherVisuals\":true,\"objects\":{\"layout\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"pages\":[{\"properties\":{\"showByDefault\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"showPage\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"id\":\"ReportSection\"}},{\"properties\":{\"showPage\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"id\":\"ReportSection19c772ce42b200e546cb\"}}]}}}",
+          "filters": "[]",
+          "height": 604.18,
+          "width": 93.03,
+          "x": 1170.93,
+          "y": 105.86,
+          "z": 2.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "TEMPLATE",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection19c772ce42b200e546cb",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"396487d28023a8e50b71\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":1280,\"height\":99.4486215538847,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Dashboard\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"36pt\"}}]},{\"textRuns\":[{\"value\":\"This page provides an overview of key metrics and allows users to navigate to specific sections.\",\"textStyle\":{\"fontSize\":\"13.3333px\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0.4}}}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 99.45,
+          "width": 1280.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"887225011318127dab48\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":93.03258145363408,\"z\":1000,\"width\":1280,\"height\":12.832080200501252,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":-0.5}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":-0.5}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 12.83,
+          "width": 1280.00,
+          "x": 0.00,
+          "y": 93.03,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Regional and Product Analysis",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection2d2fb54673b8997b1130",
+      "ordinal": 4,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"463eb43364e066075c90\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":1280,\"height\":99.4486215538847,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Dashboard\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"36pt\"}}]},{\"textRuns\":[{\"value\":\"This page provides an overview of key metrics and allows users to navigate to specific sections.\",\"textStyle\":{\"fontSize\":\"13.3333px\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0.4}}}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 99.45,
+          "width": 1280.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"8fd29b691c47423de925\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1128.1537176274019,\"y\":25.664160401002505,\"z\":2,\"width\":140.08354218880535,\"height\":48.1203007518797}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'back'\"}}}},\"selector\":{\"id\":\"default\"}}],\"text\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Back to home'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Back'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 48.12,
+          "width": 140.08,
+          "x": 1128.15,
+          "y": 25.66,
+          "z": 2.00
+        },
+        {
+          "config": "{\"name\":\"b3e103543829a2da1058\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":93.03258145363408,\"z\":1,\"width\":1280,\"height\":12.832080200501252,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":-0.5}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":-0.5}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 12.83,
+          "width": 1280.00,
+          "x": 0.00,
+          "y": 93.03,
+          "z": 1.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Sales Analysis",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection5dabcea95a373ad00872",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"783602ee897c0ae07672\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":93.03258145363408,\"z\":1,\"width\":1280,\"height\":12.832080200501252,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":-0.5}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":-0.5}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 12.83,
+          "width": 1280.00,
+          "x": 0.00,
+          "y": 93.03,
+          "z": 1.00
+        },
+        {
+          "config": "{\"name\":\"e71cd35db2cbb69e7682\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":1280,\"height\":99.4486215538847,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Sales Analysis\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"36pt\"}}]},{\"textRuns\":[{\"value\":\"This page provides an overview of key metrics and allows users to navigate to specific sections.\",\"textStyle\":{\"fontSize\":\"13.3333px\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0.4}}}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 99.45,
+          "width": 1280.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"f6efd75be9b0326c4123\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1128.1537176274019,\"y\":25.664160401002505,\"z\":2,\"width\":140.08354218880535,\"height\":48.1203007518797}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'back'\"}}}},\"selector\":{\"id\":\"default\"}}],\"text\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Back to home'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Back'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 48.12,
+          "width": 140.08,
+          "x": 1128.15,
+          "y": 25.66,
+          "z": 2.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Marketing and Store Analysis",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection710207acebb515572d95",
+      "ordinal": 3,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"2b05fb9108e60616bdce\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1128.1537176274019,\"y\":25.664160401002505,\"z\":2,\"width\":140.08354218880535,\"height\":48.1203007518797}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'back'\"}}}},\"selector\":{\"id\":\"default\"}}],\"text\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Back to home'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Back'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 48.12,
+          "width": 140.08,
+          "x": 1128.15,
+          "y": 25.66,
+          "z": 2.00
+        },
+        {
+          "config": "{\"name\":\"b20743874979a0c0c4bb\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":93.03258145363408,\"z\":1,\"width\":1280,\"height\":12.832080200501252,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":-0.5}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":-0.5}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 12.83,
+          "width": 1280.00,
+          "x": 0.00,
+          "y": 93.03,
+          "z": 1.00
+        },
+        {
+          "config": "{\"name\":\"d745a0c8a7ea800aa640\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":1280,\"height\":99.4486215538847,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Marketing and Store Analysis\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"36pt\"}}]},{\"textRuns\":[{\"value\":\"This page provides an overview of key metrics and allows users to navigate to specific sections.\",\"textStyle\":{\"fontSize\":\"13.3333px\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0.4}}}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 99.45,
+          "width": 1280.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Financial and Executive Summary",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSectione4a1629660951430e8a9",
+      "ordinal": 5,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"27d6bb224dc2567e6008\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":1280,\"height\":99.4486215538847,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Dashboard\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"36pt\"}}]},{\"textRuns\":[{\"value\":\"This page provides an overview of key metrics and allows users to navigate to specific sections.\",\"textStyle\":{\"fontSize\":\"13.3333px\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0.4}}}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 99.45,
+          "width": 1280.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"70bf03031509e22bc0ee\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1128.1537176274019,\"y\":25.664160401002505,\"z\":2,\"width\":140.08354218880535,\"height\":48.1203007518797}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'back'\"}}}},\"selector\":{\"id\":\"default\"}}],\"text\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Back to home'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Back'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 48.12,
+          "width": 140.08,
+          "x": 1128.15,
+          "y": 25.66,
+          "z": 2.00
+        },
+        {
+          "config": "{\"name\":\"e60e523480e10566d003\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":93.03258145363408,\"z\":1,\"width\":1280,\"height\":12.832080200501252,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'line'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":-0.5}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":-0.5}}}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 12.83,
+          "width": 1280.00,
+          "x": 0.00,
+          "y": 93.03,
+          "z": 1.00
         }
       ],
       "width": 1280.00
