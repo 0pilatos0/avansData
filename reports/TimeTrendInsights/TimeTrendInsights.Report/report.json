@@ -1,5 +1,5 @@
 {
-  "config": "{\"version\":\"5.47\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU08\",\"version\":\"5.47\",\"type\":2}},\"activeSectionIndex\":3,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "config": "{\"version\":\"5.47\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU08\",\"version\":\"5.47\",\"type\":2}},\"activeSectionIndex\":4,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
   "layoutOptimization": 0,
   "resourcePackages": [
     {
@@ -132,7 +132,7 @@
       "ordinal": 4,
       "visualContainers": [
         {
-          "config": "{\"name\":\"463eb43364e066075c90\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":1280,\"height\":99.4486215538847,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Dashboard\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"36pt\"}}]},{\"textRuns\":[{\"value\":\"This page provides an overview of key metrics and allows users to navigate to specific sections.\",\"textStyle\":{\"fontSize\":\"13.3333px\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0.4}}}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}}",
+          "config": "{\"name\":\"463eb43364e066075c90\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":1280,\"height\":99.4486215538847,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Regional and Product Analysis\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"36pt\"}}]},{\"textRuns\":[{\"value\":\"This page provides an overview of key metrics and allows users to navigate to specific sections.\",\"textStyle\":{\"fontSize\":\"13.3333px\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0.4}}}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}}",
           "filters": "[]",
           "height": 99.45,
           "width": 1280.00,
@@ -157,6 +157,15 @@
           "x": 0.00,
           "y": 93.03,
           "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"e6b131af0ab27aa089a3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":99.40298507462687,\"z\":2001,\"width\":1279.7014925373135,\"height\":480}}],\"singleVisual\":{\"visualType\":\"map\",\"projections\":{\"Category\":[{\"queryRef\":\"avansData Gross National Income Per Capita.Continent\"}],\"Size\":[{\"queryRef\":\"Measures (2).SumOfSalesQuantity\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"avansData Gross National Income Per Capita\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Continent\"},\"Name\":\"avansData Gross National Income Per Capita.Continent\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"SumOfSalesQuantity\"},\"Name\":\"Measures (2).SumOfSalesQuantity\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{}}}",
+          "filters": "[]",
+          "height": 480.00,
+          "width": 1279.70,
+          "x": 0.00,
+          "y": 99.40,
+          "z": 2001.00
         }
       ],
       "width": 1280.00
@@ -321,7 +330,7 @@
       "ordinal": 5,
       "visualContainers": [
         {
-          "config": "{\"name\":\"27d6bb224dc2567e6008\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":1280,\"height\":99.4486215538847,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Dashboard\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"36pt\"}}]},{\"textRuns\":[{\"value\":\"This page provides an overview of key metrics and allows users to navigate to specific sections.\",\"textStyle\":{\"fontSize\":\"13.3333px\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0.4}}}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}}",
+          "config": "{\"name\":\"27d6bb224dc2567e6008\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":1280,\"height\":99.4486215538847,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Financial and Executive Summary\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"36pt\"}}]},{\"textRuns\":[{\"value\":\"This page provides an overview of key metrics and allows users to navigate to specific sections.\",\"textStyle\":{\"fontSize\":\"13.3333px\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0.4}}}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}}",
           "filters": "[]",
           "height": 99.45,
           "width": 1280.00,
