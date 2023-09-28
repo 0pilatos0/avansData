@@ -37,7 +37,7 @@ To get started with this project, follow these steps:
 1. Clone the repository to your local machine:
 
    ```shell
-   git clone <repository_url>
+   git clone https://github.com/0pilatos0/avansData.git
    ```
 
 2. Navigate to the desired Power BI project directory in powerbi and open the desired project
