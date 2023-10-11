@@ -7,9 +7,136 @@
         "x": 0,
         "y": 0
       },
-      "nodes": [],
+      "nodes": [
+        {
+          "location": {
+            "x": 532.2625338658579,
+            "y": 0
+          },
+          "nodeIndex": "Contoso_Product_LookUp",
+          "nodeLineageTag": "d0d59c99-70a7-4313-ab48-7740de12faaa",
+          "size": {
+            "height": 296,
+            "width": 273.89509733787145
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 10,
+            "y": 0
+          },
+          "nodeIndex": "Contoso_Product_Category_LookUp",
+          "nodeLineageTag": "8f500bbf-b272-429c-ae4f-a1e215a7e09d",
+          "size": {
+            "height": 128,
+            "width": 303.80791562539463
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 102.58162276300871,
+            "y": 375.90619778916283
+          },
+          "nodeIndex": "Contoso_ProductSubcategory_LookUp",
+          "nodeLineageTag": "8fddaa38-f63b-4767-a657-67081fc952a2",
+          "size": {
+            "height": 152,
+            "width": 350.3465260423244
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 1640.794666578633,
+            "y": 0
+          },
+          "nodeIndex": "Contoso_Calendar_LookUp",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 9
+        },
+        {
+          "location": {
+            "x": 1131.4071270047875,
+            "y": 660.7070560799541
+          },
+          "nodeIndex": "Contoso_Promotion_LookUp",
+          "size": {
+            "height": 272,
+            "width": 287.382523713537
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 1665.4380686992261,
+            "y": 445.6691504319781
+          },
+          "nodeIndex": "Contoso_Sales_LookUp",
+          "nodeLineageTag": "32f4ccf7-00a1-4e24-8010-c357f11f964b",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 10
+        },
+        {
+          "location": {
+            "x": 1186.7086504540036,
+            "y": 273.20552837216661
+          },
+          "nodeIndex": "Contoso_Stores_LookUp",
+          "size": {
+            "height": 272,
+            "width": 267.66148837882929
+          },
+          "zIndex": 8
+        },
+        {
+          "location": {
+            "x": 1941.9647445683877,
+            "y": 12.214835476422934
+          },
+          "nodeIndex": "Gross_National_Income_Per_Capita_LookUp",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 2215.9647445683877,
+            "y": 423.72575968451429
+          },
+          "nodeIndex": "Measure Table",
+          "nodeLineageTag": "c51c03dd-8d4f-418f-8855-59e6c324b7d1",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 854.26946667923835,
+            "y": 375.40671575062106
+          },
+          "nodeIndex": "Contoso_Geography",
+          "nodeLineageTag": "2c71858b-b29d-4eab-aaa2-39a8aac128e1",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 1
+        }
+      ],
       "name": "All tables",
-      "zoomValue": 100,
+      "zoomValue": 73.057617525321547,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,

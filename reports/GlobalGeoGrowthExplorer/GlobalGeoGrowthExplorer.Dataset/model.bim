@@ -8,7 +8,15 @@
       },
       {
         "name": "PBIDesktopVersion",
-        "value": "2.120.963.0 (23.08)"
+        "value": "2.121.942.0 (23.09)"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"Contoso_Calendar_LookUp\",\"Contoso_Product_LookUp\",\"Contoso_Product_Category_LookUp\",\"Contoso_ProductSubcategory_LookUp\",\"Contoso_Promotion_LookUp\",\"Contoso_Sales_LookUp\",\"Contoso_Stores_LookUp\",\"Gross_National_Income_Per_Capita_LookUp\",\"Measure Table\",\"Contoso_Geography\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
       }
     ],
     "culture": "en-US",
@@ -23,6 +31,3440 @@
           },
           "contentType": "json"
         }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "relationships": [
+      {
+        "name": "563fc2c7-202f-47a7-9284-78002b800072",
+        "fromColumn": "ProductKey",
+        "fromTable": "Contoso_Sales_LookUp",
+        "toColumn": "ProductKey",
+        "toTable": "Contoso_Product_LookUp"
+      },
+      {
+        "name": "816e35fa-e069-4a36-ad12-d7beda0bed65",
+        "fromColumn": "ProductSubcategoryKey",
+        "fromTable": "Contoso_Product_LookUp",
+        "toColumn": "ProductSubcategoryKey",
+        "toTable": "Contoso_ProductSubcategory_LookUp"
+      },
+      {
+        "name": "da0c9b18-1561-4b0a-a7dc-5ab981151c53",
+        "fromColumn": "ProductCategoryKey",
+        "fromTable": "Contoso_ProductSubcategory_LookUp",
+        "toColumn": "ProductCategoryKey",
+        "toTable": "Contoso_Product_Category_LookUp"
+      },
+      {
+        "name": "870a610f-8637-4821-8dc5-9dca7db456ac",
+        "fromColumn": "PromotionKey",
+        "fromTable": "Contoso_Sales_LookUp",
+        "toColumn": "PromotionKey",
+        "toTable": "Contoso_Promotion_LookUp"
+      },
+      {
+        "name": "47aac77c-6dae-45a5-a9c2-be6558206438",
+        "fromColumn": "StoreKey",
+        "fromTable": "Contoso_Sales_LookUp",
+        "toColumn": "StoreKey",
+        "toTable": "Contoso_Stores_LookUp"
+      },
+      {
+        "name": "9a3480cf-411b-48f7-b1d7-1f8eb92b94c8",
+        "fromColumn": "GeographyKey",
+        "fromTable": "Contoso_Stores_LookUp",
+        "toColumn": "GeographyKey",
+        "toTable": "Contoso_Geography"
+      },
+      {
+        "name": "b40b500e-1e29-4832-ade3-49322d61e212",
+        "fromColumn": "Date",
+        "fromTable": "Contoso_Calendar_LookUp",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_5645e552-1977-4d92-b5a0-df03854cd110"
+      },
+      {
+        "name": "777becac-0a53-4812-a4c8-3c243cac26ae",
+        "fromColumn": "Start of Year",
+        "fromTable": "Contoso_Calendar_LookUp",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_51171fe5-7139-455b-8d94-c7a6c814e097"
+      },
+      {
+        "name": "f91f0fc1-bab6-4030-a69d-97591457ac94",
+        "fromColumn": "Start of Month",
+        "fromTable": "Contoso_Calendar_LookUp",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_9ece94d4-fc80-4ad3-afb6-97b0f9ffdd1b"
+      },
+      {
+        "name": "f6c9e38e-35b4-4e7d-8ba5-6322d65fd05f",
+        "fromColumn": "Start of Week",
+        "fromTable": "Contoso_Calendar_LookUp",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_52759f34-d437-4e87-b8b6-ad6f570f9afc"
+      },
+      {
+        "name": "db1544c6-1144-4e05-b5d5-1b40ea78e120",
+        "fromColumn": "DateKey",
+        "fromTable": "Contoso_Sales_LookUp",
+        "toColumn": "Date",
+        "toTable": "Contoso_Calendar_LookUp"
+      }
+    ],
+    "sourceQueryCulture": "en-NL",
+    "tables": [
+      {
+        "name": "Contoso_Calendar_LookUp",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Short Date",
+            "lineageTag": "f1c3ae80-b6e1-493e-9c56-74da74ecd28a",
+            "sourceColumn": "Date",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Date Hierarchy",
+                  "table": "LocalDateTable_5645e552-1977-4d92-b5a0-df03854cd110"
+                },
+                "isDefault": true,
+                "relationship": "b40b500e-1e29-4832-ade3-49322d61e212"
+              }
+            ]
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "ac049060-0d81-48bb-b225-195ec5fa2ed6",
+            "sourceColumn": "Year",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "1006c665-e35a-42ae-9232-c24a50cd5fab",
+            "sourceColumn": "Month",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "3647790e-fed5-4612-9c89-302a1e31a398",
+            "sourceColumn": "Day",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Start of Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "d01d4bef-e213-4763-b001-5376420cce15",
+            "sourceColumn": "Start of Year",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Date Hierarchy",
+                  "table": "LocalDateTable_51171fe5-7139-455b-8d94-c7a6c814e097"
+                },
+                "isDefault": true,
+                "relationship": "777becac-0a53-4812-a4c8-3c243cac26ae"
+              }
+            ]
+          },
+          {
+            "name": "Start of Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "ca6b466d-1238-4f58-b31a-7fbcbe6465a9",
+            "sourceColumn": "Start of Month",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Date Hierarchy",
+                  "table": "LocalDateTable_9ece94d4-fc80-4ad3-afb6-97b0f9ffdd1b"
+                },
+                "isDefault": true,
+                "relationship": "f91f0fc1-bab6-4030-a69d-97591457ac94"
+              }
+            ]
+          },
+          {
+            "name": "Start of Week",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "a8efb826-786b-427c-979e-4e9dc5bf30cd",
+            "sourceColumn": "Start of Week",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Date Hierarchy",
+                  "table": "LocalDateTable_52759f34-d437-4e87-b8b6-ad6f570f9afc"
+                },
+                "isDefault": true,
+                "relationship": "f6c9e38e-35b4-4e7d-8ba5-6322d65fd05f"
+              }
+            ]
+          },
+          {
+            "name": "Month Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "94cbebf2-ab6a-4be6-869b-2dc6fcff2c33",
+            "sourceColumn": "Month Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Day Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b40b7c0c-6817-48c1-9497-2b8f102aa3b2",
+            "sourceColumn": "Day Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Start of the Week Monday",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "expression": "WEEKDAY(Contoso_Calendar_LookUp[Date],2)",
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "lineageTag": "f2fbad8a-ae40-4db2-ab9d-84370fd61f2b",
+            "summarizeBy": "sum",
+            "type": "calculated"
+          },
+          {
+            "name": "Weekend",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": [
+              "SWITCH(",
+              "    Contoso_Calendar_LookUp[Start of the Week Monday],",
+              "    6, \"Weekend\",",
+              "    7, \"Weekend\",",
+              "    \"Weekday\")"
+            ],
+            "isDataTypeInferred": true,
+            "lineageTag": "49bb24a2-0439-4697-aca5-6cad2ecb18f5",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "lineageTag": "68fcce62-ca2b-4670-80e5-da6df934a855",
+        "partitions": [
+          {
+            "name": "Contoso_Calendar_LookUp",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = PostgreSQL.Database(\"161.97.97.200\", \"avansData\"),",
+                "    avansData_Contoso_Calendar = Source{[Schema=\"avansData\",Item=\"Contoso_Calendar\"]}[Data],",
+                "    #\"Removed Columns\" = Table.RemoveColumns(avansData_Contoso_Calendar,{\"Year\", \"Quarter\", \"Month\", \"Day\", \"DayOfMonth\", \"DayOfWeekName\", \"MonthName\", \"MonthOfYear\", \"QuarterOfYear\"}),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Removed Columns\",{{\"DateInt\", type text}}),",
+                "    #\"Changed Type1\" = Table.TransformColumnTypes(#\"Changed Type\",{{\"DateInt\", type date}}),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Changed Type1\",{{\"DateInt\", \"Date\"}}),",
+                "    #\"Inserted Year\" = Table.AddColumn(#\"Renamed Columns\", \"Year\", each Date.Year([Date]), Int64.Type),",
+                "    #\"Inserted Month\" = Table.AddColumn(#\"Inserted Year\", \"Month\", each Date.Month([Date]), Int64.Type),",
+                "    #\"Inserted Day\" = Table.AddColumn(#\"Inserted Month\", \"Day\", each Date.Day([Date]), Int64.Type),",
+                "    #\"Inserted Start of Year\" = Table.AddColumn(#\"Inserted Day\", \"Start of Year\", each Date.StartOfYear([Date]), type date),",
+                "    #\"Inserted Start of Month\" = Table.AddColumn(#\"Inserted Start of Year\", \"Start of Month\", each Date.StartOfMonth([Date]), type date),",
+                "    #\"Inserted Start of Week\" = Table.AddColumn(#\"Inserted Start of Month\", \"Start of Week\", each Date.StartOfWeek([Date]), type date),",
+                "    #\"Inserted Month Name\" = Table.AddColumn(#\"Inserted Start of Week\", \"Month Name\", each Date.MonthName([Date]), type text),",
+                "    #\"Inserted Day Name\" = Table.AddColumn(#\"Inserted Month Name\", \"Day Name\", each Date.DayOfWeekName([Date]), type text)",
+                "in",
+                "    #\"Inserted Day Name\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DateTableTemplate_55e0477c-1d67-419e-aaae-8d47c601ec7f",
+        "annotations": [
+          {
+            "name": "__PBI_TemplateDateTable",
+            "value": "true"
+          },
+          {
+            "name": "DefaultItem",
+            "value": "DateHierarchy"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "3fb7ea94-67f1-4bf7-acc0-438c99db4fda",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "5189d324-827d-47a7-a5ef-51016bdae36d",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "f915cf61-ee11-4d26-b0df-d8bbbff3c39e",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "813b9f3c-0bd5-4f5b-8bdb-4e09976f30e9",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "8a9156b9-87b0-4c9b-b1ff-0182645e445b",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "825abbaa-7317-41ad-9583-abfe51e22853",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "b091889e-c166-4eaa-8246-8bc22fcafa5a",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "c5ee1757-e94c-42db-a76e-d11771a19cca",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "cc4ed5d6-5c83-4f90-b368-df335cd1f7d5",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "80eddc23-afeb-42f7-ad44-8aad40f453f9",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "182e7192-53f4-4067-95c4-0f4a6e8643c4",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "777c2464-67a3-484b-9c94-44806cade5ff"
+          }
+        ],
+        "isHidden": true,
+        "isPrivate": true,
+        "lineageTag": "f2a42db2-63c9-4d74-bfcd-e083170e6a58",
+        "partitions": [
+          {
+            "name": "DateTableTemplate_55e0477c-1d67-419e-aaae-8d47c601ec7f",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))",
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Contoso_Product_LookUp",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "BrandName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "df3f299a-b5a0-4c68-a9b2-ae20a4486669",
+            "sourceColumn": "BrandName",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ClassName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "87207d9f-5942-4ed2-9ccf-b9a34d66bdfb",
+            "sourceColumn": "ClassName",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Manufacturer",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6c38d34e-5dea-488f-8274-9c91955473f2",
+            "sourceColumn": "Manufacturer",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ProductDescription",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c614bded-4652-4587-93f8-0509169c98f3",
+            "sourceColumn": "ProductDescription",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ProductKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "0bd560e0-9f8c-4dc0-9404-970fafb76bdf",
+            "sourceColumn": "ProductKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ProductName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "50d57b82-5c56-40b3-ab17-01bc69fa722c",
+            "sourceColumn": "ProductName",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ProductSubcategoryKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "3824d95a-37b8-4359-a11f-d254ecab708d",
+            "sourceColumn": "ProductSubcategoryKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "UnitCost",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-NL\"}"
+              }
+            ],
+            "dataType": "decimal",
+            "formatString": "\"€\"\\ #,0.###############;#,0.###############\\ -\"€\";\"€\"\\ #,0.###############",
+            "lineageTag": "0696b44e-f21e-433d-9f4d-3b6f2db72444",
+            "sourceColumn": "UnitCost",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "UnitPrice",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-NL\"}"
+              }
+            ],
+            "dataType": "decimal",
+            "formatString": "\"€\"\\ #,0.###############;#,0.###############\\ -\"€\";\"€\"\\ #,0.###############",
+            "lineageTag": "f456471b-d478-414e-8eef-a2131d52f3df",
+            "sourceColumn": "UnitPrice",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "d0d59c99-70a7-4313-ab48-7740de12faaa",
+        "partitions": [
+          {
+            "name": "Contoso_Product_LookUp",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = PostgreSQL.Database(\"161.97.97.200\", \"avansData\"),",
+                "    avansData_Contoso_Product = Source{[Schema=\"avansData\",Item=\"Contoso_Product\"]}[Data],",
+                "    #\"Remove the Dollar Sign\" = Table.ReplaceValue(avansData_Contoso_Product,\"$\",\" \",Replacer.ReplaceText,{\"UnitCost\", \"UnitPrice\"}),",
+                "    #\"Remove empty space\" = Table.TransformColumns(#\"Remove the Dollar Sign\",{{\"UnitPrice\", Text.Trim, type text}, {\"UnitCost\", Text.Trim, type text}}),",
+                "    #\"Change type to Currency\" = Table.TransformColumnTypes(#\"Remove empty space\",{{\"UnitPrice\", Currency.Type}, {\"UnitCost\", Currency.Type}})",
+                "in",
+                "    #\"Change type to Currency\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Contoso_Product_Category_LookUp",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "ProductCategory",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b59cf00d-86f2-4e6b-bdb8-e54aafc7a26a",
+            "sourceColumn": "ProductCategory",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ProductCategoryKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "7f332c5e-412c-49d6-b099-f0e10ffd33e1",
+            "sourceColumn": "ProductCategoryKey",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "8f500bbf-b272-429c-ae4f-a1e215a7e09d",
+        "partitions": [
+          {
+            "name": "Contoso_Product_Category_LookUp",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = PostgreSQL.Database(\"161.97.97.200\", \"avansData\"),",
+                "    avansData_Contoso_Product_Category = Source{[Schema=\"avansData\",Item=\"Contoso_Product_Category\"]}[Data]",
+                "in",
+                "    avansData_Contoso_Product_Category"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Contoso_ProductSubcategory_LookUp",
+        "columns": [
+          {
+            "name": "ProductCategoryKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "64513695-a0fc-4118-b543-8e88b219ffd1",
+            "sourceColumn": "ProductCategoryKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ProductSubcategory",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c831d73f-2095-48ec-93fe-d9d53345b854",
+            "sourceColumn": "ProductSubcategory",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ProductSubcategoryKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "8a48ce7d-4f26-42b0-95f7-9f94cc0c9525",
+            "sourceColumn": "ProductSubcategoryKey",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "8fddaa38-f63b-4767-a657-67081fc952a2",
+        "partitions": [
+          {
+            "name": "Contoso_ProductSubcategory_LookUp",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = PostgreSQL.Database(\"161.97.97.200\", \"avansData\"),",
+                "    avansData_Contoso_ProductSubcategory = Source{[Schema=\"avansData\",Item=\"Contoso_ProductSubcategory\"]}[Data]",
+                "in",
+                "    avansData_Contoso_ProductSubcategory"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Contoso_Promotion_LookUp",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "DiscountPercent",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "0832760e-9ba3-4e1d-9bf8-286d95f2dc49",
+            "sourceColumn": "DiscountPercent",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "51294c63-aa34-4011-b681-747e5d023f73",
+            "sourceColumn": "Year",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6a158100-9f6e-41d6-b410-98276ea2289d",
+            "sourceColumn": "Quarter",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b7ff2c2e-42cc-4338-9d2a-47ee4be241dc",
+            "sourceColumn": "Month",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d8126b8e-ec7b-43a7-bbb6-c39ad4ca9774",
+            "sourceColumn": "Day",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "PromotionKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "02918ac8-8ab7-4918-8d93-3b0e29706dfa",
+            "sourceColumn": "PromotionKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "PromotionLabel",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "80b38371-10c9-4580-ad99-44d5102ed241",
+            "sourceColumn": "PromotionLabel",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "PromotionName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f35c45a5-ef3c-4902-bce7-a1658fe04578",
+            "sourceColumn": "PromotionName",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "b153dda3-77fe-446c-9279-5cfede86bbe4",
+        "partitions": [
+          {
+            "name": "Contoso_Promotion_LookUp",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = PostgreSQL.Database(\"161.97.97.200\", \"avansData\"),",
+                "    avansData_Contoso_Promotion = Source{[Schema=\"avansData\",Item=\"Contoso_Promotion\"]}[Data],",
+                "    #\"Changed type to Percentage\" = Table.TransformColumnTypes(avansData_Contoso_Promotion,{{\"DiscountPercent\", Percentage.Type}})",
+                "in",
+                "    #\"Changed type to Percentage\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Contoso_Sales_LookUp",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "SalesKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "5ed7ec72-095b-480d-ac76-6fe9b5604d4f",
+            "sourceColumn": "SalesKey",
+            "summarizeBy": "distinctCount"
+          },
+          {
+            "name": "DateKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "56fa7029-5a33-4bf2-9c62-10478f45b32c",
+            "sourceColumn": "DateKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "channelKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "9aba9250-ac2f-43c9-9e7a-b5d5394c8a33",
+            "sourceColumn": "channelKey",
+            "summarizeBy": "distinctCount"
+          },
+          {
+            "name": "StoreKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "253b1f7a-42bc-4df3-8ed9-efefac6295eb",
+            "sourceColumn": "StoreKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ProductKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "cb4042b6-57d8-4e37-8d76-d42816bb127e",
+            "sourceColumn": "ProductKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "PromotionKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "8cb9d976-52b0-4926-8283-c630149a471c",
+            "sourceColumn": "PromotionKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "UnitCost",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-NL\"}"
+              }
+            ],
+            "dataType": "decimal",
+            "formatString": "\"€\"\\ #,0.###############;#,0.###############\\ -\"€\";\"€\"\\ #,0.###############",
+            "lineageTag": "6e6280ae-bb7a-4ed1-942e-0883cc718224",
+            "sourceColumn": "UnitCost",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "UnitPrice",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-NL\"}"
+              }
+            ],
+            "dataType": "decimal",
+            "formatString": "\"€\"\\ #,0.###############;#,0.###############\\ -\"€\";\"€\"\\ #,0.###############",
+            "lineageTag": "1a89feec-2b70-405b-ac6c-51f48b4ab0e6",
+            "sourceColumn": "UnitPrice",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "SalesQuantity",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "424d1ad6-3094-440b-89e0-991b19a17c15",
+            "sourceColumn": "SalesQuantity",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ReturnQuantity",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "7e28a688-774e-4d5f-8905-a2dedbefe699",
+            "sourceColumn": "ReturnQuantity",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ReturnAmount",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8707d5ff-20be-4d27-bb9c-635c52bfdb87",
+            "sourceColumn": "ReturnAmount",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "DiscountQuantity",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d0deecd1-5bca-4209-8bf9-39e37914baa2",
+            "sourceColumn": "DiscountQuantity",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "DiscountAmount",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ac5d5f2a-f43f-475f-84e1-1f850068df2c",
+            "sourceColumn": "DiscountAmount",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "TotalCost",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-NL\"}"
+              }
+            ],
+            "dataType": "decimal",
+            "formatString": "\"€\"\\ #,0.###############;#,0.###############\\ -\"€\";\"€\"\\ #,0.###############",
+            "lineageTag": "ef50455a-cc0e-4bfd-b147-8171895a7a3c",
+            "sourceColumn": "TotalCost",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "SalesAmount",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-NL\"}"
+              }
+            ],
+            "dataType": "decimal",
+            "formatString": "\"€\"\\ #,0.###############;#,0.###############\\ -\"€\";\"€\"\\ #,0.###############",
+            "lineageTag": "91608a14-bf00-44cf-875d-de0e8c6639a6",
+            "sourceColumn": "SalesAmount",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Profit",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-NL\"}"
+              }
+            ],
+            "dataType": "decimal",
+            "expression": [
+              "",
+              "Contoso_Sales_LookUp[SalesAmount] - Contoso_Sales_LookUp[TotalCost]"
+            ],
+            "formatString": "\"€\"\\ #,0.###############;#,0.###############\\ -\"€\";\"€\"\\ #,0.###############",
+            "isDataTypeInferred": true,
+            "lineageTag": "efda12b8-b26b-4b45-bcb0-8783da641a51",
+            "summarizeBy": "sum",
+            "type": "calculated"
+          }
+        ],
+        "lineageTag": "32f4ccf7-00a1-4e24-8010-c357f11f964b",
+        "partitions": [
+          {
+            "name": "Contoso_Sales_LookUp",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = PostgreSQL.Database(\"161.97.97.200\", \"avansData\"),",
+                "    avansData_Contoso_Sales = Source{[Schema=\"avansData\",Item=\"Contoso_Sales\"]}[Data],",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(avansData_Contoso_Sales,{{\"TotalCost\", Currency.Type}, {\"SalesAmount\", Currency.Type}, {\"UnitCost\", Currency.Type}, {\"UnitPrice\", Currency.Type}}),",
+                "    #\"Extracted Text Before Delimiter\" = Table.TransformColumns(#\"Changed Type\", {{\"DateKey\", each Text.BeforeDelimiter(_, \"00:\"), type text}}),",
+                "    #\"Changed Type1\" = Table.TransformColumnTypes(#\"Extracted Text Before Delimiter\",{{\"DateKey\", type date}})",
+                "in",
+                "    #\"Changed Type1\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Contoso_Stores_LookUp",
+        "columns": [
+          {
+            "name": "CloseReason",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e18c16e6-c985-4b14-aa49-7b6ed0a55152",
+            "sourceColumn": "CloseReason",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "EmployeeCount",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "9cf8b3ab-48ab-41bc-b87c-27c03fc290e7",
+            "sourceColumn": "EmployeeCount",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "GeographyKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "52396c96-a9d5-497e-b74d-f64622921c3d",
+            "sourceColumn": "GeographyKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "SellingAreaSize",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "e39386cb-59a3-492b-8edf-5a5a06384880",
+            "sourceColumn": "SellingAreaSize",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Status",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3cdd79ca-98b3-4e2f-9249-bb6f160e59f0",
+            "sourceColumn": "Status",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "StoreKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "2ec924c0-d4e3-4d26-a882-5eaebbd35d00",
+            "sourceColumn": "StoreKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "StoreName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "0c4dffad-52a0-4ae9-91eb-c38f1047913f",
+            "sourceColumn": "StoreName",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "StoreType",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "adffd13b-9777-48cf-9ca1-eed31d64e600",
+            "sourceColumn": "StoreType",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Size Store",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": [
+              "",
+              "SWITCH(TRUE(),",
+              "Contoso_Stores_LookUp[EmployeeCount] <= 10 ,  \"Tiny\",",
+              "Contoso_Stores_LookUp[EmployeeCount] <=20 , \"Small\",",
+              "Contoso_Stores_LookUp[EmployeeCount] <=50 , \"Medium\",",
+              "Contoso_Stores_LookUp[EmployeeCount] <= 100 , \"Large\",",
+              "Contoso_Stores_LookUp[EmployeeCount] > 100 , \"Enterprise\",",
+              "\"No Employee\")"
+            ],
+            "isDataTypeInferred": true,
+            "lineageTag": "2a08f935-853a-4484-949b-53d3e2c1a284",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "lineageTag": "4f861928-ba96-4e86-8358-d4d840650ed1",
+        "partitions": [
+          {
+            "name": "Contoso_Stores_LookUp",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = PostgreSQL.Database(\"161.97.97.200\", \"avansData\"),",
+                "    avansData_Contoso_Stores = Source{[Schema=\"avansData\",Item=\"Contoso_Stores\"]}[Data]",
+                "in",
+                "    avansData_Contoso_Stores"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Gross_National_Income_Per_Capita_LookUp",
+        "columns": [
+          {
+            "name": "iso3",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c626a427-4102-4316-86de-1eeed4d85575",
+            "sourceColumn": "iso3",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Country",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "db30d6f1-dfd3-4cc0-afea-e1ded653dbd5",
+            "sourceColumn": "Country",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Continent",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "054f7432-7360-4c41-8021-6468be72de7e",
+            "sourceColumn": "Continent",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Hemisphere",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "cc13d232-c0f2-4f39-96ca-d2c5f8c82844",
+            "sourceColumn": "Hemisphere",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Human Development Groups",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "a92c6ae2-2f06-491d-af97-99f632124fa3",
+            "sourceColumn": "Human Development Groups",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "UNDP Developing Regions",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "a705311d-8acd-471c-9d81-17851db99864",
+            "sourceColumn": "UNDP Developing Regions",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "HDI Rank (2021)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "225f4e6f-cd71-4381-9a2c-179ba23e62b9",
+            "sourceColumn": "HDI Rank (2021)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (1990)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "286f1e78-f722-465c-988a-c8f6affa55ea",
+            "sourceColumn": "Gross National Income Per Capita (1990)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (1991)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "c67cce38-abc4-4661-bc16-ac48fc1d4456",
+            "sourceColumn": "Gross National Income Per Capita (1991)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (1992)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "bab39648-a1cd-4c17-a609-686647a5f473",
+            "sourceColumn": "Gross National Income Per Capita (1992)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (1993)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "53de5027-23ad-4cbc-86ba-5b20a2bd831b",
+            "sourceColumn": "Gross National Income Per Capita (1993)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (1994)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "26c1c8e9-2f4f-436e-b9bb-6b634c8bf125",
+            "sourceColumn": "Gross National Income Per Capita (1994)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (1995)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "1951bb79-7a67-4598-a7cb-841bda3639a0",
+            "sourceColumn": "Gross National Income Per Capita (1995)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (1996)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "3b12167a-ebf1-4ca9-bef5-90f800e8c169",
+            "sourceColumn": "Gross National Income Per Capita (1996)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (1997)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "78b11943-e235-40fa-a956-7e5d36c10035",
+            "sourceColumn": "Gross National Income Per Capita (1997)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (1998)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "efc9254b-0261-4251-bcc9-33b659f42f65",
+            "sourceColumn": "Gross National Income Per Capita (1998)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (1999)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "a0a98140-861b-4fe5-9bca-d86841f49373",
+            "sourceColumn": "Gross National Income Per Capita (1999)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (2000)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "5b831f9f-77c9-4679-9c48-efa18bf0491b",
+            "sourceColumn": "Gross National Income Per Capita (2000)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (2001)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "74c15ca1-b4ef-4694-823d-d065be93e82a",
+            "sourceColumn": "Gross National Income Per Capita (2001)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (2002)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "c0fef1e1-3484-40ec-b1fc-72961450dee8",
+            "sourceColumn": "Gross National Income Per Capita (2002)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (2003)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "7bee265d-f53e-4110-a0c0-d86fa592b592",
+            "sourceColumn": "Gross National Income Per Capita (2003)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (2004)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "e1335242-1ea3-4e95-86ef-f6a12a192160",
+            "sourceColumn": "Gross National Income Per Capita (2004)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (2005)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "a55bd417-5f37-4c4b-8290-ad7aec114ae9",
+            "sourceColumn": "Gross National Income Per Capita (2005)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (2006)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "c08120d9-87b4-4ee6-9142-1752e6c714d1",
+            "sourceColumn": "Gross National Income Per Capita (2006)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (2007)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "603cbd8f-8de7-450d-9ec0-d0d5ac9a585d",
+            "sourceColumn": "Gross National Income Per Capita (2007)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (2008)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "9cafb7c5-8d36-40a0-8051-d01e900a7d89",
+            "sourceColumn": "Gross National Income Per Capita (2008)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (2009)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "5d9d439f-9d81-455b-805a-562e04cfbd6c",
+            "sourceColumn": "Gross National Income Per Capita (2009)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (2010)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "2faaf471-fcfb-420d-8ae9-a0b037a0101d",
+            "sourceColumn": "Gross National Income Per Capita (2010)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (2011)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "0f96f3f8-4c4d-4146-ad68-a7270dae8951",
+            "sourceColumn": "Gross National Income Per Capita (2011)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (2012)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "d4c933e7-8e28-4224-ad6a-2d37e1e67bce",
+            "sourceColumn": "Gross National Income Per Capita (2012)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (2013)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "cfbcc82b-0025-4a36-a4fe-7ff4146879a4",
+            "sourceColumn": "Gross National Income Per Capita (2013)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (2014)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "58c7803a-9d7f-4c89-a188-c3a76827de33",
+            "sourceColumn": "Gross National Income Per Capita (2014)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (2015)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "70481ed2-a1d0-45a1-8fed-60c00715bc2e",
+            "sourceColumn": "Gross National Income Per Capita (2015)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (2016)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "460893fd-f448-485d-bdff-5ffdc7e81f5e",
+            "sourceColumn": "Gross National Income Per Capita (2016)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (2017)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "592a63c6-1e51-47f7-9afe-842d82e622cc",
+            "sourceColumn": "Gross National Income Per Capita (2017)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (2018)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "ff7675ba-5a1f-4967-8875-ec4b107fbef4",
+            "sourceColumn": "Gross National Income Per Capita (2018)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (2019)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "34519469-6164-4a7f-b8e2-e462525548ad",
+            "sourceColumn": "Gross National Income Per Capita (2019)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (2020)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "6be5fbac-f8a4-4dd8-aa54-87f19689376d",
+            "sourceColumn": "Gross National Income Per Capita (2020)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gross National Income Per Capita (2021)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "19b24b53-3d61-420d-9df4-8f54d80aa648",
+            "sourceColumn": "Gross National Income Per Capita (2021)",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "c6084f34-584a-4227-bd93-f0f5e16b225f",
+        "partitions": [
+          {
+            "name": "Gross_National_Income_Per_Capita_LookUp",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = PostgreSQL.Database(\"161.97.97.200\", \"avansData\"),",
+                "    #\"avansData_Gross National Income Per Capita\" = Source{[Schema=\"avansData\",Item=\"Gross National Income Per Capita\"]}[Data]",
+                "in",
+                "    #\"avansData_Gross National Income Per Capita\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Measure Table",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "lineageTag": "c51c03dd-8d4f-418f-8855-59e6c324b7d1",
+        "measures": [
+          {
+            "name": "Total Sales Quantity",
+            "expression": [
+              "",
+              "SUM(Contoso_Sales_LookUp[SalesQuantity])"
+            ],
+            "formatString": "0",
+            "lineageTag": "c434901e-bf80-4a7a-8125-3cc06612ebe5"
+          },
+          {
+            "name": "Total Return Quantity",
+            "expression": [
+              "",
+              "SUM(Contoso_Sales_LookUp[ReturnQuantity])"
+            ],
+            "formatString": "0",
+            "lineageTag": "4d8d70f5-964a-45bd-838a-03856943545b"
+          },
+          {
+            "name": "Average Retail Price",
+            "expression": [
+              "",
+              "AVERAGE(Contoso_Product_LookUp[UnitPrice])"
+            ],
+            "formatString": "#,0.00",
+            "lineageTag": "b69bd89e-bbf2-4013-b416-00cd3953018f"
+          },
+          {
+            "name": "Return Rate Percentage",
+            "expression": [
+              "DIVIDE([Total Return Quantity],[Total Sales Quantity], \"No Sale\")",
+              ""
+            ],
+            "formatString": "0.00%;-0.00%;0.00%",
+            "lineageTag": "cd2aad4e-351d-45cf-95f2-c562de1ddad3"
+          },
+          {
+            "name": "Weekend Sales Quantity",
+            "expression": [
+              "",
+              "CALCULATE([Total Sales Quantity],",
+              "Contoso_Calendar_LookUp[Start of the Week Monday] = \"Weekend\" )"
+            ],
+            "formatString": "0",
+            "lineageTag": "ff421dea-e2c2-4768-ba59-6f7acb84e1d0"
+          },
+          {
+            "name": "WeekDay Sales Quntity",
+            "expression": [
+              "",
+              "CALCULATE([Total Sales Quantity],",
+              "Contoso_Calendar_LookUp[Start of the Week Monday] = \"WeekDay\")"
+            ],
+            "formatString": "0",
+            "lineageTag": "6b283a70-eb7d-4afc-aa3f-1fcebf02a21e"
+          },
+          {
+            "name": "Total Stores",
+            "expression": [
+              "",
+              "DISTINCTCOUNT(Contoso_Sales_LookUp[StoreKey])"
+            ],
+            "formatString": "0",
+            "lineageTag": "634edeb1-b8d6-4560-bf68-a9f9642f5c2c"
+          },
+          {
+            "name": "Total Sales",
+            "expression": [
+              "",
+              "DISTINCTCOUNT(Contoso_Sales_LookUp[SalesKey])"
+            ],
+            "formatString": "0",
+            "lineageTag": "cb3451bf-08a3-4936-87ac-06a0b1cbe837"
+          },
+          {
+            "name": "Total Profit Per Store",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-NL\"}"
+              }
+            ],
+            "expression": [
+              "",
+              "SUMX(",
+              "    SUMMARIZE(Contoso_Sales_LookUp,Contoso_Sales_LookUp[StoreKey]),",
+              "    CALCULATE(",
+              "        SUM(Contoso_Sales_LookUp[Profit]),",
+              "        ALLEXCEPT(Contoso_Sales_LookUp,Contoso_Sales_LookUp[StoreKey])",
+              "    ))"
+            ],
+            "formatString": "\"€\"\\ #,0.###############;#,0.###############\\ -\"€\";\"€\"\\ #,0.###############",
+            "lineageTag": "fcf0158d-7e34-49ec-a9ad-d3735337d5c9"
+          },
+          {
+            "name": "Profit",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-NL\"}"
+              }
+            ],
+            "expression": "SUM(Contoso_Sales_LookUp[Profit])",
+            "formatString": "\"€\"\\ #,0.###############;#,0.###############\\ -\"€\";\"€\"\\ #,0.###############",
+            "lineageTag": "103eb338-1315-4101-b8a7-3606f83d5dac"
+          },
+          {
+            "name": "Profit Per Continent",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-NL\"}"
+              }
+            ],
+            "expression": [
+              "SUMX(",
+              "    SUMMARIZE(Contoso_Geography,Contoso_Geography[ContinentName]),",
+              "    [Profit]",
+              ")"
+            ],
+            "formatString": "\"€\"\\ #,0.###############;#,0.###############\\ -\"€\";\"€\"\\ #,0.###############",
+            "lineageTag": "8dbe65a8-b0e5-4829-9a6e-85051199d8a9"
+          },
+          {
+            "name": "Total Revenue CC",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-NL\"}"
+              }
+            ],
+            "expression": "SUM(Contoso_Sales_LookUp[SalesAmount])",
+            "formatString": "\"€\"\\ #,0.###############;#,0.###############\\ -\"€\";\"€\"\\ #,0.###############",
+            "lineageTag": "98a2991e-10d9-4fd9-a803-8f0f28531eda"
+          },
+          {
+            "name": "ALL Sales No Filter",
+            "expression": [
+              "CALCULATE(",
+              "    [Total Sales],",
+              "    ALL( Contoso_Sales_LookUp))",
+              ""
+            ],
+            "formatString": "0",
+            "lineageTag": "a0b2921e-2b43-4788-bff6-87a1bc45c184"
+          },
+          {
+            "name": "% Off All Sales",
+            "expression": "DIVIDE([Total Sales],[ALL Sales No Filter])",
+            "formatString": "0.00%;-0.00%;0.00%",
+            "lineageTag": "263d1c03-de82-4ec5-a53c-244a15df563e"
+          },
+          {
+            "name": "OverAll Average Retail Price",
+            "expression": [
+              "CALCULATE(",
+              "    [Average Retail Price],",
+              "    ALL(Contoso_Product_LookUp))"
+            ],
+            "formatString": "#,0",
+            "lineageTag": "2b8c58e7-32df-46e6-9f45-8b99adae57d7"
+          },
+          {
+            "name": "OverAll Return No Filter",
+            "expression": [
+              "CALCULATE(",
+              "    [Total Return Quantity],",
+              "    ALL(Contoso_Sales_LookUp)",
+              "    )"
+            ],
+            "formatString": "0",
+            "lineageTag": "709f6c3c-2542-4ff2-a41a-ffe03c7b78e4"
+          },
+          {
+            "name": "% Off All Returns",
+            "expression": "DIVIDE([Total Return Quantity], [OverAll Return No Filter])",
+            "formatString": "0.00%;-0.00%;0.00%",
+            "lineageTag": "06fdd94f-f14d-4f2c-a552-16d08c89f6db"
+          },
+          {
+            "name": "Total Sales Amount",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-NL\"}"
+              }
+            ],
+            "expression": "SUM(Contoso_Sales_LookUp[SalesAmount])",
+            "formatString": "\"€\"\\ #,0;#,0\\ -\"€\";\"€\"\\ #,0",
+            "lineageTag": "92e66d57-d4b6-47df-93e6-127487cee6f4"
+          },
+          {
+            "name": "High Sale Orders",
+            "expression": [
+              "CALCULATE(",
+              "    [Total Sales],",
+              "    FILTER(",
+              "        Contoso_Product_LookUp,",
+              "        Contoso_Product_LookUp[UnitPrice] > [OverAll Average Retail Price]))",
+              ""
+            ],
+            "formatString": "0",
+            "lineageTag": "703968ed-2e65-4193-9cb4-f8588ec8e4d3"
+          },
+          {
+            "name": "Average Revenue per Store",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-NL\"}"
+              }
+            ],
+            "expression": [
+              "DIVIDE(",
+              "    [Total Revenue CC],",
+              "    [Total Stores])"
+            ],
+            "formatString": "\"€\"\\ #,0.###############;#,0.###############\\ -\"€\";\"€\"\\ #,0.###############",
+            "lineageTag": "ad7b62f4-cff4-414c-a777-249d6064f865"
+          },
+          {
+            "name": "Total Cost",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-NL\"}"
+              }
+            ],
+            "expression": [
+              "SUMX(",
+              "    Contoso_Sales_LookUp,",
+              "    Contoso_Sales_LookUp[SalesQuantity] * ",
+              "    RELATED(Contoso_Product_LookUp[UnitCost]))"
+            ],
+            "formatString": "\"€\"\\ #,0.###############;#,0.###############\\ -\"€\";\"€\"\\ #,0.###############",
+            "lineageTag": "a70de17e-357f-491f-aa92-67847ed3f72f"
+          },
+          {
+            "name": "Total Profit",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-NL\"}"
+              }
+            ],
+            "expression": [
+              "",
+              "[Total Sales Amount] - [Total Cost]"
+            ],
+            "formatString": "\"€\"\\ #,0;#,0\\ -\"€\";\"€\"\\ #,0",
+            "lineageTag": "95b7f1de-7736-45ce-a084-7e4e04380530"
+          },
+          {
+            "name": "YTD Revenue",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-NL\"}"
+              }
+            ],
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    [Total Profit],",
+              "    DATESYTD(",
+              "        Contoso_Calendar_LookUp[Date]))"
+            ],
+            "formatString": "\"€\"\\ #,0;#,0\\ -\"€\";\"€\"\\ #,0",
+            "lineageTag": "72cf4885-d727-456d-80e2-605798949b69"
+          },
+          {
+            "name": "Previous Month Revenue",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-NL\"}"
+              }
+            ],
+            "expression": [
+              "",
+              "CALCULATE([Total Sales Amount],",
+              "DATEADD(",
+              "    Contoso_Calendar_LookUp[Date],",
+              "    -1,",
+              "    MONTH",
+              "))"
+            ],
+            "formatString": "\"€\"\\ #,0.###############;#,0.###############\\ -\"€\";\"€\"\\ #,0.###############",
+            "lineageTag": "f0c52a2b-6e88-432c-84ec-df4ff946ad70"
+          },
+          {
+            "name": "Revenue Target",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-NL\"}"
+              }
+            ],
+            "expression": [
+              "",
+              "[Previous Month Revenue] * 1.1"
+            ],
+            "formatString": "\"€\"\\ #,0;#,0\\ -\"€\";\"€\"\\ #,0",
+            "lineageTag": "fffe024d-ba66-4611-b50c-da3927a5f5de"
+          },
+          {
+            "name": "10-day Rolling Revenue",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-NL\"}"
+              }
+            ],
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    [Total Sales Amount],",
+              "    DATESINPERIOD(",
+              "        Contoso_Calendar_LookUp[Date],",
+              "        MAX(",
+              "            Contoso_Calendar_LookUp[Date]",
+              "        ),",
+              "        -10,",
+              "        DAY))"
+            ],
+            "formatString": "\"€\"\\ #,0;#,0\\ -\"€\";\"€\"\\ #,0",
+            "lineageTag": "c2621b02-d603-4a3b-aaa4-240a16c3cf0f"
+          },
+          {
+            "name": "Previous Month Return",
+            "expression": [
+              "",
+              "CALCULATE( [Total Return Quantity],",
+              "DATEADD(Contoso_Calendar_LookUp[Date],",
+              "-1,",
+              "MONTH))"
+            ],
+            "formatString": "0",
+            "lineageTag": "2cb782c1-c8f8-4bc5-881b-dae7cc599f5d"
+          },
+          {
+            "name": "Previous Month Sales",
+            "expression": [
+              "",
+              "CALCULATE( [Total Sales],",
+              "DATEADD(Contoso_Calendar_LookUp[Date],",
+              "-1,",
+              "MONTH))"
+            ],
+            "formatString": "0",
+            "lineageTag": "31d4cf11-c1f9-418c-bf88-de6b1dd61b93"
+          },
+          {
+            "name": "Previous Month Profit",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-NL\"}"
+              }
+            ],
+            "expression": [
+              "",
+              "CALCULATE( [Total Profit],",
+              "DATEADD(Contoso_Calendar_LookUp[Date],",
+              "-1,",
+              "MONTH))"
+            ],
+            "formatString": "\"€\"\\ #,0;#,0\\ -\"€\";\"€\"\\ #,0",
+            "lineageTag": "4a383cd2-b94d-4fd3-8f22-3810a7b1712d"
+          },
+          {
+            "name": "Sales Target",
+            "expression": [
+              "",
+              "[Previous Month Sales] * 1.1"
+            ],
+            "formatString": "0",
+            "lineageTag": "f9c32be0-6bdd-4ac4-ae85-5c3943a647e1"
+          },
+          {
+            "name": "Profit Target",
+            "expression": [
+              "",
+              "[Previous Month Profit] * 1.1"
+            ],
+            "formatString": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+            "lineageTag": "5e0ce862-9174-477b-9709-18bfd0c36a36"
+          },
+          {
+            "name": "90-Day Rolling Revenue",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-NL\"}"
+              }
+            ],
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    [Total Profit],",
+              "    DATESINPERIOD(",
+              "        Contoso_Calendar_LookUp[Date],",
+              "        MAX(Contoso_Calendar_LookUp[Date]),-90,DAY",
+              "    ))"
+            ],
+            "formatString": "\"€\"\\ #,0;#,0\\ -\"€\";\"€\"\\ #,0",
+            "lineageTag": "09870a49-f6ba-4127-a149-98b3971e1ea2"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Measure Table",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"i44FAA==\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(Source,{{\"Column1\", type text}}),",
+                "    #\"Removed Columns\" = Table.RemoveColumns(#\"Changed Type\",{\"Column1\"})",
+                "in",
+                "    #\"Removed Columns\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Contoso_Geography",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "ContinentName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataCategory": "Continent",
+            "dataType": "string",
+            "lineageTag": "c16c02a8-619f-4d06-9c94-f90c4b5e7a2d",
+            "sourceColumn": "ContinentName",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "GeographyKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "ce7b45a3-f9b7-4185-83ce-31867a7fbabf",
+            "sourceColumn": "GeographyKey",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "GeographyType",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "363a2058-da2f-4090-a2b4-6e2e49fa6dd5",
+            "sourceColumn": "GeographyType",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "RegionCountryName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataCategory": "Country",
+            "dataType": "string",
+            "lineageTag": "ddeb5eec-30e9-4b7a-8663-77da4726b9f0",
+            "sourceColumn": "RegionCountryName",
+            "summarizeBy": "none"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "ContinentName Hierarchy",
+            "levels": [
+              {
+                "name": "ContinentName",
+                "column": "ContinentName",
+                "lineageTag": "9b2f945e-1f85-46f3-9356-e073fcbc58c6",
+                "ordinal": 0
+              },
+              {
+                "name": "RegionCountryName",
+                "column": "RegionCountryName",
+                "lineageTag": "c296069c-b7ae-48f8-a221-fca30064eaea",
+                "ordinal": 1
+              }
+            ],
+            "lineageTag": "2a75a6c2-f0eb-4572-8d90-f13440aaf880"
+          }
+        ],
+        "lineageTag": "2c71858b-b29d-4eab-aaa2-39a8aac128e1",
+        "partitions": [
+          {
+            "name": "Contoso_Geography",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(\"C:\\Users\\zymbe\\Desktop\\ContoDataWareHouse\\Contoso_Geography.csv\"),[Delimiter=\",\", Columns=4, Encoding=65001, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Use First Row as Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    #\"Change Type\" = Table.TransformColumnTypes(#\"Use First Row as Headers\",{{\"ContinentName\", type text}, {\"GeographyKey\", Int64.Type}, {\"GeographyType\", type text}, {\"RegionCountryName\", type text}})",
+                "in",
+                "    #\"Change Type\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "LocalDateTable_5645e552-1977-4d92-b5a0-df03854cd110",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "d2febe7b-3194-4a4f-86c8-d022af35e5e2",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isHidden": true,
+            "lineageTag": "b9757332-7d49-420d-a122-5bf33c1df391",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isHidden": true,
+            "lineageTag": "509018c6-599b-47e8-bceb-dc1439e272a7",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "88fe25fe-f00d-479f-b985-0fa9cc2a2c8c",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isHidden": true,
+            "lineageTag": "e278367c-9463-4053-a838-71e0bac34a0d",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "6d5699d9-c1d7-41f5-a490-ddd0cb3de6fc",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isHidden": true,
+            "lineageTag": "578788ac-7560-44ac-ae98-bd61ef91bdf5",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "6a96191c-6c21-42b1-b589-80cb209f210a",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "3edcaa42-d18a-4ec1-a280-2aa979e893bf",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "2410f4c0-7429-4d0b-8a0a-ef93a3f391a8",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "61650f0f-a991-463d-9a01-5f76ca9744dd",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "e962545d-721c-485c-bfe1-41e7a5ed27fd"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "ebdf7049-d1eb-4bc3-a3ca-494719a98ab8",
+        "partitions": [
+          {
+            "name": "LocalDateTable_5645e552-1977-4d92-b5a0-df03854cd110",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('Contoso_Calendar_LookUp'[Date])), 1, 1), Date(Year(MAX('Contoso_Calendar_LookUp'[Date])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      },
+      {
+        "name": "LocalDateTable_51171fe5-7139-455b-8d94-c7a6c814e097",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "e94a3835-d2fa-4bc7-a88d-fbf33a20841b",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isHidden": true,
+            "lineageTag": "ceb160a6-20e3-40ec-9d06-8781e834b30a",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isHidden": true,
+            "lineageTag": "680fb7d8-2be5-4d31-b5e6-60a9418b69b3",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "2bfad454-b6be-401b-a7c0-b38654024b0f",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isHidden": true,
+            "lineageTag": "07fcb5bc-a007-4443-80a8-6218ff5efe60",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "79e44c3d-b953-4efa-b367-17d52f16a5e2",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isHidden": true,
+            "lineageTag": "0cc45276-b1be-4a51-9329-735e9b3a984d",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "6795f408-3a0d-4df0-8c93-b1823fce39a3",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "c6418f82-54e4-4a0b-a0db-a894f81f4a2d",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "3a55cd00-1d33-4998-bb89-d59323f46968",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "aedf6657-6f8e-4e96-8dab-79c17865b63a",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "0f071c2e-aaa7-435a-b799-94d47cfcf031"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "154fec95-9e3c-43eb-a7a6-d1e5251673d8",
+        "partitions": [
+          {
+            "name": "LocalDateTable_51171fe5-7139-455b-8d94-c7a6c814e097",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('Contoso_Calendar_LookUp'[Start of Year])), 1, 1), Date(Year(MAX('Contoso_Calendar_LookUp'[Start of Year])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      },
+      {
+        "name": "LocalDateTable_9ece94d4-fc80-4ad3-afb6-97b0f9ffdd1b",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "460b8102-5d2d-4362-8309-8fc95580c209",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isHidden": true,
+            "lineageTag": "ded1bcc8-a04e-455f-b48c-213232f583b0",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isHidden": true,
+            "lineageTag": "a88f6ec2-7282-4cb5-8650-8efb2ede22b0",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "d8f80e90-5396-4c86-9368-89ca8129691b",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isHidden": true,
+            "lineageTag": "0bd2b171-8b78-4bdc-8a92-d126e2c817ca",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "ebe1c30f-2fdd-4113-8732-50eb6851e94f",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isHidden": true,
+            "lineageTag": "53b825d6-a4c6-432d-a4c5-b11b5f2e9562",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "f4af542b-dbbb-4914-b7e7-edf3194f4b02",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "4a7aeba7-e556-4ebb-b75c-64c08586ef9e",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "19be519d-43e1-4834-a71f-916b82064a85",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "ea8539ab-08e6-4b8a-a3ac-ae8ecffad8a4",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "44467e24-5274-47f6-adfd-9fee5e57b680"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "7eb8dc93-5050-46fa-892b-64c1e427ad4d",
+        "partitions": [
+          {
+            "name": "LocalDateTable_9ece94d4-fc80-4ad3-afb6-97b0f9ffdd1b",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('Contoso_Calendar_LookUp'[Start of Month])), 1, 1), Date(Year(MAX('Contoso_Calendar_LookUp'[Start of Month])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      },
+      {
+        "name": "LocalDateTable_52759f34-d437-4e87-b8b6-ad6f570f9afc",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "643396a4-a047-48aa-827f-ba16928f14d5",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isHidden": true,
+            "lineageTag": "2ffddbd2-6f30-4997-b39c-6283959b3a51",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isHidden": true,
+            "lineageTag": "45996ab6-1ff2-40e1-bfd0-0ffeeb8e573e",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "f3d68d19-5445-4815-9691-a922071b2abc",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isHidden": true,
+            "lineageTag": "4e546902-bdd0-45ed-a73e-1995f20ea17a",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "d5b38dad-c3e9-47b3-827e-658f3549e519",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isHidden": true,
+            "lineageTag": "57bc9d00-51dd-4268-9159-f31ca4e46d3c",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "0cbd99dc-4bcc-4e34-a727-9696a12b2205",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "a1ad3c45-a041-47c5-a97e-081d9d472b98",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "fd80d5ab-a20a-4515-bdc9-be0500e585f2",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "6f3cb0bb-cacb-45f0-9279-b725aea020ca",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "f77b1078-dd8d-41b9-800f-f5da148dec62"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "be217ac1-0539-4c81-86f5-128aa4e69ae8",
+        "partitions": [
+          {
+            "name": "LocalDateTable_52759f34-d437-4e87-b8b6-ad6f570f9afc",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('Contoso_Calendar_LookUp'[Start of Week])), 1, 1), Date(Year(MAX('Contoso_Calendar_LookUp'[Start of Week])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
       }
     ]
   }
