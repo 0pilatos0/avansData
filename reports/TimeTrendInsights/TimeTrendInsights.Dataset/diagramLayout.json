@@ -24,7 +24,7 @@
         {
           "location": {
             "x": 598.3631774816472,
-            "y": 861.45151936902869
+            "y": 861.45151936902864
           },
           "nodeIndex": "avansData Contoso_Channel",
           "nodeLineageTag": "9e338bab-71b5-4b85-89d0-4c89dddba61c",
@@ -36,7 +36,7 @@
         },
         {
           "location": {
-            "x": 969.04259998012355,
+            "x": 969.04259998012352,
             "y": 0
           },
           "nodeIndex": "avansData Contoso_Geography",
@@ -49,7 +49,7 @@
         },
         {
           "location": {
-            "x": 614.83191646256614,
+            "x": 614.83191646256616,
             "y": 80
           },
           "nodeIndex": "avansData Contoso_Product",
@@ -75,7 +75,7 @@
         },
         {
           "location": {
-            "x": 293.3741522985141,
+            "x": 293.37415229851412,
             "y": 158.06915501966336
           },
           "nodeIndex": "avansData Contoso_ProductSubcategory",
@@ -88,8 +88,8 @@
         },
         {
           "location": {
-            "x": 968.40712700478764,
-            "y": 655.7070560799541
+            "x": 968.40712700478768,
+            "y": 655.70705607995408
           },
           "nodeIndex": "avansData Contoso_Promotion",
           "nodeLineageTag": "b9d3af76-b21c-4586-ac42-ad3dc66c7438",
@@ -101,8 +101,8 @@
         },
         {
           "location": {
-            "x": 600.74216794428571,
-            "y": 467.92241633820959
+            "x": 600.74216794428568,
+            "y": 467.9224163382096
           },
           "nodeIndex": "avansData Contoso_Sales",
           "nodeLineageTag": "f4edda52-2231-49b6-89ea-05c53422b0e9",
@@ -114,8 +114,8 @@
         },
         {
           "location": {
-            "x": 967.29295422374321,
-            "y": 229.41150644915439
+            "x": 967.2929542237432,
+            "y": 229.4115064491544
           },
           "nodeIndex": "avansData Contoso_Stores",
           "nodeLineageTag": "3b33fa4b-4f8e-4fe8-b42d-d44a1891b348",
@@ -128,7 +128,7 @@
         {
           "location": {
             "x": 1651.2929542237434,
-            "y": 157.72575968451426
+            "y": 157.72575968451427
           },
           "nodeIndex": "avansData Gross National Income Per Capita",
           "nodeLineageTag": "154565fd-332c-4ab6-b17f-f14f535fb9c4",
@@ -140,7 +140,7 @@
         },
         {
           "location": {
-            "x": 1877.2929542237439,
+            "x": 1877.292954223744,
             "y": 442.7257596845144
           },
           "nodeIndex": "Measures (2)",
