@@ -1,6 +1,15 @@
 {
-  "config": "{\"version\":\"5.48\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU08\",\"version\":\"5.47\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "config": "{\"version\":\"5.48\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU08\",\"version\":\"5.47\",\"type\":2}},\"activeSectionIndex\":5,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
   "layoutOptimization": 0,
+  "pods": [
+    {
+      "boundSection": "ReportSection710207acebb515572d95",
+      "config": "{\"acceptsFilterContext\":1}",
+      "name": "Pod",
+      "parameters": "[{\"name\":\"Param_Filter93564558f43471228de6\",\"boundFilter\":\"Filter93564558f43471228de6\",\"fieldExpr\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"avansData Contoso_Promotion\"}},\"Property\":\"PromotionName\"}}}]",
+      "type": 1
+    }
+  ],
   "resourcePackages": [
     {
       "resourcePackage": {
@@ -25,7 +34,6 @@
       "filters": "[]",
       "height": 720.00,
       "name": "ReportSection",
-      "ordinal": 1,
       "visualContainers": [
         {
           "config": "{\"name\":\"4ef164405da2989ca269\",\"layouts\":[{\"id\":0,\"position\":{\"x\":640.2985074626865,\"y\":105.67164179104478,\"z\":6000,\"width\":624.1791044776119,\"height\":115.52238805970148,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"avansData Contoso_Calendar.Date\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(avansData Contoso_Sales.SalesQuantity)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"avansData Contoso_Calendar\",\"Type\":0},{\"Name\":\"a1\",\"Entity\":\"avansData Contoso_Sales\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a1\"}},\"Property\":\"SalesQuantity\"}},\"Function\":0},\"Name\":\"Sum(avansData Contoso_Sales.SalesQuantity)\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Date\"},\"Name\":\"avansData Contoso_Calendar.Date\",\"NativeReferenceName\":\"Date\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Date\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"lineStyles\":[{\"properties\":{\"lineChartType\":{\"expr\":{\"Literal\":{\"Value\":\"'smooth'\"}}},\"strokeWidth\":{\"expr\":{\"Literal\":{\"Value\":\"4L\"}}}}}]}}}",
@@ -100,6 +108,7 @@
       "filters": "[]",
       "height": 720.00,
       "name": "ReportSection19c772ce42b200e546cb",
+      "ordinal": 5,
       "visualContainers": [
         {
           "config": "{\"name\":\"2565f212afb02411b510\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0.2985074626866355,\"y\":295.6716417910449,\"z\":5000,\"width\":640.2985074626865,\"height\":150.44776119402985,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"drillFilterOtherVisuals\":true}}",
@@ -192,7 +201,7 @@
       "filters": "[]",
       "height": 720.00,
       "name": "ReportSection2d2fb54673b8997b1130",
-      "ordinal": 4,
+      "ordinal": 2,
       "visualContainers": [
         {
           "config": "{\"name\":\"463eb43364e066075c90\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":1280,\"height\":99.4486215538847,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Regional and Product Analysis\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"36pt\"}}]},{\"textRuns\":[{\"value\":\"This page provides an overview of key metrics and allows users to navigate to specific sections.\",\"textStyle\":{\"fontSize\":\"13.3333px\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0.4}}}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}}",
@@ -249,7 +258,7 @@
       "filters": "[{\"name\":\"Filtere0c57a70041d60d9558c\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"avansData Contoso_Calendar\"}},\"Property\":\"Quarter\"}},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}}]",
       "height": 720.00,
       "name": "ReportSection5dabcea95a373ad00872",
-      "ordinal": 2,
+      "ordinal": 1,
       "visualContainers": [
         {
           "config": "{\"name\":\"4c599a00bea0a042412c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1077.4505494505495,\"y\":105.96336996336996,\"z\":5000,\"width\":202.54945054945054,\"height\":394.7838827838828,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(avansData Contoso_Sales.SalesQuantity)\"},{\"queryRef\":\"avansData Contoso_Calendar.Year\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"avansData Contoso_Sales\",\"Type\":0},{\"Name\":\"a1\",\"Entity\":\"avansData Contoso_Calendar\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"SalesQuantity\"}},\"Function\":0},\"Name\":\"Sum(avansData Contoso_Sales.SalesQuantity)\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a1\"}},\"Property\":\"Year\"},\"Name\":\"avansData Contoso_Calendar.Year\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"SalesQuantity\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{}}}",
@@ -348,7 +357,7 @@
       "config": "{}",
       "displayName": "Marketing and Store Analysis",
       "displayOption": 1,
-      "filters": "[]",
+      "filters": "[{\"name\":\"Filter93564558f43471228de6\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"avansData Contoso_Promotion\"}},\"Property\":\"PromotionName\"}},\"type\":\"Categorical\",\"howCreated\":5}]",
       "height": 720.00,
       "name": "ReportSection710207acebb515572d95",
       "ordinal": 3,
@@ -408,7 +417,7 @@
       "filters": "[]",
       "height": 720.00,
       "name": "ReportSectione4a1629660951430e8a9",
-      "ordinal": 5,
+      "ordinal": 4,
       "visualContainers": [
         {
           "config": "{\"name\":\"27d6bb224dc2567e6008\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":1280,\"height\":99.4486215538847,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Financial and Executive Summary\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"36pt\"}}]},{\"textRuns\":[{\"value\":\"This page provides an overview of key metrics and allows users to navigate to specific sections.\",\"textStyle\":{\"fontSize\":\"13.3333px\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0.4}}}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}}",

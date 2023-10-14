@@ -1866,6 +1866,10 @@
             ],
             "formatString": "#,0",
             "lineageTag": "9a1de3e0-4f13-4e0b-9eb4-844ecbdcf98b"
+          },
+          {
+            "name": "BestPerformingPromotion",
+            "lineageTag": "1319f421-b16c-43b3-bb69-1394f6d90df2"
           }
         ],
         "partitions": [
