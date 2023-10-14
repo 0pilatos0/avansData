@@ -2566,6 +2566,41 @@
             ],
             "formatString": "\"€\"\\ #,0;#,0\\ -\"€\";\"€\"\\ #,0",
             "lineageTag": "09870a49-f6ba-4127-a149-98b3971e1ea2"
+          },
+          {
+            "name": "Sales Target Gap",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": "[Total Sales] - [Sales Target]",
+            "lineageTag": "0555838f-49e2-4360-aaf6-3880a6ee761a"
+          },
+          {
+            "name": "Revenue Target Gap",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-NL\"}"
+              }
+            ],
+            "expression": "[Total Revenue CC] - [Revenue Target]",
+            "formatString": "\"€\"\\ #,0.###############;#,0.###############\\ -\"€\";\"€\"\\ #,0.###############",
+            "lineageTag": "ce3697c9-60d6-4720-9265-b38c06f66b3f"
+          },
+          {
+            "name": "Profit Target Gap",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-NL\"}"
+              }
+            ],
+            "expression": "[Total Profit] - [Profit]",
+            "formatString": "\"€\"\\ #,0.###############;#,0.###############\\ -\"€\";\"€\"\\ #,0.###############",
+            "lineageTag": "341a07b1-e666-4149-bef4-a2e02c8fff38"
           }
         ],
         "partitions": [
