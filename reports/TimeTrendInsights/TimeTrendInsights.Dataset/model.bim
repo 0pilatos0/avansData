@@ -1,5 +1,5 @@
 {
-  "compatibilityLevel": 1550,
+  "compatibilityLevel": 1567,
   "model": {
     "annotations": [
       {
@@ -801,6 +801,10 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
           }
         ],
         "columns": [
@@ -826,8 +830,7 @@
                 "value": "Automatic"
               }
             ],
-            "dataType": "int64",
-            "formatString": "0",
+            "dataType": "string",
             "lineageTag": "473b0f03-1449-4ec4-bb76-b080386b4cf6",
             "sourceColumn": "DateKey",
             "summarizeBy": "none"
@@ -988,12 +991,16 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
               }
             ],
-            "dataType": "string",
+            "dataType": "double",
             "lineageTag": "0af10866-7144-4905-8221-868c49d5c4e7",
             "sourceColumn": "TotalCost",
-            "summarizeBy": "none"
+            "summarizeBy": "sum"
           },
           {
             "name": "SalesAmount",
@@ -1003,13 +1010,70 @@
                 "value": "Automatic"
               }
             ],
-            "dataType": "string",
+            "dataType": "double",
+            "formatString": "0.00E+000",
             "lineageTag": "8d7c1935-b3a0-492a-8dcd-5b8280269655",
             "sourceColumn": "SalesAmount",
-            "summarizeBy": "none"
+            "summarizeBy": "sum"
           }
         ],
         "lineageTag": "f4edda52-2231-49b6-89ea-05c53422b0e9",
+        "measures": [
+          {
+            "name": "Count of SalesAmount total for StoreName",
+            "changedProperties": [
+              {
+                "property": "FormatString"
+              }
+            ],
+            "expression": [
+              "",
+              "CALCULATE(",
+              "\tCOUNTA('avansData Contoso_Sales'[SalesAmount]),",
+              "\tALLSELECTED('avansData Contoso_Stores'[StoreName])",
+              ")"
+            ],
+            "extendedProperties": [
+              {
+                "name": "MeasureTemplate",
+                "type": "json",
+                "value": {
+                  "daxTemplateName": "TotalForSelectedCategory",
+                  "version": 0
+                }
+              }
+            ],
+            "formatString": "0",
+            "lineageTag": "a7e85089-af17-42d1-8a44-94dee5c77429"
+          },
+          {
+            "name": "Count of SalesAmount total for StoreName 2",
+            "changedProperties": [
+              {
+                "property": "FormatString"
+              }
+            ],
+            "expression": [
+              "",
+              "CALCULATE(",
+              "\tCOUNTA('avansData Contoso_Sales'[SalesAmount]),",
+              "\tALLSELECTED('avansData Contoso_Stores'[StoreName])",
+              ")"
+            ],
+            "extendedProperties": [
+              {
+                "name": "MeasureTemplate",
+                "type": "json",
+                "value": {
+                  "daxTemplateName": "TotalForSelectedCategory",
+                  "version": 0
+                }
+              }
+            ],
+            "formatString": "0",
+            "lineageTag": "dd880f69-597f-49a9-b381-3043b02c12c3"
+          }
+        ],
         "partitions": [
           {
             "name": "avansData Contoso_Sales",
@@ -1021,9 +1085,10 @@
                 "    avansData_Contoso_Sales = Source{[Schema=\"avansData\",Item=\"Contoso_Sales\"]}[Data],",
                 "    #\"Replaced Value\" = Table.ReplaceValue(avansData_Contoso_Sales,\" 00:00:00,000\",\"\",Replacer.ReplaceText,{\"DateKey\"}),",
                 "    #\"Replaced Value1\" = Table.ReplaceValue(#\"Replaced Value\",\"-\",\"\",Replacer.ReplaceText,{\"DateKey\"}),",
-                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Replaced Value1\",{{\"DateKey\", Int64.Type}})",
+                "    #\"Changed Type with Locale\" = Table.TransformColumnTypes(#\"Replaced Value1\", {{\"TotalCost\", type number}}, \"nl-NL\"),",
+                "    #\"Changed Type with Locale1\" = Table.TransformColumnTypes(#\"Changed Type with Locale\", {{\"SalesAmount\", type number}}, \"nl-NL\")",
                 "in",
-                "    #\"Changed Type\""
+                "    #\"Changed Type with Locale1\""
               ],
               "type": "m"
             }
@@ -1870,6 +1935,12 @@
           {
             "name": "BestPerformingPromotion",
             "lineageTag": "1319f421-b16c-43b3-bb69-1394f6d90df2"
+          },
+          {
+            "name": "SumOfSalesAmount",
+            "expression": "SUM('avansData Contoso_Sales'[SalesAmount])",
+            "formatString": "0",
+            "lineageTag": "5f37dc87-fa1d-4f8f-ba4e-b55d273c8608"
           }
         ],
         "partitions": [
