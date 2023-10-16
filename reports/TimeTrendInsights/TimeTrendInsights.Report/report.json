@@ -1,11 +1,16 @@
 {
-  "config": "{\"version\":\"5.48\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU08\",\"version\":\"5.47\",\"type\":2}},\"activeSectionIndex\":3,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "config": "{\"version\":\"5.48\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU08\",\"version\":\"5.47\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
   "layoutOptimization": 0,
   "pods": [
     {
       "boundSection": "ReportSection710207acebb515572d95",
       "config": "{\"acceptsFilterContext\":1}",
       "name": "Pod"
+    },
+    {
+      "boundSection": "ReportSection2d2fb54673b8997b1130",
+      "config": "{}",
+      "name": "Pod1"
     }
   ],
   "resourcePackages": [
@@ -194,7 +199,7 @@
     },
     {
       "config": "{}",
-      "displayName": "Regional and Product Analysis",
+      "displayName": "Financial and Executive Summary",
       "displayOption": 1,
       "filters": "[]",
       "height": 720.00,
@@ -202,7 +207,7 @@
       "ordinal": 2,
       "visualContainers": [
         {
-          "config": "{\"name\":\"463eb43364e066075c90\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":1280,\"height\":99.4486215538847,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Regional and Product Analysis\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"36pt\"}}]},{\"textRuns\":[{\"value\":\"This page provides an overview of key metrics and allows users to navigate to specific sections.\",\"textStyle\":{\"fontSize\":\"13.3333px\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0.4}}}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}}",
+          "config": "{\"name\":\"463eb43364e066075c90\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":1280,\"height\":99.4486215538847,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Financial and Executive Summary\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"36pt\"}}]},{\"textRuns\":[{\"value\":\"This page provides an overview of key metrics and allows users to navigate to specific sections.\",\"textStyle\":{\"fontSize\":\"13.3333px\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0.4}}}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}}",
           "filters": "[]",
           "height": 99.45,
           "width": 1280.00,
@@ -229,7 +234,7 @@
           "z": 1000.00
         },
         {
-          "config": "{\"name\":\"e1c01bb46ce30e4e52b5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":619.1478696741855,\"z\":4000,\"width\":1280,\"height\":100.51796157059314,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"avansData Contoso_Calendar.Date\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"avansData Contoso_Calendar\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Date\"},\"Name\":\"avansData Contoso_Calendar.Date\",\"NativeReferenceName\":\"Date\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Date\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"startDate\":{\"expr\":{\"Literal\":{\"Value\":\"datetime'2008-11-14T00:00:00'\"}}},\"endDate\":{\"expr\":{\"Literal\":{\"Value\":\"datetime'2018-12-31T00:00:00'\"}}},\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Between'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"avansData Contoso_Calendar\",\"Type\":0}],\"Where\":[{\"Condition\":{\"And\":{\"Left\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Date\"}},\"Right\":{\"Literal\":{\"Value\":\"datetime'2008-11-14T00:00:00'\"}}}},\"Right\":{\"Comparison\":{\"ComparisonKind\":3,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Date\"}},\"Right\":{\"Literal\":{\"Value\":\"datetime'2019-01-01T00:00:00'\"}}}}}}}]}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "config": "{\"name\":\"e1c01bb46ce30e4e52b5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":619.1478696741855,\"z\":4000,\"width\":1280,\"height\":100.51796157059314,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"avansData Contoso_Calendar.Date\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"avansData Contoso_Calendar\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Date\"},\"Name\":\"avansData Contoso_Calendar.Date\",\"NativeReferenceName\":\"Date\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Date\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"startDate\":{\"expr\":{\"Literal\":{\"Value\":\"datetime'2005-01-01T00:00:00'\"}}},\"endDate\":{\"expr\":{\"Literal\":{\"Value\":\"datetime'2018-12-31T00:00:00'\"}}},\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Between'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"avansData Contoso_Calendar\",\"Type\":0}],\"Where\":[{\"Condition\":{\"And\":{\"Left\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Date\"}},\"Right\":{\"Literal\":{\"Value\":\"datetime'2005-01-01T00:00:00'\"}}}},\"Right\":{\"Comparison\":{\"ComparisonKind\":3,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Date\"}},\"Right\":{\"Literal\":{\"Value\":\"datetime'2019-01-01T00:00:00'\"}}}}}}}]}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
           "filters": "[]",
           "height": 100.52,
           "width": 1280.00,
@@ -238,7 +243,7 @@
           "z": 4000.00
         },
         {
-          "config": "{\"name\":\"e6b131af0ab27aa089a3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":99.4486215538847,\"z\":3000,\"width\":1280,\"height\":519.6992481203007,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"map\",\"projections\":{\"Category\":[{\"queryRef\":\"avansData Contoso_Stores.StoreName\",\"active\":true},{\"queryRef\":\"avansData Contoso_Geography.RegionCountryName\",\"active\":true},{\"queryRef\":\"avansData Gross National Income Per Capita.Continent\"}],\"Size\":[{\"queryRef\":\"Measures (2).SumOfSalesQuantity\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"avansData Gross National Income Per Capita\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0},{\"Name\":\"a1\",\"Entity\":\"avansData Contoso_Geography\",\"Type\":0},{\"Name\":\"a2\",\"Entity\":\"avansData Contoso_Stores\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Continent\"},\"Name\":\"avansData Gross National Income Per Capita.Continent\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"SumOfSalesQuantity\"},\"Name\":\"Measures (2).SumOfSalesQuantity\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a1\"}},\"Property\":\"RegionCountryName\"},\"Name\":\"avansData Contoso_Geography.RegionCountryName\",\"NativeReferenceName\":\"RegionCountryName\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a2\"}},\"Property\":\"StoreName\"},\"Name\":\"avansData Contoso_Stores.StoreName\",\"NativeReferenceName\":\"StoreName\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Sum of sales per country for selected time period'\"}}}}}]}}}",
+          "config": "{\"name\":\"e6b131af0ab27aa089a3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":99.4486215538847,\"z\":3000,\"width\":1280,\"height\":519.6992481203007,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"map\",\"projections\":{\"Category\":[{\"queryRef\":\"avansData Contoso_Stores.StoreName\",\"active\":true},{\"queryRef\":\"avansData Contoso_Geography.RegionCountryName\"},{\"queryRef\":\"avansData Gross National Income Per Capita.Continent\"}],\"Size\":[{\"queryRef\":\"Measures (2).SumOfSalesQuantity\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"avansData Gross National Income Per Capita\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Measures (2)\",\"Type\":0},{\"Name\":\"a1\",\"Entity\":\"avansData Contoso_Geography\",\"Type\":0},{\"Name\":\"a2\",\"Entity\":\"avansData Contoso_Stores\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Continent\"},\"Name\":\"avansData Gross National Income Per Capita.Continent\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"SumOfSalesQuantity\"},\"Name\":\"Measures (2).SumOfSalesQuantity\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a1\"}},\"Property\":\"RegionCountryName\"},\"Name\":\"avansData Contoso_Geography.RegionCountryName\",\"NativeReferenceName\":\"RegionCountryName\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a2\"}},\"Property\":\"StoreName\"},\"Name\":\"avansData Contoso_Stores.StoreName\",\"NativeReferenceName\":\"StoreName\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Sum of sales per country for selected time period'\"}}}}}]}}}",
           "filters": "[]",
           "height": 519.70,
           "width": 1280.00,
@@ -446,7 +451,7 @@
     },
     {
       "config": "{}",
-      "displayName": "Financial and Executive Summary",
+      "displayName": "Regional and Product Analysis",
       "displayOption": 1,
       "filters": "[]",
       "height": 720.00,
@@ -454,7 +459,7 @@
       "ordinal": 4,
       "visualContainers": [
         {
-          "config": "{\"name\":\"27d6bb224dc2567e6008\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":1280,\"height\":99.4486215538847,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Financial and Executive Summary\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"36pt\"}}]},{\"textRuns\":[{\"value\":\"This page provides an overview of key metrics and allows users to navigate to specific sections.\",\"textStyle\":{\"fontSize\":\"13.3333px\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0.4}}}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}}",
+          "config": "{\"name\":\"27d6bb224dc2567e6008\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":1280,\"height\":99.4486215538847,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Regional and Product Analysis\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"36pt\"}}]},{\"textRuns\":[{\"value\":\"This page provides an overview of key metrics and allows users to navigate to specific sections.\",\"textStyle\":{\"fontSize\":\"13.3333px\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0.4}}}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}}",
           "filters": "[]",
           "height": 99.45,
           "width": 1280.00,
@@ -470,6 +475,15 @@
           "x": 259.75,
           "y": 105.96,
           "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"2f4422923132fa99a1ae\",\"layouts\":[{\"id\":0,\"position\":{\"x\":640.2985074626865,\"y\":500.5970149253731,\"z\":5002,\"width\":639.4029850746268,\"height\":219.40298507462686,\"tabOrder\":5003}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"avansData Contoso_Product.Manufacturer\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(avansData Contoso_Sales.SalesAmount)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"avansData Contoso_Product\",\"Type\":0},{\"Name\":\"a1\",\"Entity\":\"avansData Contoso_Sales\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Manufacturer\"},\"Name\":\"avansData Contoso_Product.Manufacturer\",\"NativeReferenceName\":\"Manufacturer\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a1\"}},\"Property\":\"SalesAmount\"}},\"Function\":0},\"Name\":\"Sum(avansData Contoso_Sales.SalesAmount)\",\"NativeReferenceName\":\"Sum of SalesAmount\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a1\"}},\"Property\":\"SalesAmount\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 219.40,
+          "width": 639.40,
+          "x": 640.30,
+          "y": 500.60,
+          "z": 5002.00
         },
         {
           "config": "{\"name\":\"70bf03031509e22bc0ee\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1128.1537176274019,\"y\":25.664160401002505,\"z\":2000,\"width\":140.08354218880535,\"height\":48.1203007518797,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'back'\"}}}},\"selector\":{\"id\":\"default\"}}],\"text\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Back to home'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Back'\"}}}}}]}}}",
@@ -488,6 +502,15 @@
           "x": 850.52,
           "y": 105.96,
           "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"a448862919ba9a4b9cb2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":500.5970149253731,\"z\":5001,\"width\":640.2985074626865,\"height\":219.40298507462686,\"tabOrder\":5002}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"avansData Contoso_Calendar.Year\",\"active\":true},{\"queryRef\":\"avansData Contoso_Calendar.Month\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(avansData Contoso_Sales.ReturnAmount)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"avansData Contoso_Calendar\",\"Type\":0},{\"Name\":\"a1\",\"Entity\":\"avansData Contoso_Sales\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Year\"},\"Name\":\"avansData Contoso_Calendar.Year\",\"NativeReferenceName\":\"Year\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Month\"},\"Name\":\"avansData Contoso_Calendar.Month\",\"NativeReferenceName\":\"Month\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a1\"}},\"Property\":\"ReturnAmount\"}},\"Function\":5},\"Name\":\"CountNonNull(avansData Contoso_Sales.ReturnAmount)\",\"NativeReferenceName\":\"Count of ReturnAmount\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a1\"}},\"Property\":\"ReturnAmount\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 219.40,
+          "width": 640.30,
+          "x": 0.00,
+          "y": 500.60,
+          "z": 5001.00
         },
         {
           "config": "{\"name\":\"e251cf101328e1439ad6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":99.3992673992674,\"z\":5000,\"width\":259.75091575091574,\"height\":391.97069597069594,\"tabOrder\":5001}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"avansData Contoso_Product_Category.ProductCategory\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"avansData Contoso_Product_Category\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"ProductCategory\"},\"Name\":\"avansData Contoso_Product_Category.ProductCategory\",\"NativeReferenceName\":\"ProductCategory\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",

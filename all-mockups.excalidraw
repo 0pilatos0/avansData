@@ -34,8 +34,8 @@
     },
     {
       "type": "text",
-      "version": 538,
-      "versionNonce": 1916773041,
+      "version": 539,
+      "versionNonce": 271444646,
       "isDeleted": false,
       "id": "aoT7piK2LEMtoJTUxFiIk",
       "fillStyle": "hachure",
@@ -55,7 +55,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1696519567827,
+      "updated": 1697486177184,
       "link": null,
       "locked": false,
       "fontSize": 31.49669471370808,
@@ -70,8 +70,8 @@
     },
     {
       "type": "text",
-      "version": 497,
-      "versionNonce": 218488031,
+      "version": 498,
+      "versionNonce": 1106770618,
       "isDeleted": false,
       "id": "O2_h4iSO19c1SB9ueBcDY",
       "fillStyle": "hachure",
@@ -91,7 +91,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1696519567827,
+      "updated": 1697486177186,
       "link": null,
       "locked": false,
       "fontSize": 22.497639081220054,
@@ -102,7 +102,7 @@
       "containerId": null,
       "originalText": "This page combines quarterly and monthly sales analysis for both the Sales Analyst and Sales Manager.",
       "lineHeight": 1.25,
-      "baseline": 20
+      "baseline": 19
     },
     {
       "type": "rectangle",
@@ -172,7 +172,7 @@
       "containerId": "jfWVC2UmxqsbLWNSmNc66",
       "originalText": "Sales per quater (Line)",
       "lineHeight": 1.25,
-      "baseline": 22
+      "baseline": 23
     },
     {
       "type": "rectangle",
@@ -242,7 +242,7 @@
       "containerId": "wTToUgtFkd0Rp-jdwJhX0",
       "originalText": "Sales quantity Per Month (Bar)",
       "lineHeight": 1.25,
-      "baseline": 50
+      "baseline": 52
     },
     {
       "type": "rectangle",
@@ -312,7 +312,7 @@
       "containerId": "9VPo62-WRgiMVHadkvRWR",
       "originalText": "date filters\n\n- Start - end",
       "lineHeight": 1.25,
-      "baseline": 79
+      "baseline": 81
     },
     {
       "type": "rectangle",
@@ -411,7 +411,7 @@
       "containerId": "Oz7p0vh__G9MQkNguJh9U",
       "originalText": "KPI",
       "lineHeight": 1.25,
-      "baseline": 22
+      "baseline": 23
     },
     {
       "type": "rectangle",
@@ -481,7 +481,7 @@
       "containerId": "6TuhRAm9bVoAHAp_IhKnX",
       "originalText": "KPI",
       "lineHeight": 1.25,
-      "baseline": 22
+      "baseline": 23
     },
     {
       "type": "rectangle",
@@ -551,7 +551,7 @@
       "containerId": "SMvifY2MXNLRgtZZa9oXz",
       "originalText": "KPI",
       "lineHeight": 1.25,
-      "baseline": 22
+      "baseline": 23
     },
     {
       "type": "rectangle",
@@ -621,7 +621,7 @@
       "containerId": "MI94s3zpS1Gbkm4Mhj_80",
       "originalText": "Insights and recomendations",
       "lineHeight": 1.25,
-      "baseline": 78
+      "baseline": 79
     },
     {
       "type": "rectangle",
@@ -654,8 +654,8 @@
     },
     {
       "type": "text",
-      "version": 461,
-      "versionNonce": 343549073,
+      "version": 462,
+      "versionNonce": 1973790182,
       "isDeleted": false,
       "id": "js9JZmDftmiloGhihPDrC",
       "fillStyle": "hachure",
@@ -675,7 +675,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1696519567827,
+      "updated": 1697486177187,
       "link": null,
       "locked": false,
       "fontSize": 31.49669471370808,
@@ -690,8 +690,8 @@
     },
     {
       "type": "text",
-      "version": 407,
-      "versionNonce": 588572927,
+      "version": 408,
+      "versionNonce": 1566348154,
       "isDeleted": false,
       "id": "3pIWmUN1XKRrNJomJ6kiR",
       "fillStyle": "hachure",
@@ -711,7 +711,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1696519567827,
+      "updated": 1697486177188,
       "link": null,
       "locked": false,
       "fontSize": 22.497639081220058,
@@ -722,7 +722,7 @@
       "containerId": null,
       "originalText": "This page combines marketing performance and store sales analysis for the Marketing Team and Store Manager.",
       "lineHeight": 1.25,
-      "baseline": 20
+      "baseline": 19
     },
     {
       "type": "rectangle",
@@ -792,7 +792,7 @@
       "containerId": "QPkB_mvgkPtQWCCbpV4ii",
       "originalText": "Sales Amount by Promotion Name by Month (Stacked barchart)",
       "lineHeight": 1.25,
-      "baseline": 50
+      "baseline": 51
     },
     {
       "type": "rectangle",
@@ -862,7 +862,7 @@
       "containerId": "cNlysYvV-Yu5vzbAPrBrC",
       "originalText": "Total Sales Amount by Day of the Week",
       "lineHeight": 1.25,
-      "baseline": 22
+      "baseline": 23
     },
     {
       "type": "rectangle",
@@ -932,7 +932,7 @@
       "containerId": "6sf6qSffWhO-15ep_1C2C",
       "originalText": "KPI",
       "lineHeight": 1.25,
-      "baseline": 22
+      "baseline": 23
     },
     {
       "type": "rectangle",
@@ -1002,7 +1002,7 @@
       "containerId": "Bdgaa2zqpxTIRLdHBIxVT",
       "originalText": "KPI",
       "lineHeight": 1.25,
-      "baseline": 22
+      "baseline": 23
     },
     {
       "type": "rectangle",
@@ -1072,7 +1072,7 @@
       "containerId": "g9PItoObrdrEexMFacFvP",
       "originalText": "KPI",
       "lineHeight": 1.25,
-      "baseline": 22
+      "baseline": 23
     },
     {
       "type": "rectangle",
@@ -1142,12 +1142,12 @@
       "containerId": "0MW22juB0ImrL3HtZkWlP",
       "originalText": "KPI",
       "lineHeight": 1.25,
-      "baseline": 22
+      "baseline": 23
     },
     {
       "type": "rectangle",
-      "version": 970,
-      "versionNonce": 1912818252,
+      "version": 971,
+      "versionNonce": 1884493242,
       "isDeleted": false,
       "id": "rvBN5YrySGj07MpCHtCDE",
       "fillStyle": "hachure",
@@ -1156,8 +1156,8 @@
       "roughness": 1,
       "opacity": 100,
       "angle": 0,
-      "x": -3101.418389008579,
-      "y": -4460.952736068889,
+      "x": -3100.428826020298,
+      "y": -4460.30167405717,
       "strokeColor": "#000000",
       "backgroundColor": "transparent",
       "width": 1449.4570875456338,
@@ -1169,14 +1169,14 @@
         "type": 3
       },
       "boundElements": [],
-      "updated": 1696499249164,
+      "updated": 1697486891804,
       "link": null,
       "locked": false
     },
     {
       "type": "text",
-      "version": 409,
-      "versionNonce": 1942579825,
+      "version": 410,
+      "versionNonce": 587462950,
       "isDeleted": false,
       "id": "UA-G9Pf5Yr0q3IrqHQkMb",
       "fillStyle": "hachure",
@@ -1196,7 +1196,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1696519567828,
+      "updated": 1697486177188,
       "link": null,
       "locked": false,
       "fontSize": 31.49669471370808,
@@ -1211,8 +1211,8 @@
     },
     {
       "type": "text",
-      "version": 421,
-      "versionNonce": 397242655,
+      "version": 422,
+      "versionNonce": 2049971258,
       "isDeleted": false,
       "id": "F2PoXkGDzHr3BeRigw5Se",
       "fillStyle": "hachure",
@@ -1232,7 +1232,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1696519567828,
+      "updated": 1697486177189,
       "link": null,
       "locked": false,
       "fontSize": 22.497639081220058,
@@ -1243,12 +1243,12 @@
       "containerId": null,
       "originalText": "This page combines regional sales analysis and product sales analysis for the Regional Manager and Product Manager.",
       "lineHeight": 1.25,
-      "baseline": 20
+      "baseline": 19
     },
     {
       "type": "rectangle",
-      "version": 583,
-      "versionNonce": 128721396,
+      "version": 588,
+      "versionNonce": 1612716474,
       "isDeleted": false,
       "id": "oQjPUTgfqPe26EbLOkEX7",
       "fillStyle": "hachure",
@@ -1257,8 +1257,8 @@
       "roughness": 1,
       "opacity": 100,
       "angle": 0,
-      "x": -2108.7442837244034,
-      "y": -4311.429211695853,
+      "x": -2109.308502881305,
+      "y": -4301.164471705619,
       "strokeColor": "#000000",
       "backgroundColor": "transparent",
       "width": 402.707739553839,
@@ -1275,14 +1275,14 @@
           "id": "45IzYWHLzC3_jDV6qja8J"
         }
       ],
-      "updated": 1696499249164,
+      "updated": 1697486263194,
       "link": null,
       "locked": false
     },
     {
       "type": "text",
-      "version": 764,
-      "versionNonce": 409362297,
+      "version": 769,
+      "versionNonce": 1596510842,
       "isDeleted": false,
       "id": "45IzYWHLzC3_jDV6qja8J",
       "fillStyle": "hachure",
@@ -1291,8 +1291,8 @@
       "roughness": 1,
       "opacity": 100,
       "angle": 0,
-      "x": -2095.0592677072495,
-      "y": -4121.57328903035,
+      "x": -2095.623486864151,
+      "y": -4111.308549040115,
       "strokeColor": "#000000",
       "backgroundColor": "transparent",
       "width": 375.33770751953125,
@@ -1302,7 +1302,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1696512722287,
+      "updated": 1697486263194,
       "link": null,
       "locked": false,
       "fontSize": 22.696941137864837,
@@ -1313,7 +1313,7 @@
       "containerId": "oQjPUTgfqPe26EbLOkEX7",
       "originalText": " Sales Amount by Store Type by Quarter (PIE)",
       "lineHeight": 1.25,
-      "baseline": 50
+      "baseline": 52
     },
     {
       "type": "rectangle",
@@ -1383,287 +1383,7 @@
       "containerId": "c5nLoJ9ACm0b34eXW7OPn",
       "originalText": "Sales Quantity by Product Category over Time (LINE)",
       "lineHeight": 1.25,
-      "baseline": 22
-    },
-    {
-      "type": "rectangle",
-      "version": 753,
-      "versionNonce": 1353652980,
-      "isDeleted": false,
-      "id": "_mwjexNGF38lpdV0-McH4",
-      "fillStyle": "hachure",
-      "strokeWidth": 1,
-      "strokeStyle": "solid",
-      "roughness": 1,
-      "opacity": 100,
-      "angle": 0,
-      "x": -3032.9097720614154,
-      "y": -3826.0024487906517,
-      "strokeColor": "#000000",
-      "backgroundColor": "#fab005",
-      "width": 270.06351115636227,
-      "height": 142.65205781171275,
-      "seed": 1073467883,
-      "groupIds": [],
-      "frameId": null,
-      "roundness": {
-        "type": 3
-      },
-      "boundElements": [
-        {
-          "type": "text",
-          "id": "cuuuxpxS6v_vPt8bPsFRj"
-        }
-      ],
-      "updated": 1696499249167,
-      "link": null,
-      "locked": false
-    },
-    {
-      "type": "text",
-      "version": 639,
-      "versionNonce": 1061029977,
-      "isDeleted": false,
-      "id": "cuuuxpxS6v_vPt8bPsFRj",
-      "fillStyle": "hachure",
-      "strokeWidth": 1,
-      "strokeStyle": "solid",
-      "roughness": 1,
-      "opacity": 100,
-      "angle": 0,
-      "x": -2918.605509769367,
-      "y": -3768.925847853657,
-      "strokeColor": "#000000",
-      "backgroundColor": "transparent",
-      "width": 41.454986572265625,
-      "height": 28.498855937724116,
-      "seed": 519705739,
-      "groupIds": [],
-      "frameId": null,
-      "roundness": null,
-      "boundElements": [],
-      "updated": 1696512722290,
-      "link": null,
-      "locked": false,
-      "fontSize": 22.799084750179293,
-      "fontFamily": 1,
-      "text": "KPI",
-      "textAlign": "center",
-      "verticalAlign": "middle",
-      "containerId": "_mwjexNGF38lpdV0-McH4",
-      "originalText": "KPI",
-      "lineHeight": 1.25,
-      "baseline": 22
-    },
-    {
-      "type": "rectangle",
-      "version": 790,
-      "versionNonce": 1902776180,
-      "isDeleted": false,
-      "id": "60Mpu-taL9JX8aQtGOqbr",
-      "fillStyle": "hachure",
-      "strokeWidth": 1,
-      "strokeStyle": "solid",
-      "roughness": 1,
-      "opacity": 100,
-      "angle": 0,
-      "x": -2680.8126254979325,
-      "y": -3826.0024487906517,
-      "strokeColor": "#000000",
-      "backgroundColor": "#fab005",
-      "width": 270.06351115636227,
-      "height": 142.65205781171275,
-      "seed": 1073467883,
-      "groupIds": [],
-      "frameId": null,
-      "roundness": {
-        "type": 3
-      },
-      "boundElements": [
-        {
-          "type": "text",
-          "id": "b3FvcUwXGIg7TPAOOEm_o"
-        }
-      ],
-      "updated": 1696499249168,
-      "link": null,
-      "locked": false
-    },
-    {
-      "type": "text",
-      "version": 675,
-      "versionNonce": 1640498615,
-      "isDeleted": false,
-      "id": "b3FvcUwXGIg7TPAOOEm_o",
-      "fillStyle": "hachure",
-      "strokeWidth": 1,
-      "strokeStyle": "solid",
-      "roughness": 1,
-      "opacity": 100,
-      "angle": 0,
-      "x": -2566.508363205884,
-      "y": -3768.925847853657,
-      "strokeColor": "#000000",
-      "backgroundColor": "transparent",
-      "width": 41.454986572265625,
-      "height": 28.498855937724116,
-      "seed": 519705739,
-      "groupIds": [],
-      "frameId": null,
-      "roundness": null,
-      "boundElements": [],
-      "updated": 1696512722290,
-      "link": null,
-      "locked": false,
-      "fontSize": 22.799084750179293,
-      "fontFamily": 1,
-      "text": "KPI",
-      "textAlign": "center",
-      "verticalAlign": "middle",
-      "containerId": "60Mpu-taL9JX8aQtGOqbr",
-      "originalText": "KPI",
-      "lineHeight": 1.25,
-      "baseline": 22
-    },
-    {
-      "type": "rectangle",
-      "version": 747,
-      "versionNonce": 325276660,
-      "isDeleted": false,
-      "id": "JZENgi4v2mVZTEK66BDnJ",
-      "fillStyle": "hachure",
-      "strokeWidth": 1,
-      "strokeStyle": "solid",
-      "roughness": 1,
-      "opacity": 100,
-      "angle": 0,
-      "x": -2328.3282206844306,
-      "y": -3826.0024487906517,
-      "strokeColor": "#000000",
-      "backgroundColor": "#fab005",
-      "width": 270.06351115636227,
-      "height": 142.65205781171275,
-      "seed": 1073467883,
-      "groupIds": [],
-      "frameId": null,
-      "roundness": {
-        "type": 3
-      },
-      "boundElements": [
-        {
-          "type": "text",
-          "id": "jQgBZb50fA-2lB5PZwspN"
-        }
-      ],
-      "updated": 1696499249168,
-      "link": null,
-      "locked": false
-    },
-    {
-      "type": "text",
-      "version": 633,
-      "versionNonce": 49124665,
-      "isDeleted": false,
-      "id": "jQgBZb50fA-2lB5PZwspN",
-      "fillStyle": "hachure",
-      "strokeWidth": 1,
-      "strokeStyle": "solid",
-      "roughness": 1,
-      "opacity": 100,
-      "angle": 0,
-      "x": -2214.023958392382,
-      "y": -3768.925847853657,
-      "strokeColor": "#000000",
-      "backgroundColor": "transparent",
-      "width": 41.454986572265625,
-      "height": 28.498855937724116,
-      "seed": 519705739,
-      "groupIds": [],
-      "frameId": null,
-      "roundness": null,
-      "boundElements": [],
-      "updated": 1696512722291,
-      "link": null,
-      "locked": false,
-      "fontSize": 22.799084750179293,
-      "fontFamily": 1,
-      "text": "KPI",
-      "textAlign": "center",
-      "verticalAlign": "middle",
-      "containerId": "JZENgi4v2mVZTEK66BDnJ",
-      "originalText": "KPI",
-      "lineHeight": 1.25,
-      "baseline": 22
-    },
-    {
-      "type": "rectangle",
-      "version": 844,
-      "versionNonce": 92072052,
-      "isDeleted": false,
-      "id": "tgORSrdxoHZiCa1_R7gOz",
-      "fillStyle": "hachure",
-      "strokeWidth": 1,
-      "strokeStyle": "solid",
-      "roughness": 1,
-      "opacity": 100,
-      "angle": 0,
-      "x": -1976.2310741209471,
-      "y": -3826.0024487906517,
-      "strokeColor": "#000000",
-      "backgroundColor": "#fab005",
-      "width": 270.06351115636227,
-      "height": 142.65205781171275,
-      "seed": 1073467883,
-      "groupIds": [],
-      "frameId": null,
-      "roundness": {
-        "type": 3
-      },
-      "boundElements": [
-        {
-          "type": "text",
-          "id": "D5czUk-w8oQG2V88JsKQI"
-        }
-      ],
-      "updated": 1696499249168,
-      "link": null,
-      "locked": false
-    },
-    {
-      "type": "text",
-      "version": 731,
-      "versionNonce": 474756823,
-      "isDeleted": false,
-      "id": "D5czUk-w8oQG2V88JsKQI",
-      "fillStyle": "hachure",
-      "strokeWidth": 1,
-      "strokeStyle": "solid",
-      "roughness": 1,
-      "opacity": 100,
-      "angle": 0,
-      "x": -1861.9268118288987,
-      "y": -3768.925847853657,
-      "strokeColor": "#000000",
-      "backgroundColor": "transparent",
-      "width": 41.454986572265625,
-      "height": 28.498855937724116,
-      "seed": 519705739,
-      "groupIds": [],
-      "frameId": null,
-      "roundness": null,
-      "boundElements": [],
-      "updated": 1696512722291,
-      "link": null,
-      "locked": false,
-      "fontSize": 22.799084750179293,
-      "fontFamily": 1,
-      "text": "KPI",
-      "textAlign": "center",
-      "verticalAlign": "middle",
-      "containerId": "tgORSrdxoHZiCa1_R7gOz",
-      "originalText": "KPI",
-      "lineHeight": 1.25,
-      "baseline": 22
+      "baseline": 23
     },
     {
       "type": "rectangle",
@@ -1696,8 +1416,8 @@
     },
     {
       "type": "text",
-      "version": 449,
-      "versionNonce": 418706513,
+      "version": 450,
+      "versionNonce": 263578726,
       "isDeleted": false,
       "id": "jbrbvY5DB5-DwGyg7uMmQ",
       "fillStyle": "hachure",
@@ -1717,7 +1437,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1696519567828,
+      "updated": 1697486177189,
       "link": null,
       "locked": false,
       "fontSize": 31.49669471370808,
@@ -1732,8 +1452,8 @@
     },
     {
       "type": "text",
-      "version": 384,
-      "versionNonce": 1413477695,
+      "version": 385,
+      "versionNonce": 1515551994,
       "isDeleted": false,
       "id": "sA1Q-v8Pj2jUMeqBO5lck",
       "fillStyle": "hachure",
@@ -1753,7 +1473,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1696519567828,
+      "updated": 1697486177190,
       "link": null,
       "locked": false,
       "fontSize": 22.497639081220058,
@@ -1764,7 +1484,7 @@
       "containerId": null,
       "originalText": "This page combines financial analysis and an executive summary for the Financial Analyst and Executive.",
       "lineHeight": 1.25,
-      "baseline": 20
+      "baseline": 19
     },
     {
       "type": "rectangle",
@@ -1834,7 +1554,7 @@
       "containerId": "idKqxjPHKaBV6gIsq83Av",
       "originalText": "Sales Amount by Continent (WORLD MAP)",
       "lineHeight": 1.25,
-      "baseline": 22
+      "baseline": 23
     },
     {
       "type": "rectangle",
@@ -1904,12 +1624,12 @@
       "containerId": "_uzlxv5RUw5nGKI3uYvxA",
       "originalText": "Date range selector",
       "lineHeight": 1.25,
-      "baseline": 22
+      "baseline": 23
     },
     {
       "type": "text",
-      "version": 569,
-      "versionNonce": 131351089,
+      "version": 570,
+      "versionNonce": 1032349606,
       "isDeleted": false,
       "id": "9gcuxmlKUCL9W1-nNa7Ce",
       "fillStyle": "hachure",
@@ -1929,7 +1649,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1696519567828,
+      "updated": 1697486177190,
       "link": null,
       "locked": false,
       "fontSize": 22.497639081220058,
@@ -1940,12 +1660,12 @@
       "containerId": null,
       "originalText": "Sales Analyst",
       "lineHeight": 1.25,
-      "baseline": 20
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 442,
-      "versionNonce": 1076688223,
+      "version": 443,
+      "versionNonce": 189779386,
       "isDeleted": false,
       "id": "BVAzOiEXZHpQKIY2m3T9w",
       "fillStyle": "hachure",
@@ -1965,7 +1685,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1696519567828,
+      "updated": 1697486177190,
       "link": null,
       "locked": false,
       "fontSize": 22.497639081220058,
@@ -1976,12 +1696,12 @@
       "containerId": null,
       "originalText": "Sales Manager",
       "lineHeight": 1.25,
-      "baseline": 20
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 586,
-      "versionNonce": 1565447185,
+      "version": 587,
+      "versionNonce": 1822982886,
       "isDeleted": false,
       "id": "5_1mXq64ukgDp7fpysoAf",
       "fillStyle": "hachure",
@@ -2001,7 +1721,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1696519567828,
+      "updated": 1697486177190,
       "link": null,
       "locked": false,
       "fontSize": 22.497639081220058,
@@ -2012,12 +1732,12 @@
       "containerId": null,
       "originalText": "Marketing Team",
       "lineHeight": 1.25,
-      "baseline": 20
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 469,
-      "versionNonce": 46461311,
+      "version": 470,
+      "versionNonce": 1916929658,
       "isDeleted": false,
       "id": "ZOBdRnTLrUVMCEhz0zYnl",
       "fillStyle": "hachure",
@@ -2037,7 +1757,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1696519567828,
+      "updated": 1697486177191,
       "link": null,
       "locked": false,
       "fontSize": 22.497639081220058,
@@ -2048,12 +1768,12 @@
       "containerId": null,
       "originalText": "Store Manager",
       "lineHeight": 1.25,
-      "baseline": 20
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 513,
-      "versionNonce": 761014769,
+      "version": 514,
+      "versionNonce": 1336096294,
       "isDeleted": false,
       "id": "ZGUpY1QwAobuKIHRKpheJ",
       "fillStyle": "hachure",
@@ -2073,7 +1793,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1696519567828,
+      "updated": 1697486177191,
       "link": null,
       "locked": false,
       "fontSize": 22.497639081220058,
@@ -2084,12 +1804,12 @@
       "containerId": null,
       "originalText": "Regional Manager",
       "lineHeight": 1.25,
-      "baseline": 20
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 544,
-      "versionNonce": 88631711,
+      "version": 545,
+      "versionNonce": 1475290938,
       "isDeleted": false,
       "id": "B6866Uu1DeoREhG-_kqTH",
       "fillStyle": "hachure",
@@ -2109,7 +1829,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1696519567828,
+      "updated": 1697486177191,
       "link": null,
       "locked": false,
       "fontSize": 22.497639081220058,
@@ -2120,12 +1840,12 @@
       "containerId": null,
       "originalText": "Product Manager",
       "lineHeight": 1.25,
-      "baseline": 20
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 428,
-      "versionNonce": 553894865,
+      "version": 429,
+      "versionNonce": 1063616870,
       "isDeleted": false,
       "id": "RVtWeZ_lPumuShPODk8o9",
       "fillStyle": "hachure",
@@ -2145,7 +1865,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1696519567828,
+      "updated": 1697486177191,
       "link": null,
       "locked": false,
       "fontSize": 22.497639081220058,
@@ -2156,12 +1876,12 @@
       "containerId": null,
       "originalText": "Financial Analyst",
       "lineHeight": 1.25,
-      "baseline": 20
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 408,
-      "versionNonce": 887610815,
+      "version": 409,
+      "versionNonce": 1958359034,
       "isDeleted": false,
       "id": "xQ3mO2hArnuLz5c7t6Gqq",
       "fillStyle": "hachure",
@@ -2181,7 +1901,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1696519567829,
+      "updated": 1697486177192,
       "link": null,
       "locked": false,
       "fontSize": 22.497639081220058,
@@ -2192,7 +1912,7 @@
       "containerId": null,
       "originalText": "Executive",
       "lineHeight": 1.25,
-      "baseline": 20
+      "baseline": 19
     },
     {
       "type": "rectangle",
@@ -2538,8 +2258,8 @@
     },
     {
       "type": "text",
-      "version": 342,
-      "versionNonce": 79941087,
+      "version": 343,
+      "versionNonce": 1866228902,
       "isDeleted": false,
       "id": "LBwHw8vjGcOgKxSieb171",
       "fillStyle": "hachure",
@@ -2559,7 +2279,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1696519567829,
+      "updated": 1697486177194,
       "link": null,
       "locked": false,
       "fontSize": 30.3252536908015,
@@ -2570,12 +2290,12 @@
       "containerId": null,
       "originalText": "Dashboard Overview",
       "lineHeight": 1.25,
-      "baseline": 27
+      "baseline": 26
     },
     {
       "type": "text",
-      "version": 484,
-      "versionNonce": 1955578769,
+      "version": 485,
+      "versionNonce": 2091262138,
       "isDeleted": false,
       "id": "WWY0pZuSTlwy68uWIlYLK",
       "fillStyle": "hachure",
@@ -2595,7 +2315,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1696519567829,
+      "updated": 1697486177196,
       "link": null,
       "locked": false,
       "fontSize": 21.660895493429642,
@@ -2606,7 +2326,7 @@
       "containerId": null,
       "originalText": "This page provides an overview of key metrics and allows users to navigate to specific sections.",
       "lineHeight": 1.25,
-      "baseline": 19
+      "baseline": 18
     },
     {
       "type": "rectangle",
@@ -2676,7 +2396,7 @@
       "containerId": "6sBAuotYepmmg9c8ikvU6",
       "originalText": "KPI\n(total salesquantity last month)",
       "lineHeight": 1.25,
-      "baseline": 75
+      "baseline": 76
     },
     {
       "type": "rectangle",
@@ -2746,7 +2466,7 @@
       "containerId": "fFvlnCbnDTnvIzt5bRRum",
       "originalText": "KPI\n(total salesquantity last month compared to previous month)",
       "lineHeight": 1.25,
-      "baseline": 75
+      "baseline": 76
     },
     {
       "type": "rectangle",
@@ -2816,7 +2536,7 @@
       "containerId": "s9PglOUCxUm4IvqW_NSie",
       "originalText": "KPI\n(total salesquantity this month)",
       "lineHeight": 1.25,
-      "baseline": 75
+      "baseline": 76
     },
     {
       "type": "rectangle",
@@ -2886,7 +2606,7 @@
       "containerId": "Q3fO4QpIuU1xSuyCZSUM8",
       "originalText": "SalesQuantity linechart comparing last month with current month",
       "lineHeight": 1.25,
-      "baseline": 21
+      "baseline": 22
     },
     {
       "type": "rectangle",
@@ -2956,12 +2676,12 @@
       "containerId": "E4bkASpkCUpDcX6s6H2PC",
       "originalText": "Navigatie naar andere paginas",
       "lineHeight": 1.25,
-      "baseline": 49
+      "baseline": 50
     },
     {
       "type": "text",
-      "version": 325,
-      "versionNonce": 804043263,
+      "version": 326,
+      "versionNonce": 550821862,
       "isDeleted": false,
       "id": "rRLjI9-SKnT9y7FKuCpb5",
       "fillStyle": "hachure",
@@ -2981,7 +2701,7 @@
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1696519567829,
+      "updated": 1697486177196,
       "link": null,
       "locked": false,
       "fontSize": 21.660895493429642,
@@ -2992,7 +2712,7 @@
       "containerId": null,
       "originalText": "All users",
       "lineHeight": 1.25,
-      "baseline": 19
+      "baseline": 18
     },
     {
       "type": "rectangle",
@@ -3161,7 +2881,7 @@
       "containerId": "KXUof1KvNublCxUQROf77",
       "originalText": "#10",
       "lineHeight": 1.25,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "ellipse",
@@ -4001,7 +3721,7 @@
       "containerId": "ymSSR8nxh7Zz9rfOqV1Hd",
       "originalText": "filter",
       "lineHeight": 1.25,
-      "baseline": 15
+      "baseline": 16
     },
     {
       "type": "ellipse",
@@ -4335,7 +4055,7 @@
       "containerId": null,
       "originalText": "Mehdi Zymberi",
       "lineHeight": 1.15,
-      "baseline": 306
+      "baseline": 307
     },
     {
       "type": "line",
@@ -4551,8 +4271,8 @@
     },
     {
       "type": "text",
-      "version": 782,
-      "versionNonce": 2002987135,
+      "version": 783,
+      "versionNonce": 727054714,
       "isDeleted": false,
       "id": "PvCIJ18YOveFSyvWildZC",
       "fillStyle": "hachure",
@@ -4565,14 +4285,14 @@
       "y": -3388.6683328827517,
       "strokeColor": "#000000",
       "backgroundColor": "transparent",
-      "width": 2336.47705078125,
+      "width": 2336.308837890625,
       "height": 396.1825383655062,
       "seed": 836284532,
       "groupIds": [],
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1696519745651,
+      "updated": 1697486177197,
       "link": null,
       "locked": false,
       "fontSize": 344.5065551004402,
@@ -4675,8 +4395,8 @@
     },
     {
       "type": "text",
-      "version": 759,
-      "versionNonce": 21092223,
+      "version": 760,
+      "versionNonce": 1480323878,
       "isDeleted": false,
       "id": "kPnITrFlRM8WtP5aC8pgO",
       "fillStyle": "hachure",
@@ -4689,14 +4409,14 @@
       "y": -295.33520299993916,
       "strokeColor": "#000000",
       "backgroundColor": "transparent",
-      "width": 2003.079345703125,
+      "width": 2002.92138671875,
       "height": 372.2954525522072,
       "seed": 155047500,
       "groupIds": [],
       "frameId": null,
       "roundness": null,
       "boundElements": [],
-      "updated": 1696519732879,
+      "updated": 1697486177198,
       "link": null,
       "locked": false,
       "fontSize": 323.7351761323541,
@@ -5109,6 +4829,286 @@
         1,
         1
       ]
+    },
+    {
+      "type": "rectangle",
+      "version": 671,
+      "versionNonce": 510469222,
+      "isDeleted": false,
+      "id": "VzVi0AfagX8qlAeIScbzg",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": -3067.1277051530506,
+      "y": -3822.854032684425,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "width": 699,
+      "height": 136,
+      "seed": 1625370854,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "7qM8g5NHMswP3lk7l2NEj"
+        }
+      ],
+      "updated": 1697486608480,
+      "link": null,
+      "locked": false
+    },
+    {
+      "type": "text",
+      "version": 943,
+      "versionNonce": 1797386086,
+      "isDeleted": false,
+      "id": "7qM8g5NHMswP3lk7l2NEj",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": -2855.401279982152,
+      "y": -3769.0396208955904,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "width": 275.5471496582031,
+      "height": 28.371176422331047,
+      "seed": 1419125798,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": null,
+      "boundElements": [],
+      "updated": 1697486616820,
+      "link": null,
+      "locked": false,
+      "fontSize": 22.696941137864837,
+      "fontFamily": 1,
+      "text": "return amount per month",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "VzVi0AfagX8qlAeIScbzg",
+      "originalText": "return amount per month",
+      "lineHeight": 1.25,
+      "baseline": 20
+    },
+    {
+      "type": "ellipse",
+      "version": 706,
+      "versionNonce": 1030638438,
+      "isDeleted": false,
+      "id": "rOdtn39Y0dOqZdSR_SKHi",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": -2412.2339317990227,
+      "y": -3848.4760171720745,
+      "strokeColor": "#000000",
+      "backgroundColor": "#fa5252",
+      "width": 76.25344479890707,
+      "height": 77.03154117440613,
+      "seed": 1525943398,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 2
+      },
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "XsFQ-B7TW1Nbr7rvQHaeP"
+        }
+      ],
+      "updated": 1697486620256,
+      "link": null,
+      "locked": false
+    },
+    {
+      "type": "text",
+      "version": 996,
+      "versionNonce": 1507093414,
+      "isDeleted": false,
+      "id": "XsFQ-B7TW1Nbr7rvQHaeP",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": -2389.865861694925,
+      "y": -3821.761306623343,
+      "strokeColor": "#000000",
+      "backgroundColor": "#fa5252",
+      "width": 31.597976684570312,
+      "height": 23.13259494726911,
+      "seed": 1321308070,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": null,
+      "boundElements": [],
+      "updated": 1697486622241,
+      "link": null,
+      "locked": false,
+      "fontSize": 18.506075957815288,
+      "fontFamily": 1,
+      "text": "#16",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "rOdtn39Y0dOqZdSR_SKHi",
+      "originalText": "#16",
+      "lineHeight": 1.25,
+      "baseline": 16
+    },
+    {
+      "type": "rectangle",
+      "version": 748,
+      "versionNonce": 441784038,
+      "isDeleted": false,
+      "id": "7RgmMRNj8XUQv8dodNh1w",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": -2279.6509141054794,
+      "y": -3811.8315053176075,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "width": 572,
+      "height": 131,
+      "seed": 959113082,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "1SezE7q-KEjfDP3L9ZJUg"
+        }
+      ],
+      "updated": 1697486893778,
+      "link": null,
+      "locked": false
+    },
+    {
+      "type": "text",
+      "version": 1060,
+      "versionNonce": 853951334,
+      "isDeleted": false,
+      "id": "1SezE7q-KEjfDP3L9ZJUg",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": -2095.3079880800888,
+      "y": -3759.9891011312457,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "width": 203.31414794921875,
+      "height": 27.315191627275976,
+      "seed": 1897130042,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": null,
+      "boundElements": [],
+      "updated": 1697486899474,
+      "link": null,
+      "locked": false,
+      "fontSize": 21.85215330182078,
+      "fontFamily": 1,
+      "text": "top manufacturars",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "7RgmMRNj8XUQv8dodNh1w",
+      "originalText": "top manufacturars",
+      "lineHeight": 1.25,
+      "baseline": 18
+    },
+    {
+      "type": "ellipse",
+      "version": 759,
+      "versionNonce": 672848762,
+      "isDeleted": false,
+      "id": "Dsy9Up_rLfsNspAc4Nypm",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": -1750.1154920579997,
+      "y": -3836.437864805258,
+      "strokeColor": "#000000",
+      "backgroundColor": "#fa5252",
+      "width": 73.41526575833555,
+      "height": 74.16440112321654,
+      "seed": 1839124730,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 2
+      },
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "Ooi7DscGQ1aW21VOPETmu"
+        }
+      ],
+      "updated": 1697486891488,
+      "link": null,
+      "locked": false
+    },
+    {
+      "type": "text",
+      "version": 1066,
+      "versionNonce": 1709530170,
+      "isDeleted": false,
+      "id": "Ooi7DscGQ1aW21VOPETmu",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": -1728.573807364662,
+      "y": -3810.7125356865295,
+      "strokeColor": "#000000",
+      "backgroundColor": "#fa5252",
+      "width": 30.419464111328125,
+      "height": 22.271591928893855,
+      "seed": 307143098,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": null,
+      "boundElements": [],
+      "updated": 1697486891488,
+      "link": null,
+      "locked": false,
+      "fontSize": 17.817273543115085,
+      "fontFamily": 1,
+      "text": "#16",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "Dsy9Up_rLfsNspAc4Nypm",
+      "originalText": "#16",
+      "lineHeight": 1.25,
+      "baseline": 15
     }
   ],
   "appState": {
