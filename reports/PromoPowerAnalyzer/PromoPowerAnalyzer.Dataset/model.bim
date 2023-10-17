@@ -1,5 +1,5 @@
 {
-  "compatibilityLevel": 1550,
+  "compatibilityLevel": 1567,
   "model": {
     "annotations": [
       {
@@ -8,7 +8,7 @@
       },
       {
         "name": "PBIDesktopVersion",
-        "value": "2.120.963.0 (23.08)"
+        "value": "2.121.942.0 (23.09)"
       },
       {
         "name": "PBI_QueryOrder",
@@ -89,7 +89,7 @@
         "toTable": "avansData Contoso_Channel"
       }
     ],
-    "sourceQueryCulture": "nl-NL",
+    "sourceQueryCulture": "en-NL",
     "tables": [
       {
         "name": "avansData Contoso_Stores",
@@ -244,7 +244,6 @@
             ],
             "dataCategory": "PaddedDateTableDates",
             "dataType": "dateTime",
-            "formatString": "General Date",
             "isDataTypeInferred": true,
             "isHidden": true,
             "isNameInferred": true,
@@ -268,7 +267,6 @@
             "dataCategory": "Years",
             "dataType": "int64",
             "expression": "YEAR([Date])",
-            "formatString": "0",
             "isDataTypeInferred": true,
             "isHidden": true,
             "lineageTag": "6e4bd3c2-82c9-4a91-abbb-83eeb2747889",
@@ -290,7 +288,6 @@
             "dataCategory": "MonthOfYear",
             "dataType": "int64",
             "expression": "MONTH([Date])",
-            "formatString": "0",
             "isDataTypeInferred": true,
             "isHidden": true,
             "lineageTag": "89c581ea-3c89-45b5-bd3d-38e42a726e9b",
@@ -334,7 +331,6 @@
             "dataCategory": "QuarterOfYear",
             "dataType": "int64",
             "expression": "INT(([MonthNo] + 2) / 3)",
-            "formatString": "0",
             "isDataTypeInferred": true,
             "isHidden": true,
             "lineageTag": "303f3972-80e4-4365-a759-f6d95c1bba43",
@@ -378,7 +374,6 @@
             "dataCategory": "DayOfMonth",
             "dataType": "int64",
             "expression": "DAY([Date])",
-            "formatString": "0",
             "isDataTypeInferred": true,
             "isHidden": true,
             "lineageTag": "6ae74fe8-937e-4296-9efe-1725a1c5de02",
@@ -530,12 +525,22 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"nl-NL\"}"
               }
             ],
-            "dataType": "string",
+            "changedProperties": [
+              {
+                "property": "DataType"
+              }
+            ],
+            "dataType": "decimal",
+            "formatString": "\"€\"\\ #,0.###############;#,0.###############\\ -\"€\";\"€\"\\ #,0.###############",
             "lineageTag": "b87ab896-eeeb-4e27-998c-7b87db5dddb3",
             "sourceColumn": "UnitCost",
-            "summarizeBy": "none"
+            "summarizeBy": "sum"
           },
           {
             "name": "UnitPrice",
@@ -543,12 +548,22 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"nl-NL\"}"
               }
             ],
-            "dataType": "string",
+            "changedProperties": [
+              {
+                "property": "DataType"
+              }
+            ],
+            "dataType": "decimal",
+            "formatString": "\"€\"\\ #,0.###############;#,0.###############\\ -\"€\";\"€\"\\ #,0.###############",
             "lineageTag": "e8325aae-ed60-46d4-8d18-c180b5a71016",
             "sourceColumn": "UnitPrice",
-            "summarizeBy": "none"
+            "summarizeBy": "sum"
           },
           {
             "name": "SalesQuantity",
@@ -624,12 +639,22 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"nl-NL\"}"
               }
             ],
-            "dataType": "string",
+            "changedProperties": [
+              {
+                "property": "DataType"
+              }
+            ],
+            "dataType": "decimal",
+            "formatString": "\"€\"\\ #,0.###############;#,0.###############\\ -\"€\";\"€\"\\ #,0.###############",
             "lineageTag": "9a92e299-641f-4ca1-b5a0-b9fb97322c24",
             "sourceColumn": "TotalCost",
-            "summarizeBy": "none"
+            "summarizeBy": "sum"
           },
           {
             "name": "SalesAmount",
@@ -637,12 +662,61 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"nl-NL\"}"
               }
             ],
-            "dataType": "string",
+            "changedProperties": [
+              {
+                "property": "DataType"
+              }
+            ],
+            "dataType": "decimal",
+            "formatString": "\"€\"\\ #,0.###############;#,0.###############\\ -\"€\";\"€\"\\ #,0.###############",
             "lineageTag": "0f3db7a7-b887-4633-8a65-0afb9d99be20",
             "sourceColumn": "SalesAmount",
-            "summarizeBy": "none"
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "totalEarnings",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "DataType"
+              }
+            ],
+            "dataType": "decimal",
+            "expression": "'avansData Contoso_Sales'[SalesAmount] * 'avansData Contoso_Sales'[UnitPrice]",
+            "formatString": "\"€\"\\ #,0.00;-\"€\"\\ #,0.00;\"€\"\\ #,0.00",
+            "lineageTag": "f64d3153-cc6b-46d4-bf4b-4f59db2979e9",
+            "summarizeBy": "sum",
+            "type": "calculated"
+          },
+          {
+            "name": "returnOfInvestment",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "expression": "'avansData Contoso_Sales'[ReturnAmount] * 'avansData Contoso_Sales'[ReturnQuantity]",
+            "isDataTypeInferred": true,
+            "lineageTag": "e56dc448-a4a5-4efa-871a-a8d192619cf7",
+            "summarizeBy": "sum",
+            "type": "calculated"
           }
         ],
         "lineageTag": "889d102d-5974-426d-b767-6e31e7c618e4",
@@ -1315,6 +1389,12 @@
           }
         ],
         "lineageTag": "b8bd4c21-bbaf-4731-9368-adac01f694d2",
+        "measures": [
+          {
+            "name": "unitAmount",
+            "lineageTag": "84b7aaf1-7217-4e9b-9473-6e5192ef9756"
+          }
+        ],
         "partitions": [
           {
             "name": "avansData Contoso_Calendar",
