@@ -1803,7 +1803,7 @@
             "summarizeBy": "sum"
           },
           {
-            "name": "Gross National Income Per Capita (2018)",
+            "name": "Gross National Income Per Capita",
             "annotations": [
               {
                 "name": "SummarizationSetBy",
@@ -1816,7 +1816,7 @@
             ],
             "dataType": "double",
             "lineageTag": "7a30a536-71ec-4c28-b2be-b4ba8c837f36",
-            "sourceColumn": "Gross National Income Per Capita (2018)",
+            "sourceColumn": "Gross National Income Per Capita",
             "summarizeBy": "sum"
           },
           {
@@ -1880,9 +1880,10 @@
               "expression": [
                 "let",
                 "    Source = PostgreSQL.Database(\"161.97.97.200\", \"avansData\"),",
-                "    #\"avansData_Gross National Income Per Capita\" = Source{[Schema=\"avansData\",Item=\"Gross National Income Per Capita\"]}[Data]",
+                "    #\"avansData_Gross National Income Per Capita\" = Source{[Schema=\"avansData\",Item=\"Gross National Income Per Capita\"]}[Data],",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"avansData_Gross National Income Per Capita\",{{\"Gross National Income Per Capita (2018)\", \"Gross National Income Per Capita\"}})",
                 "in",
-                "    #\"avansData_Gross National Income Per Capita\""
+                "    #\"Renamed Columns\""
               ],
               "type": "m"
             }
