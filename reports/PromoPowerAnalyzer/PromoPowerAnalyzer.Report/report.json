@@ -1,5 +1,5 @@
 {
-  "config": "{\"version\":\"5.47\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU08\",\"version\":\"5.47\",\"type\":2}},\"activeSectionIndex\":1,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "config": "{\"version\":\"5.47\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU08\",\"version\":\"5.47\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
   "layoutOptimization": 0,
   "resourcePackages": [
     {
@@ -27,76 +27,85 @@
       "name": "ReportSection",
       "visualContainers": [
         {
-          "config": "{\"name\":\"215bbfcb82561100225c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":92.57861635220125,\"y\":326.0377358490566,\"z\":6000,\"width\":151.9496855345912,\"height\":83.52201257861635,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangleRounded'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}]}}}",
+          "config": "{\"name\":\"215bbfcb82561100225c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":92.57861635220125,\"y\":326.0377358490566,\"z\":5000,\"width\":151.9496855345912,\"height\":83.52201257861635,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangleRounded'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}]}}}",
           "filters": "[]",
           "height": 83.52,
           "width": 151.95,
           "x": 92.58,
           "y": 326.04,
-          "z": 6000.00
+          "z": 5000.00
         },
         {
-          "config": "{\"name\":\"228710d386d2a22674b3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":1000,\"width\":1280,\"height\":74.46540880503144,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"\"}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0.6}}}}}}}]}}}",
+          "config": "{\"name\":\"228710d386d2a22674b3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":1280,\"height\":74.46540880503144,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"\"}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0.6}}}}}}}]}}}",
           "filters": "[]",
           "height": 74.47,
           "width": 1280.00,
           "x": 0.00,
           "y": 0.00,
-          "z": 1000.00
-        },
-        {
-          "config": "{\"name\":\"929e1ed50d30d9ae06d8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":92.57564575645756,\"y\":154.92250922509226,\"z\":0,\"width\":103.91143911439114,\"height\":35.896678966789665,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Total earnings\"}]}]}}]}}}",
-          "filters": "[]",
-          "height": 35.90,
-          "width": 103.91,
-          "x": 92.58,
-          "y": 154.92,
           "z": 0.00
         },
         {
-          "config": "{\"name\":\"929f02dc558b30e7786c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":92.57861635220125,\"y\":247.54716981132074,\"z\":5000,\"width\":207.29559748427673,\"height\":78.49056603773585,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Total profit\"}]}]}}]}}}",
+          "config": "{\"name\":\"69a8b7a46ddafc500878\",\"layouts\":[{\"id\":0,\"position\":{\"x\":92.63157894736841,\"y\":144.09356725146196,\"z\":7000,\"width\":158.1286549707602,\"height\":87.953216374269,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangleRounded'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total profit'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 87.95,
+          "width": 158.13,
+          "x": 92.63,
+          "y": 144.09,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"929f02dc558b30e7786c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":92.57861635220125,\"y\":247.54716981132074,\"z\":4000,\"width\":207.29559748427673,\"height\":78.49056603773585,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Total profit\"}]}]}}]}}}",
           "filters": "[]",
           "height": 78.49,
           "width": 207.30,
           "x": 92.58,
           "y": 247.55,
-          "z": 5000.00
+          "z": 4000.00
         },
         {
-          "config": "{\"name\":\"cd614271534dbf3c9e75\",\"layouts\":[{\"id\":0,\"position\":{\"x\":492.0754716981132,\"y\":164.0251572327044,\"z\":3000,\"width\":454.84276729559747,\"height\":281.76100628930817,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"avansData Contoso_Promotion.PromotionName\",\"active\":true}],\"Values\":[{\"queryRef\":\"Sum(avansData Contoso_Sales.returnOfInvestment)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"avansData Contoso_Promotion\",\"Type\":0},{\"Name\":\"a1\",\"Entity\":\"avansData Contoso_Sales\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"PromotionName\"},\"Name\":\"avansData Contoso_Promotion.PromotionName\",\"NativeReferenceName\":\"PromotionName\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a1\"}},\"Property\":\"returnOfInvestment\"}},\"Function\":0},\"Name\":\"Sum(avansData Contoso_Sales.returnOfInvestment)\",\"NativeReferenceName\":\"Som van returnOfInvestment\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"PromotionName\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "config": "{\"name\":\"ba124e045f1dd9233d1f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":109.4736842105263,\"y\":154.38596491228068,\"z\":7001,\"width\":125.38011695906432,\"height\":66.4327485380117,\"tabOrder\":7001}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(avansData Contoso_Sales.returnOfInvestment)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"avansData Contoso_Sales\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"returnOfInvestment\"}},\"Function\":0},\"Name\":\"Sum(avansData Contoso_Sales.returnOfInvestment)\",\"NativeReferenceName\":\"Som van returnOfInvestment\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"returnOfInvestment\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#252423'\"}}}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total profit'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 66.43,
+          "width": 125.38,
+          "x": 109.47,
+          "y": 154.39,
+          "z": 7001.00
+        },
+        {
+          "config": "{\"name\":\"cd614271534dbf3c9e75\",\"layouts\":[{\"id\":0,\"position\":{\"x\":492.0754716981132,\"y\":164.0251572327044,\"z\":2000,\"width\":454.84276729559747,\"height\":281.76100628930817,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"avansData Contoso_Promotion.PromotionName\",\"active\":true}],\"Values\":[{\"queryRef\":\"Sum(avansData Contoso_Sales.returnOfInvestment)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"avansData Contoso_Promotion\",\"Type\":0},{\"Name\":\"a1\",\"Entity\":\"avansData Contoso_Sales\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"PromotionName\"},\"Name\":\"avansData Contoso_Promotion.PromotionName\",\"NativeReferenceName\":\"PromotionName\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a1\"}},\"Property\":\"returnOfInvestment\"}},\"Function\":0},\"Name\":\"Sum(avansData Contoso_Sales.returnOfInvestment)\",\"NativeReferenceName\":\"Som van returnOfInvestment\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"PromotionName\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
           "filters": "[]",
           "height": 281.76,
           "width": 454.84,
           "x": 492.08,
           "y": 164.03,
-          "z": 3000.00
+          "z": 2000.00
         },
         {
-          "config": "{\"name\":\"d402557aeb107388b1da\",\"layouts\":[{\"id\":0,\"position\":{\"x\":92.57861635220125,\"y\":74.46540880503144,\"z\":4000,\"width\":207.29559748427673,\"height\":89.55974842767296,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Units sold after promotion mail\"}]}]}}]}}}",
+          "config": "{\"name\":\"d402557aeb107388b1da\",\"layouts\":[{\"id\":0,\"position\":{\"x\":92.57861635220125,\"y\":74.46540880503144,\"z\":3000,\"width\":207.29559748427673,\"height\":89.55974842767296,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Units sold after promotion mail\"}]}]}}]}}}",
           "filters": "[]",
           "height": 89.56,
           "width": 207.30,
           "x": 92.58,
           "y": 74.47,
-          "z": 4000.00
+          "z": 3000.00
         },
         {
-          "config": "{\"name\":\"dfbacb267270035d1385\",\"layouts\":[{\"id\":0,\"position\":{\"x\":98.1021897810219,\"y\":342.48175182481754,\"z\":7000,\"width\":137.5182481751825,\"height\":44.67153284671533,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(avansData Contoso_Sales.totalEarnings)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"avansData Contoso_Sales\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"totalEarnings\"}},\"Function\":0},\"Name\":\"Sum(avansData Contoso_Sales.totalEarnings)\",\"NativeReferenceName\":\"Som van totalEarnings\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"totalEarnings\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"21D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#252423'\"}}}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}]}}}",
+          "config": "{\"name\":\"dfbacb267270035d1385\",\"layouts\":[{\"id\":0,\"position\":{\"x\":106.66666666666666,\"y\":336.84210526315786,\"z\":6000,\"width\":125.38011695906432,\"height\":66.4327485380117,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(avansData Contoso_Sales.totalEarnings)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"avansData Contoso_Sales\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"totalEarnings\"}},\"Function\":0},\"Name\":\"Sum(avansData Contoso_Sales.totalEarnings)\",\"NativeReferenceName\":\"Som van totalEarnings\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"totalEarnings\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#252423'\"}}}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"100D\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total earnings'\"}}}}}]}}}",
           "filters": "[]",
-          "height": 44.67,
-          "width": 137.52,
-          "x": 98.10,
-          "y": 342.48,
-          "z": 7000.00
+          "height": 66.43,
+          "width": 125.38,
+          "x": 106.67,
+          "y": 336.84,
+          "z": 6000.00
         },
         {
-          "config": "{\"name\":\"f761a066f56fe1633346\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":74.46540880503144,\"z\":2000,\"width\":92.57861635220125,\"height\":646.0377358490566,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"\"}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0.6}}}}}}}]}}}",
+          "config": "{\"name\":\"f761a066f56fe1633346\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":74.46540880503144,\"z\":1000,\"width\":92.57861635220125,\"height\":646.0377358490566,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"\"}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0.6}}}}}}}]}}}",
           "filters": "[]",
           "height": 646.04,
           "width": 92.58,
           "x": 0.00,
           "y": 74.47,
-          "z": 2000.00
+          "z": 1000.00
         }
       ],
       "width": 1280.00
@@ -177,22 +186,31 @@
       "ordinal": 3,
       "visualContainers": [
         {
-          "config": "{\"name\":\"312870872c867e43e148\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":74.46540880503144,\"z\":2000,\"width\":92.57861635220125,\"height\":646.0377358490566,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"\"}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0.6}}}}}}}]}}}",
+          "config": "{\"name\":\"312870872c867e43e148\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":74.46540880503144,\"z\":1000,\"width\":92.57861635220125,\"height\":646.0377358490566,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"\"}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0.6}}}}}}}]}}}",
           "filters": "[]",
           "height": 646.04,
           "width": 92.58,
           "x": 0.00,
           "y": 74.47,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"6cb0d73f4df832b2b22e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":92.63157894736841,\"y\":73.91812865497076,\"z\":2000,\"width\":1187.3684210526314,\"height\":646.5497076023391,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"funnel\",\"projections\":{\"Category\":[{\"queryRef\":\"avansData Contoso_Promotion.PromotionName\",\"active\":true},{\"queryRef\":\"avansData Contoso_Promotion.Year\"}],\"Y\":[{\"queryRef\":\"Sum(avansData Contoso_Sales.totalEarnings)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a1\",\"Entity\":\"avansData Contoso_Sales\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"avansData Contoso_Promotion\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"PromotionName\"},\"Name\":\"avansData Contoso_Promotion.PromotionName\",\"NativeReferenceName\":\"PromotionName\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Year\"},\"Name\":\"avansData Contoso_Promotion.Year\",\"NativeReferenceName\":\"Year\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a1\"}},\"Property\":\"totalEarnings\"}},\"Function\":0},\"Name\":\"Sum(avansData Contoso_Sales.totalEarnings)\",\"NativeReferenceName\":\"Som van totalEarnings\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a1\"}},\"Property\":\"totalEarnings\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Sales growth during special events and holidays'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 646.55,
+          "width": 1187.37,
+          "x": 92.63,
+          "y": 73.92,
           "z": 2000.00
         },
         {
-          "config": "{\"name\":\"93f670d5d21f6b4d4fc7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":1000,\"width\":1280,\"height\":74.46540880503144,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"\"}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0.6}}}}}}}]}}}",
+          "config": "{\"name\":\"93f670d5d21f6b4d4fc7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":1280,\"height\":74.46540880503144,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"\"}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0.6}}}}}}}]}}}",
           "filters": "[]",
           "height": 74.47,
           "width": 1280.00,
           "x": 0.00,
           "y": 0.00,
-          "z": 1000.00
+          "z": 0.00
         }
       ],
       "width": 1280.00
@@ -207,13 +225,13 @@
       "ordinal": 2,
       "visualContainers": [
         {
-          "config": "{\"name\":\"468fd8915b3243817b81\",\"layouts\":[{\"id\":0,\"position\":{\"x\":492.0754716981132,\"y\":164.0251572327044,\"z\":3000,\"width\":454.84276729559747,\"height\":281.76100628930817,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"avansData Contoso_Promotion.PromotionName\",\"active\":true}],\"Values\":[{\"queryRef\":\"Sum(avansData Contoso_Sales.returnOfInvestment)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"avansData Contoso_Promotion\",\"Type\":0},{\"Name\":\"a1\",\"Entity\":\"avansData Contoso_Sales\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"PromotionName\"},\"Name\":\"avansData Contoso_Promotion.PromotionName\",\"NativeReferenceName\":\"PromotionName\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a1\"}},\"Property\":\"returnOfInvestment\"}},\"Function\":0},\"Name\":\"Sum(avansData Contoso_Sales.returnOfInvestment)\",\"NativeReferenceName\":\"Som van returnOfInvestment\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"PromotionName\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "config": "{\"name\":\"25fe7893c7ac51b56643\",\"layouts\":[{\"id\":0,\"position\":{\"x\":300.3508771929824,\"y\":163.74269005847952,\"z\":5000,\"width\":880.4678362573098,\"height\":398.59649122807014,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"CountNonNull(avansData Contoso_Sales.SalesKey)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"avansData Contoso_Sales\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"SalesKey\"}},\"Function\":5},\"Name\":\"CountNonNull(avansData Contoso_Sales.SalesKey)\",\"NativeReferenceName\":\"Totaal van SalesKey\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"SalesKey\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
           "filters": "[]",
-          "height": 281.76,
-          "width": 454.84,
-          "x": 492.08,
-          "y": 164.03,
-          "z": 3000.00
+          "height": 398.60,
+          "width": 880.47,
+          "x": 300.35,
+          "y": 163.74,
+          "z": 5000.00
         },
         {
           "config": "{\"name\":\"6073449c2c5fc9319e32\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":74.46540880503144,\"z\":2000,\"width\":92.57861635220125,\"height\":646.0377358490566,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"\"}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0.6}}}}}}}]}}}",
@@ -234,22 +252,22 @@
           "z": 1000.00
         },
         {
-          "config": "{\"name\":\"7f88fefeeeacf8f1de91\",\"layouts\":[{\"id\":0,\"position\":{\"x\":92.57861635220125,\"y\":74.46540880503144,\"z\":4000,\"width\":207.29559748427673,\"height\":89.55974842767296,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Units sold after promotion mail\"}]}]}}]}}}",
+          "config": "{\"name\":\"7f88fefeeeacf8f1de91\",\"layouts\":[{\"id\":0,\"position\":{\"x\":92.57861635220125,\"y\":74.46540880503144,\"z\":3000,\"width\":207.29559748427673,\"height\":89.55974842767296,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Units sold after promotion mail\"}]}]}}]}}}",
           "filters": "[]",
           "height": 89.56,
           "width": 207.30,
           "x": 92.58,
           "y": 74.47,
-          "z": 4000.00
+          "z": 3000.00
         },
         {
-          "config": "{\"name\":\"b088f939b22091616fcb\",\"layouts\":[{\"id\":0,\"position\":{\"x\":92.57861635220125,\"y\":247.54716981132074,\"z\":5000,\"width\":207.29559748427673,\"height\":78.49056603773585,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Total profit\"}]}]}}]}}}",
+          "config": "{\"name\":\"b088f939b22091616fcb\",\"layouts\":[{\"id\":0,\"position\":{\"x\":92.57861635220125,\"y\":247.54716981132074,\"z\":4000,\"width\":207.29559748427673,\"height\":78.49056603773585,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Total profit\"}]}]}}]}}}",
           "filters": "[]",
           "height": 78.49,
           "width": 207.30,
           "x": 92.58,
           "y": 247.55,
-          "z": 5000.00
+          "z": 4000.00
         },
         {
           "config": "{\"name\":\"b5dc4cca9310518c2121\",\"layouts\":[{\"id\":0,\"position\":{\"x\":92.57861635220125,\"y\":164.0251572327044,\"z\":0,\"width\":207.29559748427673,\"height\":83.52201257861635,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Total earnings\"}]}]}}]}}}",
