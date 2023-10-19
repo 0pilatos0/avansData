@@ -628,10 +628,16 @@
                 "value": "Automatic"
               }
             ],
-            "dataType": "string",
+            "changedProperties": [
+              {
+                "property": "DataType"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "\"€\"\\ #,0.00;-\"€\"\\ #,0.00;\"€\"\\ #,0.00",
             "lineageTag": "c6d182c7-f254-42ce-b933-5aa8c4883e02",
             "sourceColumn": "DiscountAmount",
-            "summarizeBy": "none"
+            "summarizeBy": "sum"
           },
           {
             "name": "TotalCost",

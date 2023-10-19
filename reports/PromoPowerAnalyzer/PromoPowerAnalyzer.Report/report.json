@@ -1,5 +1,5 @@
 {
-  "config": "{\"version\":\"5.47\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU08\",\"version\":\"5.47\",\"type\":2}},\"activeSectionIndex\":1,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "config": "{\"version\":\"5.47\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU08\",\"version\":\"5.47\",\"type\":2}},\"activeSectionIndex\":3,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
   "layoutOptimization": 0,
   "pods": [
     {
@@ -238,7 +238,7 @@
       "ordinal": 3,
       "visualContainers": [
         {
-          "config": "{\"name\":\"312870872c867e43e148\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":74.46540880503144,\"z\":1000,\"width\":92.57861635220125,\"height\":646.0377358490566,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"\"}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0.6}}}}}}}]}}}",
+          "config": "{\"name\":\"312870872c867e43e148\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":74.46540880503144,\"z\":1000,\"width\":92.57861635220125,\"height\":646.0377358490566,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"\"}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0}}}}}}}]}}}",
           "filters": "[]",
           "height": 646.04,
           "width": 92.58,
@@ -247,22 +247,31 @@
           "z": 1000.00
         },
         {
-          "config": "{\"name\":\"6cb0d73f4df832b2b22e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":92.63157894736841,\"y\":73.91812865497076,\"z\":2000,\"width\":1187.3684210526314,\"height\":646.5497076023391,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"funnel\",\"projections\":{\"Category\":[{\"queryRef\":\"avansData Contoso_Promotion.PromotionName\",\"active\":true},{\"queryRef\":\"avansData Contoso_Promotion.Year\"}],\"Y\":[{\"queryRef\":\"Sum(avansData Contoso_Sales.totalEarnings)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a1\",\"Entity\":\"avansData Contoso_Sales\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"avansData Contoso_Promotion\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"PromotionName\"},\"Name\":\"avansData Contoso_Promotion.PromotionName\",\"NativeReferenceName\":\"PromotionName\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Year\"},\"Name\":\"avansData Contoso_Promotion.Year\",\"NativeReferenceName\":\"Year\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a1\"}},\"Property\":\"totalEarnings\"}},\"Function\":0},\"Name\":\"Sum(avansData Contoso_Sales.totalEarnings)\",\"NativeReferenceName\":\"Som van totalEarnings\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a1\"}},\"Property\":\"totalEarnings\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Sales growth during special events and holidays'\"}}}}}]}}}",
+          "config": "{\"name\":\"6cb0d73f4df832b2b22e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":92.63157894736841,\"y\":73.91812865497076,\"z\":2000,\"width\":1187.3684210526314,\"height\":323.7426900584795,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"avansData Contoso_Promotion.PromotionName\",\"active\":true},{\"queryRef\":\"avansData Contoso_Promotion.Year\"}],\"Y\":[{\"queryRef\":\"Sum(avansData Contoso_Sales.totalEarnings)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a1\",\"Entity\":\"avansData Contoso_Sales\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"avansData Contoso_Promotion\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"PromotionName\"},\"Name\":\"avansData Contoso_Promotion.PromotionName\",\"NativeReferenceName\":\"PromotionName\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Year\"},\"Name\":\"avansData Contoso_Promotion.Year\",\"NativeReferenceName\":\"Year\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a1\"}},\"Property\":\"totalEarnings\"}},\"Function\":0},\"Name\":\"Sum(avansData Contoso_Sales.totalEarnings)\",\"NativeReferenceName\":\"Som van totalEarnings\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a1\"}},\"Property\":\"totalEarnings\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Sales growth during special events and holidays'\"}}}}}]}}}",
           "filters": "[]",
-          "height": 646.55,
+          "height": 323.74,
           "width": 1187.37,
           "x": 92.63,
           "y": 73.92,
           "z": 2000.00
         },
         {
-          "config": "{\"name\":\"93f670d5d21f6b4d4fc7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":1280,\"height\":74.46540880503144,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"\"}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0.6}}}}}}}]}}}",
+          "config": "{\"name\":\"93f670d5d21f6b4d4fc7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":1280,\"height\":74.46540880503144,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"\"}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0}}}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Sales growth'\"}}}}}]}}}",
           "filters": "[]",
           "height": 74.47,
           "width": 1280.00,
           "x": 0.00,
           "y": 0.00,
           "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"e193447e88516feaa7e1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":92.63157894736841,\"y\":397.6608187134503,\"z\":2001,\"width\":1180.8187134502923,\"height\":322.8070175438596,\"tabOrder\":2001}}],\"singleVisual\":{\"visualType\":\"lineStackedColumnComboChart\",\"projections\":{\"Category\":[{\"queryRef\":\"avansData Contoso_Promotion.Year\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(avansData Contoso_Sales.totalEarnings)\"},{\"queryRef\":\"Sum(avansData Contoso_Sales.DiscountAmount)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"avansData Contoso_Sales\",\"Type\":0},{\"Name\":\"a1\",\"Entity\":\"avansData Contoso_Promotion\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a1\"}},\"Property\":\"Year\"},\"Name\":\"avansData Contoso_Promotion.Year\",\"NativeReferenceName\":\"Year\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"totalEarnings\"}},\"Function\":0},\"Name\":\"Sum(avansData Contoso_Sales.totalEarnings)\",\"NativeReferenceName\":\"Som van totalEarnings\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"DiscountAmount\"}},\"Function\":0},\"Name\":\"Sum(avansData Contoso_Sales.DiscountAmount)\",\"NativeReferenceName\":\"Som van DiscountAmount\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"totalEarnings\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Upsell offers'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 322.81,
+          "width": 1180.82,
+          "x": 92.63,
+          "y": 397.66,
+          "z": 2001.00
         }
       ],
       "width": 1280.00
@@ -286,7 +295,7 @@
           "z": 5000.00
         },
         {
-          "config": "{\"name\":\"6073449c2c5fc9319e32\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":74.46540880503144,\"z\":2000,\"width\":92.57861635220125,\"height\":646.0377358490566,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"\"}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0.6}}}}}}}]}}}",
+          "config": "{\"name\":\"6073449c2c5fc9319e32\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":74.46540880503144,\"z\":2000,\"width\":92.57861635220125,\"height\":646.0377358490566,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"\"}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0}}}}}}}]}}}",
           "filters": "[]",
           "height": 646.04,
           "width": 92.58,
@@ -295,7 +304,7 @@
           "z": 2000.00
         },
         {
-          "config": "{\"name\":\"68feaeeee901e4e5ad39\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":1000,\"width\":1280,\"height\":74.46540880503144,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"\"}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0.6}}}}}}}]}}}",
+          "config": "{\"name\":\"68feaeeee901e4e5ad39\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":1000,\"width\":1280,\"height\":74.46540880503144,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"\"}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0}}}}}}}]}}}",
           "filters": "[]",
           "height": 74.47,
           "width": 1280.00,
