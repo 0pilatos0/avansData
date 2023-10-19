@@ -615,7 +615,7 @@
               }
             ],
             "dataType": "int64",
-            "formatString": "0",
+            "formatString": "\"€\"\\ #,0.00;-\"€\"\\ #,0.00;\"€\"\\ #,0.00",
             "lineageTag": "30ccf0d4-b5ad-4a3c-a782-784e81f7960e",
             "sourceColumn": "DiscountQuantity",
             "summarizeBy": "sum"
@@ -732,7 +732,7 @@
             "type": "calculated"
           },
           {
-            "name": "prmotionCosts",
+            "name": "promotionCosts",
             "annotations": [
               {
                 "name": "SummarizationSetBy",
