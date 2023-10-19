@@ -588,7 +588,7 @@
               }
             ],
             "dataType": "int64",
-            "formatString": "0",
+            "formatString": "#,0",
             "lineageTag": "872753ca-0fa9-448d-b9b7-39aefad0a792",
             "sourceColumn": "ReturnQuantity",
             "summarizeBy": "sum"
@@ -705,16 +705,45 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
-              },
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
               }
             ],
             "dataType": "double",
             "expression": "'avansData Contoso_Sales'[ReturnAmount] * 'avansData Contoso_Sales'[ReturnQuantity]",
+            "formatString": "\"€\"\\ #,0.00;-\"€\"\\ #,0.00;\"€\"\\ #,0.00",
             "isDataTypeInferred": true,
             "lineageTag": "e56dc448-a4a5-4efa-871a-a8d192619cf7",
+            "summarizeBy": "sum",
+            "type": "calculated"
+          },
+          {
+            "name": "unitsPromotion",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "expression": "'avansData Contoso_Sales'[SalesQuantity] - 'avansData Contoso_Sales'[ReturnQuantity]",
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "lineageTag": "eb931ac6-7dd0-4abf-860c-c571187498f5",
+            "summarizeBy": "sum",
+            "type": "calculated"
+          },
+          {
+            "name": "prmotionCosts",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "double",
+            "expression": "'avansData Contoso_Sales'[totalEarnings] - 'avansData Contoso_Sales'[returnOfInvestment]",
+            "formatString": "\"€\"\\ #,0.00;-\"€\"\\ #,0.00;\"€\"\\ #,0.00",
+            "isDataTypeInferred": true,
+            "lineageTag": "9072b00b-5ec6-4ace-a2dd-e70d63c2f6fa",
             "summarizeBy": "sum",
             "type": "calculated"
           }
