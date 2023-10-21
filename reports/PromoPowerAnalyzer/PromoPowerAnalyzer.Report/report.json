@@ -1,5 +1,5 @@
 {
-  "config": "{\"version\":\"5.47\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU08\",\"version\":\"5.47\",\"type\":2}},\"activeSectionIndex\":3,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "config": "{\"version\":\"5.47\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU08\",\"version\":\"5.47\",\"type\":2}},\"activeSectionIndex\":1,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
   "layoutOptimization": 0,
   "pods": [
     {
@@ -197,12 +197,12 @@
           "z": 10000.00
         },
         {
-          "config": "{\"name\":\"777e5fba7f6d583d3a92\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1121.8713450292396,\"y\":69.23976608187134,\"z\":16000,\"width\":158.1286549707602,\"height\":138.47953216374268,\"tabOrder\":16000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"contosoLogo7650861636671364.png\"}}}}}]}}}",
+          "config": "{\"name\":\"777e5fba7f6d583d3a92\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1157.080291970803,\"y\":69.1970802919708,\"z\":16000,\"width\":122.62773722627738,\"height\":130.5109489051095,\"tabOrder\":16000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"contosoLogo7650861636671364.png\"}}}}}]}}}",
           "filters": "[]",
-          "height": 138.48,
-          "width": 158.13,
-          "x": 1121.87,
-          "y": 69.24,
+          "height": 130.51,
+          "width": 122.63,
+          "x": 1157.08,
+          "y": 69.20,
           "z": 16000.00
         },
         {
@@ -290,12 +290,12 @@
           "z": 1000.00
         },
         {
-          "config": "{\"name\":\"2c542846117abc476610\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1185.4970760233916,\"y\":159.0643274853801,\"z\":14000,\"width\":66.4327485380117,\"height\":67.36842105263158,\"tabOrder\":14000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"radioLogo013452922071675921.png\"}}}}}]}}}",
+          "config": "{\"name\":\"2c542846117abc476610\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1177.2262773722628,\"y\":157.66423357664235,\"z\":14000,\"width\":66.56934306569343,\"height\":67.44525547445255,\"tabOrder\":14000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"radioLogo013452922071675921.png\"}}}}}]}}}",
           "filters": "[]",
-          "height": 67.37,
-          "width": 66.43,
-          "x": 1185.50,
-          "y": 159.06,
+          "height": 67.45,
+          "width": 66.57,
+          "x": 1177.23,
+          "y": 157.66,
           "z": 14000.00
         },
         {
@@ -326,12 +326,12 @@
           "z": 0.00
         },
         {
-          "config": "{\"name\":\"67271df3af5458cb247a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":952.5146198830408,\"y\":232.04678362573097,\"z\":10000,\"width\":108.53801169590642,\"height\":54.26900584795321,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"twitterLogo3453023807253588.png\"}}}}}]}}}",
+          "config": "{\"name\":\"67271df3af5458cb247a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":947.7372262773723,\"y\":232.1167883211679,\"z\":10000,\"width\":108.61313868613139,\"height\":54.306569343065696,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"twitterLogo3453023807253588.png\"}}}}}]}}}",
           "filters": "[]",
-          "height": 54.27,
-          "width": 108.54,
-          "x": 952.51,
-          "y": 232.05,
+          "height": 54.31,
+          "width": 108.61,
+          "x": 947.74,
+          "y": 232.12,
           "z": 10000.00
         },
         {
@@ -380,12 +380,12 @@
           "z": 2000.00
         },
         {
-          "config": "{\"name\":\"d68e2bb275033628e3f3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1114.3859649122805,\"y\":163.74269005847952,\"z\":13000,\"width\":63.62573099415204,\"height\":62.69005847953216,\"tabOrder\":13000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"tvLogo2857108448371757.png\"}}}}}]}}}",
+          "config": "{\"name\":\"d68e2bb275033628e3f3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1113.2846715328467,\"y\":162.04379562043798,\"z\":13000,\"width\":63.94160583941606,\"height\":63.065693430656935,\"tabOrder\":13000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"tvLogo2857108448371757.png\"}}}}}]}}}",
           "filters": "[]",
-          "height": 62.69,
-          "width": 63.63,
-          "x": 1114.39,
-          "y": 163.74,
+          "height": 63.07,
+          "width": 63.94,
+          "x": 1113.28,
+          "y": 162.04,
           "z": 13000.00
         },
         {
