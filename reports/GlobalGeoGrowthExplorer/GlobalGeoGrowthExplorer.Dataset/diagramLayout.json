@@ -49,10 +49,11 @@
         },
         {
           "location": {
-            "x": 1640.794666578633,
-            "y": 0
+            "x": 1224.6847381449079,
+            "y": 711.7669828471611
           },
           "nodeIndex": "Contoso_Calendar_LookUp",
+          "nodeLineageTag": "68fcce62-ca2b-4670-80e5-da6df934a855",
           "size": {
             "height": 300,
             "width": 234
@@ -61,10 +62,11 @@
         },
         {
           "location": {
-            "x": 1131.4071270047875,
-            "y": 660.7070560799541
+            "x": 423.74649213559076,
+            "y": 637.43775087148924
           },
           "nodeIndex": "Contoso_Promotion_LookUp",
+          "nodeLineageTag": "b153dda3-77fe-446c-9279-5cfede86bbe4",
           "size": {
             "height": 272,
             "width": 287.382523713537
@@ -73,8 +75,8 @@
         },
         {
           "location": {
-            "x": 1665.4380686992261,
-            "y": 445.6691504319781
+            "x": 837.32455980974044,
+            "y": 423.76862788283466
           },
           "nodeIndex": "Contoso_Sales_LookUp",
           "nodeLineageTag": "32f4ccf7-00a1-4e24-8010-c357f11f964b",
@@ -86,10 +88,11 @@
         },
         {
           "location": {
-            "x": 1186.7086504540036,
-            "y": 273.20552837216661
+            "x": 1218.1906516183974,
+            "y": 24.087084375660254
           },
           "nodeIndex": "Contoso_Stores_LookUp",
+          "nodeLineageTag": "4f861928-ba96-4e86-8358-d4d840650ed1",
           "size": {
             "height": 272,
             "width": 267.66148837882929
@@ -98,10 +101,11 @@
         },
         {
           "location": {
-            "x": 1941.9647445683877,
-            "y": 12.214835476422934
+            "x": 1606.612993034629,
+            "y": 144.98675343060492
           },
           "nodeIndex": "Gross_National_Income_Per_Capita_LookUp",
+          "nodeLineageTag": "c6084f34-584a-4227-bd93-f0f5e16b225f",
           "size": {
             "height": 300,
             "width": 234
@@ -110,8 +114,8 @@
         },
         {
           "location": {
-            "x": 2215.9647445683877,
-            "y": 423.72575968451429
+            "x": 1638.3384623347301,
+            "y": 514.065415199731
           },
           "nodeIndex": "Measure Table",
           "nodeLineageTag": "c51c03dd-8d4f-418f-8855-59e6c324b7d1",
@@ -123,8 +127,8 @@
         },
         {
           "location": {
-            "x": 854.26946667923835,
-            "y": 375.40671575062106
+            "x": 877.53877188770321,
+            "y": 20.892006986361991
           },
           "nodeIndex": "Contoso_Geography",
           "nodeLineageTag": "2c71858b-b29d-4eab-aaa2-39a8aac128e1",
@@ -136,7 +140,7 @@
         }
       ],
       "name": "All tables",
-      "zoomValue": 73.057617525321547,
+      "zoomValue": 84.285823255466781,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,
