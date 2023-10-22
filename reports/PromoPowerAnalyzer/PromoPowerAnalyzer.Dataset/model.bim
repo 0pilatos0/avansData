@@ -784,7 +784,7 @@
         "lineageTag": "889d102d-5974-426d-b767-6e31e7c618e4",
         "measures": [
           {
-            "name": "revenue",
+            "name": "Revenue",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -1503,6 +1503,12 @@
           {
             "name": "unitAmount",
             "lineageTag": "84b7aaf1-7217-4e9b-9473-6e5192ef9756"
+          },
+          {
+            "name": "discountAmount",
+            "expression": "SUM('avansData Contoso_Sales'[DiscountAmount])",
+            "formatString": "0",
+            "lineageTag": "f8779cef-073b-44b8-bb00-1f2ff010e561"
           }
         ],
         "partitions": [
